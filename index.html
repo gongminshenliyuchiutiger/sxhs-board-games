@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新北市立雙溪高級中學－從桌遊看社會－主題網站</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Index Page Specific Styles */
+        body.index-theme {
+            background-color: #eef4f7; /* Light blue-grey background for the index page */
+            color: #333;
+        }
+
+        .index-theme header {
+            background-color: #34495e; /* Darker blue-grey */
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 5px solid #2ecc71; /* Green accent */
+        }
+
+        .index-theme header h1 {
+            font-size: 3.2em;
+            margin-bottom: 15px;
+            font-weight: 700;
+            color: #fcfcfc;
+        }
+
+        .index-theme header h2 {
+            font-size: 1.8em;
+            margin-top: 0;
+            font-weight: 400;
+            color: #bdc3c7; /* Lighter grey */
+        }
+
+        .index-theme .intro-text {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 30px auto;
+            text-align: center;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .game-card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px 0;
+        }
+
+        .game-card {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none; /* Remove underline from card link */
+            color: inherit; /* Inherit text color */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .game-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .game-card-header {
+            padding: 25px;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            min-height: 150px; /* Ensure a minimum height for background image effect */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .game-card-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+            z-index: 1;
+        }
+
+        .game-card-header h3 {
+            font-size: 1.8em;
+            margin: 0;
+            font-weight: 700;
+            color: #fff;
+            position: relative;
+            z-index: 2;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .game-card-header p.tagline {
+            font-size: 0.95em;
+            margin-top: 10px;
+            font-style: italic;
+            color: #e0e0e0;
+            position: relative;
+            z-index: 2;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            max-width: 90%;
+            opacity: 0.9;
+        }
+
+        .game-card-content {
+            padding: 25px;
+            flex-grow: 1;
+        }
+
+        .game-card-content p {
+            font-size: 0.95em;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .game-card-content ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+
+        .game-card-content ul li {
+            font-size: 0.9em;
+            color: #444;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .game-card-content ul li::before {
+            content: '•';
+            color: #2ecc71;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        /* Specific background images for each card */
+        .card-taipei-air-raid .game-card-header { background-image: url('https://via.placeholder.com/600x200/d9534f/ffffff?text=Taipei+Air+Raid'); background-color: #d9534f;}
+        .card-power-on .game-card-header { background-image: url('https://via.placeholder.com/600x200/2e7d32/ffffff?text=Power+On'); background-color: #2e7d32;}
+        .card-home-play .game-card-header { background-image: url('https://via.placeholder.com/600x200/a87e5b/ffffff?text=Home+Play'); background-color: #a87e5b;}
+        .card-conflicting-legends .game-card-header { background-image: url('https://via.placeholder.com/600x200/3f51b5/ffffff?text=Conflicting+Legends'); background-color: #3f51b5;}
+        .card-night-market-ginseng .game-card-header { background-image: url('https://via.placeholder.com/600x200/cc3333/ffffff?text=Night+Market+Ginseng'); background-color: #cc3333;}
+        .card-mission-taiwan-go .game-card-header { background-image: url('https://via.placeholder.com/600x200/004f9f/ffffff?text=Mission+Taiwan+Go'); background-color: #004f9f;}
+        .card-crazy-news .game-card-header { background-image: url('https://via.placeholder.com/600x200/222/ffffff?text=Crazy+News'); background-color: #222;}
+        .card-international-mission .game-card-header { background-image: url('https://via.placeholder.com/600x200/1a4d7c/ffffff?text=International+Mission'); background-color: #1a4d7c;}
+
+
+        .index-theme footer {
+            background-color: #34495e; /* Darker blue-grey */
+            color: #ecf0f1;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9em;
+            border-top: 5px solid #2ecc71; /* Green accent */
+        }
+
+        /* Responsive adjustments for index */
+        @media (max-width: 768px) {
+            .index-theme header h1 {
+                font-size: 2.5em;
+            }
+            .index-theme header h2 {
+                font-size: 1.4em;
+            }
+            .intro-text {
+                font-size: 1em;
+                margin: 20px auto;
+            }
+            .game-card-grid {
+                padding: 20px 0;
+            }
+            .game-card-header h3 {
+                font-size: 1.5em;
+            }
+            .game-card-header p.tagline {
+                font-size: 0.85em;
+            }
+        }
+    </style>
+</head>
+<body class="index-theme">
+    <header>
+        <div class="header-content">
+            <h1>新北市立雙溪高級中學</h1>
+            <h2>－從桌遊看社會－</h2>
+        </div>
+    </header>
+
+    <main class="container">
+        <p class="intro-text">
+            歡迎來到新北市立雙溪高級中學「從桌遊看社會」主題網站！
+            在這裡，我們將透過一系列精選的臺灣本土桌遊，探索社會多元議題、認識歷史文化，
+            並培養批判性思考與同理心。點擊下方卡片，進入各個遊戲的介紹頁面，開啟你的桌遊社會學習之旅！
+        </p>
+
+        <section class="game-card-grid">
+
+            <a href="raid-on-taihoku.html" class="game-card card-taipei-air-raid">
+                <div class="game-card-header">
+                    <h3>《臺北大空襲》</h3>
+                    <p class="tagline">攤開時代，我們折疊命運。</p>
+                </div>
+                <div class="game-card-content">
+                    <p>帶你回到日治時期台北，經歷二戰的轟炸，在戰爭結束前與家人一同求生，學習歷史與人性。</p>
+                    <ul>
+                        <li><strong>玩家人數:</strong> 2-4人</li>
+                        <li><strong>遊戲時間:</strong> 60分鐘</li>
+                        <li><strong>適合年齡:</strong> 10歲以上</li>
+                    </ul>
+                </div>
+            </a>
+
+            <a href="power-on.html" class="game-card card-power-on">
+                <div class="game-card-header">
+                    <h3>《電力啟動 Power On!》</h3>
+                    <p class="tagline">能源有限，慾望無窮，創造出最有效率的發電方式，穩定城市人民。</p>
+                </div>
+                <div class="game-card-content">
+                    <p>探索多元發電方式，學習能源管理與碳排放影響，如何在有限資源下滿足城市用電需求。</p>
+                    <ul>
+                        <li><strong>玩家人數:</strong> 2-4人</li>
+                        <li><strong>遊戲時間:</strong> 30-50分鐘</li>
+                        <li><strong>適合年齡:</strong> 6歲以上</li>
+                    </ul>
+                </div>
+            </a>
+
+            <a href="home-play.html" class="game-card card-home-play">
+                <div class="game-card-header">
+                    <h3>《扮家家遊 Home Play》</h3>
+                    <p class="tagline">「家」可不只有一種模樣，美好的家庭有著有不同的形狀。</p>
+                </div>
+                <div class="game-card-content">
+                    <p>透過扮演不同角色，體驗多元家庭型態，培養同理心與語言表達能力，認識社會上的各種家庭面貌。</p>
+                    <ul>
+                        <li><strong>玩家人數:</strong> 2-6人 (基本)</li>
+                        <li><strong>遊戲時間:</strong> 20-80分鐘</li>
+                        <li><strong>適合年齡:</strong> 8歲以上</li>
+                    </ul>
+                </div>
+            </a>
+
+            <a href="conflicting-legends.html" class="game-card card-conflicting-legends">
+                <div class="game-card-header">
+                    <h3>《偉人の猜拳単戦略 Conflicting Legends》</h3>
+                    <p class="tagline">世界上不同的偉人將加入你的麾下，一同發展文明。</p>
+                </div>
+                <div class="game-card-content">
+                    <p>結合猜拳與卡牌策略，扮演偉人發展文明，擴展領土，提升文化與科技，爭奪世界統治權。</p>
+                    <ul>
+                        <li><strong>遊戲作者:</strong> 陳智帆、張勝皓、吳威呈</li>
+                        <li><strong>出版:</strong> Homosapiens Lab</li>
+                        <li><strong>年份:</strong> 2017</li>
+                    </ul>
+                </div>
+            </a>
+
+            <a href="night-market-ginseng.html" class="game-card card-night-market-ginseng">
+                <div class="game-card-header">
+                    <h3>《夜市人蔘 Yes! Ginseng》</h3>
+                    <p class="tagline">在臺灣，夜市是認識本土文化最迅速的方式。</p>
+                </div>
+                <div class="game-card-content">
+                    <p>透過夜市經營，認識台灣小吃美食文化，學習食材搭配與策略競爭，體驗最道地的台灣風情。</p>
+                    <ul>
+                        <li><strong>玩家人數:</strong> 2-6人</li>
+                        <li><strong>遊戲時間:</strong> 15-20分鐘</li>
+                        <li><strong>適合年齡:</strong> 8歲以上</li>
+                    </ul>
+                </div>
+            </a>
+
+            <a href="mission-taiwan-go.html" class="game-card card-mission-taiwan-go">
+                <div class="game-card-header">
+                    <h3>《臺灣出任務 Mission Taiwan, Go!》</h3>
+                    <p class="tagline">開發援助任務，協助友邦及友好國家發展。</p>
+                </div>
+                <div class="game-card-content">
+                    <p>扮演國際援助組織，籌措資金、執行任務，協助友邦發展，達成永續發展目標。</p>
+                    <ul>
+                        <li><strong>玩家人數:</strong> 2-6人</li>
+                        <li><strong>遊戲時間:</strong> 30-40分鐘</li>
+                        <li><strong>適合年齡:</strong> 12歲以上</li>
+                    </ul>
+                </div>
+            </a>
+
+            <a href="crazy-news.html" class="game-card card-crazy-news">
+                <div class="game-card-header">
+                    <h3>《抓誑新聞 Crazy News》</h3>
+                    <p class="tagline">媒體誑化, 操控人心; 識讀同盟, 誓言清除毒物, 讓媒體恢復正常!</p>
+                </div>
+                <div class="game-card-content">
+                    <p>透過辨識新聞中的「毒物」，提升媒體識讀能力，成為識讀同盟的一員，讓媒體恢復正常。</p>
+                    <ul>
+                        <li><strong>玩家人數:</strong> 3-7人</li>
+                        <li><strong>遊戲時間:</strong> 30-60分鐘</li>
+                        <li><strong>適合年齡:</strong> 12歲以上</li>
+                    </ul>
+                </div>
+            </a>
+
+            <a href="international-mission.html" class="game-card card-international-mission">
+                <div class="game-card-header">
+                    <h3>《國際總動援 Mission in the World》</h3>
+                    <p class="tagline">世界上不同的偉人將加入你的麾下，一同發展文明。</p>
+                </div>
+                <div class="game-card-content">
+                    <p>兼顧社會、經濟、環境，解決國際任務，釐清資訊真相，平衡個人利益與全球目標，決定世界命運。</p>
+                    <ul>
+                        <li><strong>遊戲時間:</strong> 30-60分鐘</li>
+                        <li><strong>玩家人數:</strong> 4-6人</li>
+                        <li><strong>適合年齡:</strong> 10歲以上</li>
+                    </ul>
+                </div>
+            </a>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © Liyuchiutiger Gongminshen</p>
+    </footer>
+
+    <!-- 吉祥物圖片新增在這裡 -->
+    <div class="mascot-container">
+        <a href="#" class="mascot-link" aria-label="吉祥物">
+            <img src="image/LiyuChillGuy.svg" alt="吉祥物" class="mascot-image">
+        </a>
+    </div>
+
+</body>
+</html>

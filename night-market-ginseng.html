@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新北市立雙溪高級中學－從桌遊看社會－《夜市人蔘 Yes! Ginseng》</title>
+    <link rel="stylesheet" href="style.css"> <!-- 連結到共用 CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="night-market-ginseng-theme"> <!-- 增加主題 class -->
+    <header>
+        <div class="header-content">
+            <h1>新北市立雙溪高級中學</h1>
+            <h2>－從桌遊看社會－</h2>
+            <h3>《夜市人蔘 Yes! Ginseng》</h3>
+            <p class="tagline">在臺灣，夜市是認識本土文化最迅速的方式。</p>
+            <div class="game-meta">
+                <span><strong>玩家人數:</strong> 2-6人 (建議)</span>
+                <span><strong>遊戲時間:</strong> 15-20分鐘</span>
+                <span><strong>學習時間:</strong> 3分鐘</span>
+                <span><strong>適合年齡:</strong> 8歲以上</span>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#intro">遊戲介紹</a></li>
+            <li><a href="#game-info">遊戲資訊</a></li>
+            <li><a href="#components">牌卡介紹</a></li>
+            <li><a href="#setup">遊戲準備</a></li>
+            <li><a href="#gameplay">遊戲進行</a></li>
+            <li><a href="#scoring">勝負與計分</a></li>
+            <li><a href="#alternative-rules">變化規則</a></li>
+            <li><a href="#special-cards-details">功效牌說明</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="intro" class="game-section">
+            <h2>遊戲介紹</h2>
+            <p>夜市在台灣已經是國際辨識度極高的必走行程。所有人都說邊吃邊玩樂一次搞定，尤其夜市裡的小吃更是代表台灣人的生活與文化，藉由走訪各地夜市、品嚐美味小吃，是最迅速認識台灣本土特色的方式。</p>
+            <p>遊戲目標是讓在地人與外國旅客，在遊戲過程中認識台灣小吃美食，並透過手冊，帶領玩家認識每道菜的小典故，餐點牌上更標註了常用唸法，外國人學習發音後，就可帶親朋好友們上街直接找吃的囉！即便是在地台灣人也是可以從中認識更多地方特產、文化，為旅程增加不少豐富性的色彩。</p>
+        </section>
+
+        <section id="game-info" class="game-section">
+            <h2>遊戲資訊</h2>
+            <div class="game-info">
+                <p><strong>遊戲類型:</strong></p>
+                <ul>
+                    <li>策略: ★★★☆☆</li>
+                    <li>運氣: ★★★★☆</li>
+                    <li>互動: ★★★★★</li>
+                    <li>難度: ★★★☆☆</li>
+                </ul>
+                <p><strong>玩家數量:</strong> 2-6人(建議)</p>
+                <p><strong>遊戲時間:</strong> 15-20分鐘</p>
+                <p><strong>學習時間:</strong> 3分鐘</p>
+                <p><strong>適合年齡:</strong> 8歲以上</p>
+            </div>
+        </section>
+
+        <section id="components" class="game-section">
+            <h2>牌卡介紹</h2>
+            <h3>一般食材卡 (Ingredient Cards)</h3>
+            <div class="card-grid">
+                <div class="card-item">
+                    <h4><span class="ingredient-color-swatch color-grey"></span> 五穀雜糧：灰色 (Rice / Flour: grey color)</h4>
+                    <p>12 張</p>
+                </div>
+                <div class="card-item">
+                    <h4><span class="ingredient-color-swatch color-yellow"></span> 湯：黃色 (Soup: yellow color)</h4>
+                    <p>12 張</p>
+                </div>
+                <div class="card-item">
+                    <h4><span class="ingredient-color-swatch color-green"></span> 蔬菜：綠色 (Vegetable: green color)</h4>
+                    <p>8 張</p>
+                </div>
+                <div class="card-item">
+                    <h4><span class="ingredient-color-swatch color-blue"></span> 海鮮：藍色 (Seafood: blue color)</h4>
+                    <p>8 張</p>
+                </div>
+                <div class="card-item">
+                    <h4><span class="ingredient-color-swatch color-red"></span> 肉：紅色 (Meat: red color)</h4>
+                    <p>4 張</p>
+                </div>
+            </div>
+            <p class="note"><span class="ingredient-color-swatch color-white"></span> 無法使用之壞食材 (5張)：Bad ingredient, can't be served for dish.</p>
+
+            <h3>特別食材卡 (Special Ingredient Card)</h3>
+            <div class="card-grid">
+                <div class="card-item">
+                    <h4><span class="ingredient-color-swatch color-black"></span> 人蔘：黑色 (Ginseng: black color)</h4>
+                    <p>2 張</p>
+                    <p>人蔘食材可以替代任何2張食材牌。出示此牌大聲喊出「夜市人蔘」則立即生效。</p>
+                    <p class="note">富爸爸牌放置到桌面卻忘記說出指定口令，則此牌失去替食材功能；但更大隻也不能取代三張。</p>
+                </div>
+            </div>
+
+            <h3>餐點牌 (Order Cards)</h3>
+            <p>每張餐點牌都標示了餐點金額、菜名拼音及所需食材。完成餐點可獲得該卡片上的金額分數。</p>
+            <div class="card-grid">
+                <div class="card-item">
+                    <h4>1. 蚵仔煎 (O-a-jian)</h4>
+                    <p>所需食材: <span class="ingredient-color-swatch color-blue"></span>海鮮x1, <span class="ingredient-color-swatch color-green"></span>蔬菜x1, <span class="ingredient-color-swatch color-grey"></span>五穀雜糧x1, <span class="ingredient-color-swatch color-yellow"></span>湯x1</p>
+                    <p>12 張</p>
+                </div>
+                <div class="card-item">
+                    <h4>2. 滷肉飯 (Lo-bak-pue)</h4>
+                    <p>所需食材: <span class="ingredient-color-swatch color-red"></span>肉x1, <span class="ingredient-color-swatch color-grey"></span>五穀雜糧x1, <span class="ingredient-color-swatch color-yellow"></span>湯x1</p>
+                    <p>8 張</p>
+                </div>
+                <div class="card-item">
+                    <h4>3. 蝦仁飯 (He-bin-pue)</h4>
+                    <p>所需食材: <span class="ingredient-color-swatch color-blue"></span>海鮮x1, <span class="ingredient-color-swatch color-grey"></span>五穀雜糧x1</p>
+                    <p>4 張</p>
+                </div>
+                <div class="card-item">
+                    <h4>4. 生魚片 (Chha-mi)</h4>
+                    <p>所需食材: <span class="ingredient-color-swatch color-blue"></span>海鮮x1</p>
+                    <p>2 張</p>
+                </div>
+            </div>
+
+            <h3>功效牌 (Special Cards)</h3>
+            <p>功效牌分為攻擊、輔助、防禦、卡牌替代等類別，可在遊戲中產生特殊效果。</p>
+            <div class="card-grid">
+                <div class="card-item">
+                    <h4><span class="special-card-type-icon type-attack">攻</span>/<span class="special-card-type-icon type-assist">輔</span> 警察 (Police)</h4>
+                    <p>18 張</p>
+                </div>
+                <div class="card-item">
+                    <h4><span class="special-card-type-icon type-attack">攻</span> 奧客 (Picky Customer)</h4>
+                    <p>5 張</p>
+                </div>
+                <div class="card-item">
+                    <h4><span class="special-card-type-icon type-replace">換</span> 佛跳牆 (Monk Jumps Over The Wall)</h4>
+                    <p>4 張</p>
+                </div>
+                <div class="card-item">
+                    <h4><span class="special-card-type-icon type-attack">攻</span> 社會 (Gangster)</h4>
+                    <p>4 張</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="setup" class="game-section">
+            <h2>遊戲準備</h2>
+            <ol>
+                <li>
+                    <h4>選擇起始玩家</h4>
+                    <p>任選一位玩家作為起始玩家，遊戲依順時針方向進行。</p>
+                </li>
+                <li>
+                    <h4>洗牌與發牌</h4>
+                    <p>將三類牌牌堆分別洗勻後，由起始玩家開始依序發牌給各玩家每人：</p>
+                    <div class="game-setup-cards">
+                        <div class="card-stack-visual player-hand">食材牌</div>
+                        <div class="effect-icon plus">+</div>
+                        <div class="card-stack-visual player-hand">功效牌</div>
+                        <div class="arrow">→</div>
+                        <span>起始手牌</span>
+                        <div class="card-stack-visual player-hand">5張</div>
+                    </div>
+                </li>
+                <li>
+                    <h4>佈置桌面</h4>
+                    <p>剩餘三類牌牌堆排在場上，並翻開3張餐點牌，夜市人蔘即開始。</p>
+                    <div class="game-setup-cards">
+                        <div class="card-stack-visual">食材牌堆</div>
+                        <div class="card-stack-visual">功效牌堆</div>
+                        <div class="card-stack-visual meal-card-area">
+                            <span style="font-weight: bold;">餐點牌區</span>
+                            <span style="font-size: 0.8em; color: #cc3333;">(翻開3張)</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <h4>放置錢幣</h4>
+                    <p>將所有60元錢幣放置在銀行區。</p>
+                </li>
+            </ol>
+        </section>
+
+        <section id="gameplay" class="game-section">
+            <h2>遊戲進行</h2>
+            <p>每輪到自己的回合時，先從食材牌堆中再抽取3張到手上。</p>
+            <p>依照餐點牌所指示的食材支付出，並獲取該餐點牌標註的金額。</p>
+            <p>玩家可盡所做的餐點，並補回1張餐點牌，場上永遠保持3張餐點牌。</p>
+            <div class="game-setup-cards">
+                <div class="card-stack-visual meal-card-area">餐點牌區</div>
+                <div class="arrow">→</div>
+                <span style="font-weight: bold;">補回</span>
+                <div class="card-stack-visual meal-card-area">1張餐點牌</div>
+            </div>
+            <p class="note"><strong>除使用功效牌中「YES! WE SPEAK ENGLISH」此牌允許場上多出1份餐點，但仍需於回合結束後依規定將餐點牌補回3張。</strong></p>
+            <ul>
+                <li>除了餐點牌外，使用過的食材卡及功效防禦卡牌分別回收至該類別棄牌堆，當場上卡牌用盡時由棄牌堆的卡片補回。</li>
+                <li>有分多少錢多少！每一回合，玩家不限做菜次數，有食材即可做菜並賺取金額。</li>
+                <li>來啊，來互相傷害啊！不限攻擊次數，受攻擊之玩家有防禦牌可立即使用。</li>
+                <li>2元可購買功效牌1張，回合結束前，手牌超過8張，必須丟棄多餘手牌。</li>
+                <li>當所有餐點皆做完，則遊戲正式結束，結算各玩家的餐點牌數，累積餐點最多的贏得勝利。若累積餐點牌數量相同，則累計金額最高者勝利。</li>
+            </ul>
+        </section>
+
+        <section id="scoring" class="game-section">
+            <h2>勝負與計分</h2>
+            <p>遊戲結束時，累計獲得餐點牌數量最多的玩家贏得勝利，成為「廚神」！</p>
+            <p>如果有多位玩家餐點牌數量相同，則由累計金額最高的玩家獲勝。</p>
+            <p>如果餐點牌數量和累計金額都相同，則這些玩家共享勝利。</p>
+        </section>
+
+        <section id="alternative-rules" class="game-section">
+            <h2>變化規則 (Alternative Game Play)</h2>
+            <p>目標：玩家不斷手軟、叮嚀任何可能的獲勝者，當他賺取8元的玩家贏得勝利，賺錢財務虧損我許只是剛好而已。在遊戲裡，每個玩家都是夜市擺攤，除了服務客人掙錢外，店家之間也是競爭激烈的。玩家可以用功效牌攻擊其他店家或保護自己的生意。</p>
+            <p>遊戲進行：玩家賺得該餐點牌標註的金額，使用過的所有卡牌，包含餐點牌，分別回收至該類別棄牌堆，當場上卡牌用盡時由棄牌堆的卡片補回。在自己回合的結束階段，手牌有9張以上的狀況時，必須棄回取捨，使手牌剩下不超過8張並宣告此回合結束，換下一位玩家。</p>
+        </section>
+
+        <section id="special-cards-details" class="game-section">
+            <h2>功效牌說明</h2>
+            <div class="card-grid">
+                <div class="card-item">
+                    <h4><span class="special-card-type-icon type-defend">防</span> 衛生稽查 (Hygiene Inspection)</h4>
+                    <p>1 張</p>
+                    <p>所有防禦牌無效，全場玩家包括自己丟棄手上所有食材牌，放回棄牌堆。</p>
+                </div>
+                <div class="card-item">
+                    <h4><span class="special-card-type-icon type-attack">攻</span> 食物中毒 (Food Poisoning)</h4>
+                    <p>2 張</p>
+                    <p>向被投訴玩家索賠餐點1元，並喊出1種食材請對方全部丟棄，放回棄牌堆。若沒有該食材則沒有損失。</p>
+                </div>
+                <div class="card-item">
+                    <h4><span class="special-card-type-icon type-attack">攻</span> 警察 (Police)</h4>
+                    <p>2 張</p>
+                    <p>檢舉一玩家，此玩家可自行選擇繳罰2元或丟棄手上所有食材牌，放回棄牌堆。</p>
+                </div>
+                <div class="card-item">
+                    <h4><span class="special-card-type-icon type-attack">攻</span> 蟑螂 (Cockroach)</h4>
+                    <p>2 張</p>
+                    <p>暫停做菜一回合，仍可抽取食材牌3張，或是購買/使用功效牌。</p>
+                </div>
+                <div class="card-item">
+                    <h4><span class="special-card-type-icon type-attack">攻</span> 奧客 (Picky Customer)</h4>
+                    <p>2 張</p>
+                    <p>丟棄一半的食材牌，由攻擊方選取一半食材牌並立即丟棄，放回棄牌堆。丟棄數量為無條件進位。</p>
+                </div>
+                <div class="card-item">
+                    <h4><span class="special-card-type-icon type-attack">攻</span> 扒手 (Pickpocket)</h4>
+                    <p>3 張</p>
+                    <p>奪取玩家2元，若只有1元則損失1元。</p>
+                </div>
+                <div class="card-item">
+                    <h4><span class="special-card-type-icon type-attack">攻</span> 偷牌 (Thief)</h4>
+                    <p>3 張</p>
+                    <p>奪取玩家功效防禦牌1張。</p>
+                </div>
+                <div class="card-item">
+                    <h4><span class="special-card-type-icon type-attack">攻</span> 偷菜賊 (Card Pilferer)</h4>
+                    <p>3 張</p>
+                    <p>奪取玩家食材牌2張，若只有1張食材牌則損失該食材。</p>
+                </div>
+                <div class="card-item">
+                    <h4><span class="special-card-type-icon type-assist">輔</span> 上電視 (Store Delivery)</h4>
+                    <p>1 張</p>
+                    <p>抽取食材牌3張。</p>
+                </div>
+                <div class="card-item">
+                    <h4><span class="special-card-type-icon type-assist">輔</span> 買菜抓把蔥 (Greedy)</h4>
+                    <p>1 張</p>
+                    <p>翻開食材牌堆的第一張牌，若該張為菜(包括爛菜)可加抽2張食材牌一起放進手牌，如果不是菜則只有收下該張無法加抽。</p>
+                </div>
+                <div class="card-item">
+                    <h4><span class="special-card-type-icon type-assist">輔</span> 產地直送 (Press Interview)</h4>
+                    <p>1 張</p>
+                    <p>先抽1張食材牌到手牌，每做完一項菜後可再抽1張食材牌，直到無法繼續做為止。</p>
+                </div>
+                <div class="card-item">
+                    <h4><span class="special-card-type-icon type-defend">防</span> 黑社會 (Gangster)</h4>
+                    <p>1 張</p>
+                    <p>功效攻擊退回攻擊者。</p>
+                </div>
+                <div class="card-item">
+                    <h4><span class="special-card-type-icon type-assist">輔</span> YES! WE SPEAK ENGLISH</h4>
+                    <p>1 張</p>
+                    <p>可翻多點餐點牌1張，橫向擺放，此牌結帳完不能補牌。</p>
+                </div>
+                <div class="card-item">
+                    <h4><span class="special-card-type-icon type-defend">防</span> 夜市之光 (Market Idol)</h4>
+                    <p>2 張</p>
+                    <p>除了「衛生稽查」以外之所有攻擊牌皆可抵擋。</p>
+                </div>
+                <div class="card-item">
+                    <h4><span class="special-card-type-icon type-replace">換</span> 佛跳牆 (Ah Meat-Tofu)</h4>
+                    <p>1 張</p>
+                    <p>可擇一「肉或五穀雜糧」代替「肉或海鮮」食材，當局不限使用次數。雙手合十唸出：「阿彌陀佛」則生效。</p>
+                </div>
+                <div class="card-item">
+                    <h4><span class="special-card-type-icon type-assist">輔</span> 有關係沒關係 (Thank You For Saving Me)</h4>
+                    <p>1 張</p>
+                    <p>把受到的攻擊轉移到指定第三者代為承受。當受攻擊的第三方使用這張牌時，將效果返回原攻擊者，這張牌不會返回原始攻擊者。</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- 吉祥物圖片新增在這裡 -->
+    <div class="mascot-container">
+        <a href="#" class="mascot-link" aria-label="吉祥物">
+            <img src="image/LiyuChillGuy.svg" alt="吉祥物" class="mascot-image">
+        </a>
+    </div>
+    <footer>
+        <p>Copyright © Liyuchiutiger Gongminshen</p>
+    </footer>
+</body>
+</html>

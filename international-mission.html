@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新北市立雙溪高級中學－從桌遊看社會－《國際總動援 Mission in the World》</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* 國際總動援主題專屬樣式 */
+        .international-mission-theme {
+            background-color: #f0f8f9; /* 非常淺的青色背景 */
+            color: #333333; /* 預設文字顏色 */
+        }
+
+        .international-mission-theme header {
+            background-color: #1a4d7c; /* 深藍色 */
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 5px solid #e7bb41; /* 金色強調邊框 */
+        }
+
+        .international-mission-theme header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .international-mission-theme header h2 {
+            font-size: 1.5em;
+            margin-top: 0;
+            font-weight: 400;
+            color: #aed6f1; /* 較淺的藍色次要標題 */
+        }
+
+        .international-mission-theme header h3 {
+            font-size: 2.5em; /* 遊戲名稱更大 */
+            margin-top: 20px;
+            font-weight: 700;
+            color: #e7bb41; /* 金色遊戲名稱 */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* 增加陰影使其更突出 */
+        }
+
+        .international-mission-theme .tagline {
+            font-size: 1.3em;
+            font-style: italic;
+            color: #d0e7f7;
+            margin-top: 15px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .international-mission-theme .game-meta {
+            margin-top: 25px;
+            font-size: 1.1em;
+            color: #d0e7f7;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .international-mission-theme .game-meta span {
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        .international-mission-theme .game-meta span strong {
+            margin-right: 8px;
+            color: #fff;
+        }
+        .international-mission-theme .game-meta span::before {
+            margin-right: 5px;
+            font-size: 1.2em;
+            vertical-align: middle;
+        }
+        .international-mission-theme .game-meta .time::before { content: "⏱️"; }
+        .international-mission-theme .game-meta .players::before { content: "👥"; }
+        .international-mission-theme .game-meta .age::before { content: "🎂"; }
+
+
+        .international-mission-theme .credits-header {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #aed6f1;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .international-mission-theme .credits-header p {
+            margin: 5px 0;
+        }
+
+        .international-mission-theme nav {
+            background-color: #2e7da8; /* 中藍色 */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .international-mission-theme nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .international-mission-theme nav ul li a:hover,
+        .international-mission-theme nav ul li a:focus {
+            background-color: #e7bb41; /* 金色懸停背景 */
+            color: #1a4d7c; /* 深藍色懸停文字 */
+            text-decoration: none;
+        }
+
+        .international-mission-theme .game-section {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08); /* 更明顯的陰影 */
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .international-mission-theme .game-section h2 {
+            color: #1a4d7c; /* 深藍色主標題 */
+            border-bottom: 2px solid #e7bb41; /* 金色底線 */
+            padding-bottom: 12px;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+            font-weight: 700;
+        }
+
+        .international-mission-theme .game-section h3 {
+            color: #2e7da8; /* 中藍色次標題 */
+            border-bottom: 1px dashed #aed6f1; /* 淺藍色虛線 */
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            font-size: 1.6em;
+            font-weight: 600;
+        }
+
+        .international-mission-theme .game-section h4 {
+            color: #4a90e2; /* 淺藍色標題 */
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .international-mission-theme .game-info,
+        .international-mission-theme .note {
+            background-color: #f3f9fb; /* 淺藍綠色背景 */
+            border-left: 6px solid #e7bb41; /* 金色強調線 */
+            color: #333;
+            padding: 18px;
+            border-radius: 8px;
+            margin-top: 25px;
+        }
+        .international-mission-theme .note {
+            border-left-color: #4a90e2; /* 藍色強調線 */
+            background-color: #eef7fb; /* 淺藍色背景 */
+            font-style: normal; /* 移除預設斜體 */
+        }
+
+        .international-mission-theme ul,
+        .international-mission-theme ol {
+            line-height: 1.8;
+        }
+        .international-mission-theme ul li,
+        .international-mission-theme ol li {
+            margin-bottom: 8px;
+        }
+
+        /* 遊戲組件網格 */
+        .international-mission-theme .component-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .international-mission-theme .component-item {
+            background-color: #fdfdfd;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .international-mission-theme .component-item h4 {
+            color: #1a4d7c;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+
+        .international-mission-theme .component-item p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        /* 角色卡與任務卡佈局 */
+        .international-mission-theme .card-layout-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .international-mission-theme .card-representation {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            background-color: #fdfdfd;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .international-mission-theme .card-representation.player-hand {
+            background-color: #e8f5e7; /* 淺綠色 */
+            border-color: #4CAF50;
+            color: #388E3C;
+        }
+        .international-mission-theme .card-representation.resource-stack {
+            background-color: #f3e9d8; /* 淺橘色 */
+            border-color: #FFC107;
+            color: #FFA000;
+        }
+        .international-mission-theme .card-representation .card-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #1a4d7c;
+        }
+        .international-mission-theme .card-representation .card-icon {
+            font-size: 3em;
+            color: rgba(0,0,0,0.1);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+        .international-mission-theme .card-representation .card-text {
+            position: relative;
+            z-index: 1;
+            font-size: 0.9em;
+        }
+        .international-mission-theme .card-representation .card-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #e7bb41;
+            margin-top: 10px;
+        }
+        .international-mission-theme .card-representation .card-meta {
+            font-size: 0.8em;
+            color: #777;
+            margin-top: 5px;
+        }
+
+        /* 棋子與指示物 */
+        .international-mission-theme .token-display {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .international-mission-theme .token-item {
+            text-align: center;
+            background-color: #fefefe;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px 15px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            min-width: 100px;
+        }
+        .international-mission-theme .token-item .icon {
+            font-size: 2em;
+            margin-bottom: 5px;
+            color: #e7bb41; /* 金色 */
+        }
+        .international-mission-theme .token-item p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* 世界狀態條 */
+        .international-mission-theme .world-status-bar {
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            padding: 15px 20px;
+            margin-top: 30px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #495057;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .international-mission-theme .world-status-label {
+            color: #1a4d7c;
+            font-size: 1.2em;
+        }
+        .international-mission-theme .world-status-indicator {
+            background-color: #e7bb41; /* 金色 */
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #1a4d7c;
+            border: 2px solid #1a4d7c;
+            margin: 0 10px;
+        }
+        .international-mission-theme .world-status-marker-container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 15px;
+        }
+        .international-mission-theme .world-status-marker {
+            width: 15px;
+            height: 15px;
+            background-color: #adb5bd;
+            border-radius: 50%;
+            border: 1px solid #6c757d;
+        }
+        .international-mission-theme .world-status-marker.active {
+            background-color: #28a745; /* 綠色 */
+            border-color: #218838;
+        }
+        .international-mission-theme .world-status-end {
+            color: #dc3545; /* 紅色 */
+            font-size: 1.2em;
+        }
+        .international-mission-theme .world-status-marker-container span {
+            font-size: 0.9em;
+            color: #6c757d;
+        }
+        .international-mission-theme .world-status-marker-container .world-sustain {
+             color: #28a745;
+             font-weight: bold;
+        }
+        .international-mission-theme .world-status-marker-container .world-unrest {
+            color: #fd7e14;
+            font-weight: bold;
+        }
+        .international-mission-theme .world-status-marker-container .world-doom {
+            color: #dc3545;
+            font-weight: bold;
+        }
+
+        /* 骰子與行動 */
+        .international-mission-theme .action-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            border-radius: 50%; /* 圓形 */
+            font-weight: bold;
+            color: #fff;
+            font-size: 1.1em;
+            margin-right: 8px;
+            vertical-align: middle;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            flex-shrink: 0; /* 防止圖標被壓縮 */
+        }
+        .international-mission-theme .action-social { background-color: #4a90e2; } /* 社會-藍 */
+        .international-mission-theme .action-economy { background-color: #e7bb41; } /* 經濟-金 */
+        .international-mission-theme .action-environment { background-color: #4CAF50; } /* 環境-綠 */
+
+        .international-mission-theme .action-resource-money { background-color: #2e7da8; } /* 金錢-藍 */
+        .international-mission-theme .action-resource-material { background-color: #6c757d; } /* 物資-灰 */
+        .international-mission-theme .action-resource-tech { background-color: #a0522d; } /* 技術-棕 */
+        .international-mission-theme .action-resource-house { background-color: #dc3545; } /* 房子-紅 */
+
+
+        .international-mission-theme .resource-conversion {
+            background-color: #f3f9fb;
+            border: 1px dashed #aed6f1;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .international-mission-theme .resource-conversion p {
+            margin: 5px 0;
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+        .international-mission-theme .resource-conversion .conversion-rate {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #1a4d7c;
+        }
+
+        .international-mission-theme .outcome-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .international-mission-theme .outcome-table th,
+        .international-mission-theme .outcome-table td {
+            border: 1px solid #dee2e6;
+            padding: 12px;
+            text-align: left;
+        }
+        .international-mission-theme .outcome-table th {
+            background-color: #e9ecef;
+            font-weight: bold;
+            color: #495057;
+            font-size: 1.1em;
+        }
+        .international-mission-theme .outcome-table tbody tr:nth-child(even) {
+            background-color: #f8fcfc;
+        }
+        .international-mission-theme .outcome-table tbody tr:hover {
+            background-color: #e2f4f7;
+        }
+
+        /* 新聞資訊判讀結果樣式 */
+        .international-mission-theme .news-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 0.95em;
+        }
+        .international-mission-theme .news-table th,
+        .international-mission-theme .news-table td {
+            border: 1px solid #dee2e6;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .international-mission-theme .news-table th {
+            background-color: #e9ecef;
+            color: #495057;
+            font-weight: bold;
+        }
+        .international-mission-theme .news-table .news-category {
+            background-color: #e7bb41; /* 金色標題 */
+            color: #1a4d7c;
+            font-weight: bold;
+            text-align: center;
+            padding: 8px;
+        }
+        .international-mission-theme .news-table .correct-judgment,
+        .international-mission-theme .news-table .incorrect-judgment {
+            text-align: center;
+        }
+        .international-mission-theme .news-table .correct-judgment .check-icon {
+            color: #28a745; /* 綠色打勾 */
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+         .international-mission-theme .news-table .full-report-link { /* Changed from button to link */
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.8em;
+            white-space: nowrap; /* Prevent link text from wrapping */
+            display: inline-block; /* Make it look like a button */
+            text-decoration: none; /* Remove underline from link */
+        }
+        .international-mission-theme .news-table .full-report-link:hover {
+            background-color: #2e7da8;
+            text-decoration: none; /* Keep underline removed on hover */
+        }
+
+        @media (max-width: 768px) {
+            .international-mission-theme header h1 { font-size: 2em; }
+            .international-mission-theme header h3 { font-size: 2em; }
+            .international-mission-theme .tagline { font-size: 1em; }
+            .international-mission-theme .game-meta { flex-direction: column; align-items: center; }
+            .international-mission-theme .game-meta span { width: 90%; justify-content: flex-start; }
+            .international-mission-theme .game-section h2 { font-size: 1.8em; }
+            .international-mission-theme .game-section h3 { font-size: 1.4em; }
+            .international-mission-theme .component-grid { grid-template-columns: 1fr; }
+            .international-mission-theme .card-layout-grid { grid-template-columns: 1fr; }
+            .international-mission-theme .token-display { flex-direction: column; align-items: center; }
+            .international-mission-theme .world-status-bar { flex-direction: column; align-items: flex-start; }
+            .international-mission-theme .world-status-label { margin-bottom: 10px; }
+            .international-mission-theme .world-status-marker-container { width: 100%; margin: 10px 0; }
+            .international-mission-theme .news-table th:nth-child(2),
+            .international-mission-theme .news-table td:nth-child(2) {
+                display: none; /* 在小螢幕上隱藏新聞標題列，節省空間 */
+            }
+        }
+
+        .international-mission-theme footer {
+            background-color: #1a4d7c; /* 深藍色 */
+            color: #d0e7f7;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 0.9em;
+            border-top: 5px solid #e7bb41; /* 金色強調邊框 */
+        }
+
+        .international-mission-theme a {
+            color: #2e7da8;
+            text-decoration: none;
+        }
+
+        .international-mission-theme a:hover {
+            color: #1a4d7c;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body class="international-mission-theme">
+    <header>
+        <div class="header-content">
+            <h1>新北市立雙溪高級中學</h1>
+            <h2>－從桌遊看社會－</h2>
+            <h3>《國際總動援 Mission in the World》</h3>
+            <p class="tagline">歡迎來到這個需要兼顧社會、經濟與環境，才能獲取聲望和權力的無界共和國，這裡的每個步伐都將決定世界的走向和命運。</p>
+            <div class="game-meta">
+                <span class="time"><strong>遊戲時間:</strong> 30-60分鐘</span>
+                <span class="players"><strong>玩家人數:</strong> 4-6人</span>
+                <span class="age"><strong>適合年齡:</strong> 10+</span>
+            </div>
+            <div class="credits-header">
+                <p><strong>遊戲設計與發行:</strong> 金車文教基金會 (King Car Cultural & Educational Foundation)</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#intro">遊戲介紹</a></li>
+            <li><a href="#objective">遊戲目標</a></li>
+            <li><a href="#components">遊戲配件</a></li>
+            <li><a href="#setup">遊戲設置</a></li>
+            <li><a href="#gameplay">遊戲流程</a></li>
+            <li><a href="#world-status">世界狀態</a></li>
+            <li><a href="#ending">遊戲結算</a></li>
+            <li><a href="#news-results">新聞判讀結果</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="intro" class="game-section">
+            <h2>遊戲介紹</h2>
+            <p>一場發生在國際邊境的成衣工廠大火，正逐漸瓦解世界局勢，接踵而至的國際救援任務、一觸即發的危機事件，正考驗著最真實的人性。在這個充滿變數和未知的世界中，你必須釐清資訊真相、拼湊事件全貌，並試圖在個人利益與全球目標之間找到最佳平衡。面對即將失序的未來，你將如何動「援」各方勢力、拯救大局？</p>
+            <p class="tagline">Leave No One Behind!</p>
+        </section>
+
+        <section id="objective" class="game-section">
+            <h2>遊戲目標</h2>
+            <ol>
+                <li>解決多變複雜的國際任務，並達成個人最終理想。</li>
+                <li>遊戲進行8個回合，「聲望值」最高的玩家獲勝。</li>
+            </ol>
+        </section>
+
+        <section id="components" class="game-section">
+            <h2>遊戲配件</h2>
+            <div class="component-grid">
+                <div class="component-item">
+                    <h4>角色卡</h4>
+                    <p>10張</p>
+                </div>
+                <div class="component-item">
+                    <h4>共同任務卡</h4>
+                    <p>12張</p>
+                </div>
+                <div class="component-item">
+                    <h4>個人任務卡</h4>
+                    <p>12張</p>
+                </div>
+                <div class="component-item">
+                    <h4>緊急事件卡</h4>
+                    <p>30張</p>
+                </div>
+                <div class="component-item">
+                    <h4>新聞資訊卡</h4>
+                    <p>(經濟、環境、社會 各7張)</p>
+                </div>
+                <div class="component-item">
+                    <h4>圖版-世界狀態條</h4>
+                    <p>1個</p>
+                </div>
+                <div class="component-item">
+                    <h4>圖版-探尋地圖</h4>
+                    <p>16個</p>
+                </div>
+                <div class="component-item">
+                    <h4>救援資源</h4>
+                    <p>(金錢、物資、技術、房子)</p>
+                </div>
+                 <div class="component-item">
+                    <h4>行動指數</h4>
+                    <p>(社會、經濟、環境)</p>
+                </div>
+                <div class="component-item">
+                    <h4>骰子</h4>
+                    <p>1個</p>
+                </div>
+                <div class="component-item">
+                    <h4>棋子</h4>
+                    <p>(角色 6個, 世界狀態 1個)</p>
+                </div>
+            </div>
+
+            <h3>救援資源 (以代幣表示)</h3>
+            <div class="token-display">
+                <div class="token-item"><span class="icon action-resource-money">$</span><p>金錢</p><p>×20 (1), ×10 (3), ×10 (5)</p></div>
+                <div class="token-item"><span class="icon action-resource-material">📦</span><p>物資</p><p>×20 (1), ×10 (3), ×10 (5)</p></div>
+                <div class="token-item"><span class="icon action-resource-tech">💡</span><p>技術</p><p>×20 (1), ×10 (3), ×10 (5)</p></div>
+                <div class="token-item"><span class="icon action-resource-house">🏠</span><p>房子</p><p>×20 (1), ×10 (3), ×10 (5)</p></div>
+            </div>
+            <h3>行動指數 (以代幣表示)</h3>
+            <div class="token-display">
+                <div class="token-item"><span class="icon action-social">🤝</span><p>社會</p><p>×5 (1), ×5 (2), ×5 (3)</p></div>
+                <div class="token-item"><span class="icon action-economy">📈</span><p>經濟</p><p>×5 (1), ×5 (2), ×5 (3)</p></div>
+                <div class="token-item"><span class="icon action-environment">🌳</span><p>環境</p><p>×5 (1), ×5 (2), ×5 (3)</p></div>
+            </div>
+        </section>
+
+        <section id="setup" class="game-section">
+            <h2>遊戲設置</h2>
+            <ol>
+                <li>
+                    <h4>設置地圖圖板</h4>
+                    <p>洗混「探尋地圖圖板」後，隨機拼成4x4的探尋地圖，並且將所有玩家角色棋子置於起點。</p>
+                </li>
+                <li>
+                    <h4>設置世界狀態條</h4>
+                    <p>將世界狀態棋子置於世界狀態條起點。</p>
+                    <div class="world-status-bar">
+                        <span class="world-status-label">世界狀態</span>
+                        <div class="world-status-marker-container">
+                            <span class="world-doom">世界滅亡</span>
+                            <div class="world-status-marker"></div>
+                            <span class="world-unrest">動盪不安</span>
+                            <div class="world-status-marker active"></div> <!-- 起始點 -->
+                            <span>(世界流亡)</span>
+                            <div class="world-status-marker"></div>
+                            <span>(世界不安)</span>
+                            <div class="world-status-marker"></div>
+                            <span>(豐衣足食)</span>
+                            <div class="world-status-marker"></div>
+                            <span class="world-sustain">世界永續</span>
+                        </div>
+                        <div class="world-status-indicator"></div>
+                    </div>
+                </li>
+                <li>
+                    <h4>設置牌庫</h4>
+                    <p>分別將「共同任務卡」、「緊急事件卡」與「新聞資訊卡」洗混後，置於桌面上作為牌庫。其中「新聞資訊卡」請依照三個不同種類堆疊。</p>
+                </li>
+            </ol>
+
+            <h3>玩家角色/任務設定</h3>
+            <ol>
+                <li>
+                    <h4>抽取「角色卡」</h4>
+                    <p>每位玩家隨機抽取一張「角色卡」，依照以下牌面資訊於不同時機執行動作。</p>
+                    <div class="card-layout-grid">
+                        <div class="card-representation">
+                            <span class="card-icon">👤</span>
+                            <div class="card-title">班可迪斯國 經濟大臣</div>
+                            <p class="card-text"><strong>初始行動指數:</strong> 社會1 / 經濟3 / 環境1</p>
+                            <p class="card-text"><strong>角色技能:</strong> 每回合領取資源時，可額外獲得2份金錢。</p>
+                            <p class="card-meta"><em>遊戲開始前，玩家領取對應數量的初始行動指數。遊戲過程中，湊足一組「社會*1+經濟*1+環境*1」可換取1「聲望值」。</em></p>
+                        </div>
+                        <div class="card-representation">
+                             <span class="card-icon">👤</span>
+                            <div class="card-title">米耶安南國總理</div>
+                            <p class="card-text"><strong>初始行動指數:</strong> 社會2 / 經濟2 / 環境2</p>
+                            <p class="card-text"><strong>角色技能:</strong> 解決緊急事件卡之「衝突爆發」後，可額外獲得1個聲望值。</p>
+                            <p class="card-meta"><em>每回合開始前，玩家領取對應數量的資源。</em></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <h4>抽取「個人任務卡」</h4>
+                    <p>每位玩家隨機抽取一張「個人任務卡」。遊戲過程中，玩家需想辦法獲取牌面所需資源，達成個人任務，遊戲結算時，方可獲得完成獎勵。</p>
+                     <div class="card-layout-grid">
+                        <div class="card-representation">
+                            <span class="card-icon">🎯</span>
+                            <div class="card-title">個人任務：累積財富</div>
+                            <p class="card-text"><strong>達成條件:</strong> 獲得 金錢 6 / 物資 3 / 技術 2 / 房子 1</p>
+                            <p class="card-text"><strong>完成獎勵:</strong> 聲望值+6</p>
+                        </div>
+                         <div class="card-representation">
+                            <span class="card-icon">🎯</span>
+                            <div class="card-title">共同任務：供應斷鏈</div>
+                            <p class="card-text"><strong>解決條件:</strong> 投入 物資 3 / 技術 1 / 金錢 0</p>
+                            <p class="card-text"><strong>完成獎勵:</strong> 聲望值+1 / 世界狀態+1</p>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <section id="gameplay" class="game-section">
+            <h2>遊戲流程</h2>
+            <p>遊戲開始前，先由最近一次看外國電影的人擔任第一回合起始玩家，接下來每回合以順時針方向依序輪流擔任起始玩家。每回合遊戲進行時，從起始玩家開始，每位玩家以順時針輪流動作。</p>
+
+            <h3>每回合開始前，請先執行以下動作</h3>
+            <ol>
+                <li>
+                    <h4>領取起始資源</h4>
+                    <p>每位玩家分別領取「角色卡」上標示之對應數量的起始資源。</p>
+                </li>
+                <li>
+                    <h4>抽取共同任務</h4>
+                    <p>由當回合起始玩家翻一張「共同任務卡」置於桌面中央，接下來的回合，所有玩家皆可投放資源進行任務援助。</p>
+                </li>
+            </ol>
+
+            <h3>從起始玩家開始，每位玩家需執行以下3種行動</h3>
+            <ol>
+                <li>
+                    <h4>移動棋子</h4>
+                    <p>玩家移動「角色棋子」前往各個地圖圖板，可自行決定上下左右移動1至3步。※不可與其餘玩家停留在同一格，但可經過。</p>
+                </li>
+                <li>
+                    <h4>區域行動</h4>
+                    <p>根據停留地圖圖板指示，完成對應行動，即有機會獲取資源、行動指數或聲望值。</p>
+                    <dl>
+                        <dt>資源蒐集 ($)</dt>
+                        <dd>投擲骰子，依點數領取對應數量和種類之資源。</dd>
+                        <dt>資訊判讀 (📰)</dt>
+                        <dd>抽取一張對應議題之「新聞資訊卡」進行判讀，回答正確可獲得1個對應議題之行動指數。(新聞資訊解答詳見本頁面下方)</dd>
+                        <dt>緊急事件 (🆘)</dt>
+                        <dd>抽取一張「緊急事件卡」，若為「道具」可當下使用或收回玩家手中未來回合使用；若為「人道救援」或「衝突爆發」可直接解決或放置於桌面中央，等待解決。</dd>
+                        <dt>全球貿易 (🌐)</dt>
+                        <dd>可將手中資源以1:1的比例，與官方兌換成其他種類資源。</dd>
+                        <dt>國際會議 (🤝)</dt>
+                        <dd>可發起談判會議，當前玩家提案指定一玩家提供上限為3的一種資源援助某項已翻開之「共同任務」或「緊急事件」，而後投票。若投票結果過半數，此玩家進行援助。若投票結果為平票或反對票居多，則此次談判失敗。</dd>
+                    </dl>
+                </li>
+                <li>
+                    <h4>任務援助</h4>
+                    <p>抉擇是否投放資源，以貢獻於解決檯面上已翻開之「共同任務」或「緊急事件」。</p>
+                    <ul>
+                        <li>每位玩家投放的資源種類、數量不限，也可以選擇不投放任何資源。</li>
+                        <li>最後一位投放資源並解決任務之玩家，可獲得該卡獎勵。</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section id="world-status" class="game-section">
+            <h2>更新世界狀態</h2>
+            <p>每回合結束時，根據桌面上「共同任務」、「緊急事件」解決情形，更新當前的世界狀態。</p>
+
+            <h3>「共同任務」解決情形</h3>
+            <ul>
+                <li><strong>解決「共同任務」:</strong> 每解決一張「共同任務卡」，可向「世界永續」移動一格。</li>
+                <li><strong>未解決「共同任務」:</strong> 場上若有兩張(含)以上「共同任務卡」未解決，則世界狀態向「世界滅亡」移動一格。</li>
+            </ul>
+
+            <h3>「緊急事件」解決情形</h3>
+            <ul>
+                <li><strong>未解決「衝突爆發」:</strong> 場上若有未解決之「衝突爆發」，則每一張向「世界滅亡」移動一格。</li>
+            </ul>
+
+            <h3>世界狀態解釋</h3>
+            <ul>
+                <li>踩到「豐衣足食」，每位玩家獲得四種資源各1份。</li>
+                <li>踩到「動盪不安」，每位玩家損失四種資源各1份。</li>
+                <li>遊戲結束時，抵達「世界永續」，每位玩家可獲得1個聲望值。</li>
+                <li>遊戲結束前達到「世界滅亡」，玩家全數失敗，遊戲提早結束。</li>
+            </ul>
+        </section>
+
+        <section id="ending" class="game-section">
+            <h2>遊戲結算</h2>
+            <ol>
+                <li>
+                    <h4>檢查個人任務</h4>
+                    <p>遊戲進行8回合後，計算手上資源是否符合「個人任務」之達成條件。符合條件之玩家可領取對應聲望值獎勵。</p>
+                </li>
+                <li>
+                    <h4>換算行動指數</h4>
+                    <p>將手中的三種「行動指數」，換算成「聲望值」。</p>
+                    <div class="resource-conversion">
+                        <p><strong>換算標準:</strong></p>
+                        <p class="conversion-rate">1個聲望值 = <span class="action-economy">📈</span>經濟行動指數*1 + <span class="action-social">🤝</span>社會行動指數*1 + <span class="action-environment">🌳</span>環境行動指數*1</p>
+                        <p>以此類推，湊不成堆的不計入分數。</p>
+                    </div>
+                </li>
+                <li>
+                    <h4>總結聲望值</h4>
+                    <p>加總所有聲望值，最高的玩家獲勝。</p>
+                    <p class="note">若聲望值相同，以扣除包含個人任務後，剩餘資源最多者勝，若仍相同，就攜手一起快樂邁向勝利吧！</p>
+                </li>
+            </ol>
+        </section>
+
+        <section id="news-results" class="game-section">
+            <h2>新聞資訊判讀結果</h2>
+
+            <h3>新聞資訊卡 (社會)</h3>
+            <table class="news-table">
+                <thead>
+                    <tr>
+                        <th>解答編號</th>
+                        <th>新聞標題</th>
+                        <th colspan="2">判讀資訊</th>
+                        <th>正確資訊</th>
+                        <th>查看完整報導</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>正確</th>
+                        <th>錯誤</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S1</td>
+                        <td>公平貿易新承諾: 服飾品牌的人道永續方案</td>
+                        <td class="correct-judgment"><span class="check-icon">✓</span></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="https://csr.cw.com.tw/article/43506" target="_blank" rel="noopener noreferrer" class="full-report-link">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>S2</td>
+                        <td>國際組織介入 童工權益獲得全面保護</td>
+                        <td class="correct-judgment"><span class="check-icon">✓</span></td>
+                        <td></td>
+                        <td>某國多間成衣廠違法雇用童工，逼迫孩童超時工作且沒有給出符合基本工資的薪水。即便某國際組織因此進行了規範設置與嚴格監督，目前童工權益問題還是存在於國內。</td>
+                        <td><a href="https://www.thenewslens.com/article/81662" target="_blank" rel="noopener noreferrer" class="full-report-link">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>S3</td>
+                        <td>成衣工廠勞工示威 要求調薪引發國際關注</td>
+                        <td></td>
+                        <td class="incorrect-judgment"></td>
+                        <td></td>
+                        <td><a href="https://reurl.cc/YqW2RO" target="_blank" rel="noopener noreferrer" class="full-report-link">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>S4</td>
+                        <td>慢時尚品牌製程大公開!鼓勵民眾意識消費</td>
+                        <td class="correct-judgment"><span class="check-icon">✓</span></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="https://csr.cw.com.tw/article/43506" target="_blank" rel="noopener noreferrer" class="full-report-link">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>S5</td>
+                        <td>少數民族勞工遭迫害 知名品牌聯合抵制</td>
+                        <td class="correct-judgment"><span class="check-icon">✓</span></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="https://reurl.cc/5do6zG" target="_blank" rel="noopener noreferrer" class="full-report-link">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>S6</td>
+                        <td>成衣工廠倒塌 製造大國應急措施成功保護工人安全</td>
+                        <td class="correct-judgment"><span class="check-icon">✓</span></td>
+                        <td></td>
+                        <td>成衣製造大國境內一工廠發生倒塌意外，且因工廠在消防設備與建物結構上不符規定，最後造成多人傷亡。</td>
+                        <td><a href="https://news.pts.org.tw/article/392267" target="_blank" rel="noopener noreferrer" class="full-report-link">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>S7</td>
+                        <td>性騷防治漏洞!數百萬女性工作場所遭騷擾</td>
+                        <td class="correct-judgment"><span class="check-icon">✓</span></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="https://www.hrw.org/zh-hant/news/2020/10/14/376622" target="_blank" rel="noopener noreferrer" class="full-report-link">查看</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>新聞資訊卡 (經濟)</h3>
+            <table class="news-table">
+                <thead>
+                    <tr>
+                        <th>解答編號</th>
+                        <th>新聞標題</th>
+                        <th colspan="2">判讀資訊</th>
+                        <th>正確資訊</th>
+                        <th>查看完整報導</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>正確</th>
+                        <th>錯誤</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>M1</td>
+                        <td>支持永續時尚 某國對快時尚開徵「生態稅」</td>
+                        <td class="correct-judgment"><span class="check-icon">✓</span></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="https://esg.gvm.com.tw/article/52471" target="_blank" rel="noopener noreferrer" class="full-report-link">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>M2</td>
+                        <td>某國推出「EcoEco」工具 評估服裝對環境影響</td>
+                        <td class="correct-judgment"><span class="check-icon">✓</span></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="https://esg.gvm.com.tw/article/52471" target="_blank" rel="noopener noreferrer" class="full-report-link">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>M3</td>
+                        <td>捐不完的二手衣? 直擊衣物氾濫問題根本解方</td>
+                        <td class="correct-judgment"><span class="check-icon">✓</span></td>
+                        <td></td>
+                        <td>學者呼籲面對二手衣物氾濫問題，消費者本身減少衝動購物，購買自己真正需要的，並且愛物惜物，才是從源頭解決問題的根本方式。</td>
+                        <td><a href="https://www.twreporter.org/a/taiwan-clothes-recycling-1" target="_blank" rel="noopener noreferrer" class="full-report-link">查看</a></td>
+                    </tr>
+                     <tr>
+                        <td>M4</td>
+                        <td>禁止二手衣出口 有望促進發展中國家經濟發展</td>
+                        <td class="correct-judgment"><span class="check-icon">✓</span></td>
+                        <td></td>
+                        <td>近年來許多已開發國家開始提出要禁止廢棄的二手衣出國至第三世界，此舉雖有利於改善這些開發中國家的環境與社會，但同時會影響當地靠二手衣產業謀生的人。</td>
+                        <td><a href="https://e-info.org.tw/node/238807" target="_blank" rel="noopener noreferrer" class="full-report-link">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>M5</td>
+                        <td>快時尚品牌最新網紅行銷手法 引發網友質疑</td>
+                        <td class="correct-judgment"><span class="check-icon">✓</span></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="https://reurl.cc/YqW2b4" target="_blank" rel="noopener noreferrer" class="full-report-link">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>M6</td>
+                        <td>不敵二手衣進口 本土品牌發展受嚴重衝擊</td>
+                        <td class="correct-judgment"><span class="check-icon">✓</span></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="https://e-info.org.tw/node/238807" target="_blank" rel="noopener noreferrer" class="full-report-link">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>M7</td>
+                        <td>舊衣出口需求減少 國內回收場推創意出路</td>
+                        <td class="correct-judgment"><span class="check-icon">✓</span></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="https://www.twreporter.org/a/taiwan-clothes-recycling-1" target="_blank" rel="noopener noreferrer" class="full-report-link">查看</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>新聞資訊卡 (環境)</h3>
+            <table class="news-table">
+                <thead>
+                    <tr>
+                        <th>解答編號</th>
+                        <th>新聞標題</th>
+                        <th colspan="2">判讀資訊</th>
+                        <th>正確資訊</th>
+                        <th>查看完整報導</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>正確</th>
+                        <th>錯誤</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>E1</td>
+                        <td>讓汙水歸零! 政府聲明:保證對環境無害</td>
+                        <td class="correct-judgment"><span class="check-icon">✓</span></td>
+                        <td></td>
+                        <td>全球第二大服裝製造國的企業未妥善處理污水，排放到河流裡不僅損害環境，且污染低地最重要的飲用水源。</td>
+                        <td><a href="https://reurl.cc/NlXkg5" target="_blank" rel="noopener noreferrer" class="full-report-link">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>E2</td>
+                        <td>時裝產業每年平均用水量登全球之「冠」</td>
+                        <td class="correct-judgment"><span class="check-icon">✓</span></td>
+                        <td></td>
+                        <td>國際環境組織公布，時裝產業對水資源的消耗佔全球第二，僅次於農業。</td>
+                        <td><a href="https://www.thenewslens.com/article/185158" target="_blank" rel="noopener noreferrer" class="full-report-link">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>E3</td>
+                        <td>舊衣回收真環保? 第三世界國家淪為垃圾場</td>
+                        <td class="correct-judgment"><span class="check-icon">✓</span></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="https://e-info.org.tw/node/238807" target="_blank" rel="noopener noreferrer" class="full-report-link">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>E4</td>
+                        <td>環境災難:時裝業不為人知的黑暗面</td>
+                        <td class="correct-judgment"><span class="check-icon">✓</span></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="https://e-info.org.tw/node/238807" target="_blank" rel="noopener noreferrer" class="full-report-link">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>E5</td>
+                        <td>外太空都看得到的「山」:時尚產業背後的環境迫害</td>
+                        <td class="correct-judgment"><span class="check-icon">✓</span></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="https://csr.cw.com.tw/article/42776" target="_blank" rel="noopener noreferrer" class="full-report-link">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>E6</td>
+                        <td>「棉花」成生態殺手 政府呼籲民眾支持有機產品</td>
+                        <td class="correct-judgment"><span class="check-icon">✓</span></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="https://global.udn.com/global_vision/story/8664/5897228" target="_blank" rel="noopener noreferrer" class="full-report-link">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>E7</td>
+                        <td>知名戶外品牌首款 環境認證產品獲國際肯定</td>
+                        <td class="correct-judgment"><span class="check-icon">✓</span></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="https://www.bbc.com/ukchina/trad/vert-earth-47587116" target="_blank" rel="noopener noreferrer" class="full-report-link">查看</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+    <!-- 吉祥物圖片新增在這裡 -->
+    <div class="mascot-container">
+        <a href="#" class="mascot-link" aria-label="吉祥物">
+            <img src="image/LiyuChillGuy.svg" alt="吉祥物" class="mascot-image">
+        </a>
+    </div>
+    <footer>
+        <p>Copyright © Liyuchiutiger Gongminshen</p>
+    </footer>
+</body>
+</html>

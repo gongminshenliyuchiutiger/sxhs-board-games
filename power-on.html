@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新北市立雙溪高級中學－從桌遊看社會－《電力啟動 Power On!》</title> <!-- 標題已更新 -->
+    <link rel="stylesheet" href="style.css"> <!-- 連結到共用 CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="power-on">
+    <header>
+        <div class="header-content">
+            <h1>新北市立雙溪高級中學</h1>  <!-- 主標題已更新 -->
+            <h2>－從桌遊看社會－</h2>  <!-- 次標題已更新 -->
+            <h3>《電力啟動 Power On!》</h3> <!-- 遊戲名稱現在為 h3 -->
+            <p class="tagline">能源有限，慾望無窮，創造出最有效率的發電方式，穩定城市人民。</p>
+            <div class="game-meta">
+                <span><strong>玩家人數:</strong> 2-4</span>
+                <span><strong>年齡:</strong> 6+</span>
+                <span><strong>遊戲時間:</strong> 30-50分鐘</span>
+            </div>
+            <div class="credits-header">
+                <p><strong>遊戲作者:</strong> 鄭安棋、陳彥霖、陳陶陶、蘇羽璇</p>
+                <p><strong>遊戲編輯與美術:</strong> 陳智帆、SY Li</p>
+                <p><strong>插圖:</strong> Masha Tace、Freepik</p>
+                <p>2019 H Homosapiens Lab 山頂洞人實驗室</p>
+                <p>特別感謝經濟部能源局指導，以及台灣綜合研究院協力開發。</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#contents">內容物</a></li>
+            <li><a href="#setup">遊戲準備</a></li>
+            <li><a href="#gameplay">遊戲進行</a></li>
+            <li><a href="#power-generation">發電說明</a></li>
+            <li><a href="#carbon-tower">堆疊碳塔</a></li>
+            <li><a href="#city-cards">完成城市用電需求</a></li>
+            <li><a href="#ending">遊戲結束與勝負</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="contents" class="game-section">
+            <h2>內容物</h2>
+            <ul>
+                <li>遊戲卡 61張</li>
+                <li>城市卡 15張</li>
+                <li>碳排放積木 24顆</li>
+                <li>行動方塊 3顆</li>
+                <li>玩家幫助卡 4張</li>
+                <li>燃料兌換表 1張</li>
+            </ul>
+        </section>
+
+        <section id="setup" class="game-section">
+            <h2>遊戲準備</h2>
+            <ol>
+                <li>
+                    <h4>城市卡設置</h4>
+                    <p>城市卡正面朝下洗混成為城市卡堆，翻開3張排列在場上，碳排放積木放在城市卡堆旁備用。</p>
+                </li>
+                <li>
+                    <h4>遊戲卡設置</h4>
+                    <p>遊戲卡正面朝下洗混成為牌堆，翻開6張排列在場上、翻開10張疊在牌堆旁作為棄牌堆，接著將燃料兌換表放在棄牌堆旁。(2或3人進行遊戲時，先將卡片右下角標示著的卡片移除放回盒中不使用。)</p>
+                </li>
+                <li>
+                    <h4>玩家手牌與幫助卡</h4>
+                    <p>每位玩家拿取1張玩家幫助卡放到面前，從牌堆頂拿取5張遊戲卡作為手牌。</p>
+                </li>
+                <li>
+                    <h4>起始玩家決定</h4>
+                    <p>由最近繳過電費的人、或猜拳決定起始玩家，3顆行動方塊交給起始玩家準備開始遊戲。</p>
+                </li>
+            </ol>
+        </section>
+
+        <section id="gameplay" class="game-section">
+            <h2>遊戲進行</h2>
+            <p>輪到你時，可以進行3次行動，每次行動從以下三個動作擇一執行：</p>
+            <ul>
+                <li>
+                    <h4>動作一: 取得遊戲卡</h4>
+                    <p>從場上翻開的遊戲卡中選一張拿到手上，遊戲中玩家的手牌上限為8張，手牌達到8張便不能再選擇這個行動。</p>
+                </li>
+                <li>
+                    <h4>動作二: 打出卡牌</h4>
+                    <p>從手上打出發電廠/功能卡使用，電廠打出後放在自己面前(表示興建電廠)；功能卡打出立刻執行功能，執行完後棄入棄牌堆。</p>
+                </li>
+                <li>
+                    <h4>動作三: 啟動電廠發電</h4>
+                    <p>啟動面前同一種非再生能源的電廠發電(燃煤/燃氣/核能電廠)。</p>
+                    <p class="note">※發電規則詳見說明書背面說明。</p>
+                </li>
+            </ul>
+            <p><strong>動作執行注意事項:</strong></p>
+            <ul>
+                <li>動作一、二、三不必依序執行，每次執行動作時，將1顆行動方塊放到幫助卡上對應的格子中，表示消耗的行動數。當3顆行動方塊都放到幫助卡上，代表這回合3個行動都已做完。</li>
+                <li>再生能源的電廠發電不會消耗行動數，也就是「太陽光電、風力發電與川流式水力發電」這三種電廠(綠色卡片)發電時，不需要將行動方塊放到幫助卡上。(幫助卡上「再生能源發電」也沒有格子放方塊)</li>
+                <li>動作三可以一次啟動多張同一種類的電廠，例如面前有2張核電廠、3張燃氣電廠，若想要啟動2種電廠(如1張核電廠、2張燃氣電廠)便需要消耗2個行動數。執行動作時，放1顆行動方塊到幫助卡上核電廠顏色的格子中、放另1顆行動方塊到燃氣電廠顏色的格子中。</li>
+                <li>每張電廠在一個回合中只能啟動一次，不能重複發電。</li>
+            </ul>
+        </section>
+
+        <section id="power-generation" class="game-section">
+            <h2>發電說明</h2>
+            <p>非再生能源發電時，需要消耗燃料以及滿足其他條件，才能順利發電，燃料可以從場上取得或棄掉手牌代替。再生能源發電不需要消耗燃料，不過其中「太陽光電、風力發電」兩種間歇性能源的發電量會隨著遊戲回合的進行而有所浮動，相對不穩定。</p>
+
+            <h3>非再生能源電廠</h3>
+            <div class="power-plant-types">
+                <div class="plant-card">
+                    <h4>核能發電 (NUCLEAR POWER PLANT)</h4>
+                    <p>發電量大且穩定，可24小時運轉發電。</p>
+                    <p><strong>發電條件:</strong> 發電時不用堆疊碳積木，但是需要從手上棄掉1張核燃料/2張手牌，外加棄掉1張核廢料貯存桶(只能從場上取得)，便能成功發電。</p>
+                    <p><strong>同時啟動2張核能電廠:</strong> 可以從手上棄掉1張核燃料+2張手牌，外加棄掉2張核廢料貯存桶，總共5張牌來支付需求，以此類推。</p>
+                </div>
+                <div class="plant-card">
+                    <h4>燃氣發電 (GAS-FIRED POWER PLANT)</h4>
+                    <p>供電穩定，可24小時運轉發電。</p>
+                    <p><strong>發電條件:</strong> 發電時需要棄掉1張天然氣/2張手牌，外加堆疊2顆碳積木到碳塔上，順利堆疊不倒塌才能成功發電。</p>
+                    <p><strong>同時啟動2張燃氣電廠:</strong> 可以從手上棄掉1張天然氣+2張手牌，總共3張牌來支付需求，外加堆疊4顆碳積木才能成功發電，以此類推。</p>
+                </div>
+                <div class="plant-card">
+                    <h4>燃煤發電 (COAL-FIRED POWER PLANT)</h4>
+                    <p>以煤炭為燃料，燃料成本較低。</p>
+                    <p><strong>發電條件:</strong> 發電時需要棄掉1張手牌(煤炭無法從場上取得)，外加堆疊4顆碳積木到碳塔上，順利堆疊不倒塌才能成功發電。</p>
+                    <p><strong>同時啟動2張燃煤電廠:</strong> 必須棄掉2張手牌、堆疊8顆碳積木才能成功發電，以此類推。</p>
+                </div>
+            </div>
+
+            <h3>間歇性再生能源電廠</h3>
+            <div class="power-plant-types">
+                <div class="plant-card">
+                    <h4>太陽光電 (SOLAR POWER PLANT)</h4>
+                    <p>發電時不產生空氣污染與碳排放。</p>
+                    <p><strong>發電量:</strong> 不須消耗燃料與回合行動數即可發電，但是發電量易受到外在條件影響，發電量「?」由牌堆頂牌數字決定，每回合補牌至場上後都有可能改變，數字範圍為0~2。</p>
+                </div>
+                <div class="plant-card">
+                    <h4>風力發電 (WIND POWER PLANT)</h4>
+                    <p>發電量受風場條件影響。</p>
+                    <p><strong>發電量:</strong> 不須消耗燃料與回合行動數即可發電，但是發電量易受到外在條件影響，發電量「?」由牌堆頂牌數字決定，每回合補牌至場上後都有可能改變，數字範圍為0~2。</p>
+                </div>
+                <div class="plant-card">
+                    <h4>川流式水力發電 (HYDROELECTRIC POWER PLANT)</h4>
+                    <p>發電效率穩定，可24小時運轉發電。</p>
+                    <p><strong>發電量:</strong> 不須消耗燃料與回合行動數即可發電，發電量僅有1，但不易受到外在條件影響。</p>
+                </div>
+            </div>
+            <h3>燃料替換表</h3>
+            <p>需要消耗燃料時，除了從手上棄掉對應的燃料卡，也可以棄掉不同數量的手牌代替，幫助卡的背面有數量的對照表。</p>
+            <ul>
+                <li>棄1張手牌代替煤炭</li>
+                <li>棄2張手牌代替天然氣</li>
+                <li>棄2張手牌代替核燃料</li>
+            </ul>
+        </section>
+
+        <section id="carbon-tower" class="game-section">
+            <h2>堆疊碳塔</h2>
+            <p>使用燃煤與燃氣發電時需要堆疊碳積木到玩家共同使用的碳塔上，順利堆疊不倒塌才能成功發電。堆疊規則如下:</p>
+            <ol>
+                <li>碳塔直接從桌面上開始堆疊，由第一位堆疊的人決定堆疊的位置，但要在所有玩家都能觸碰到位置上。之後的人必須繼續往上堆疊，不能另外疊一座新的碳塔(場上只會有一座碳塔)。</li>
+                <li>堆疊時，必須一顆一顆往上疊，例如啟動燃煤電廠需要堆疊4顆碳積木，一次1顆、連續動作4次，把4顆碳積木堆疊上去，不能一次把4顆碳積木同時堆疊到碳塔上。</li>
+                <li>可以用橫躺、直立等不同角度往上堆疊，不限定堆疊的方向。</li>
+            </ol>
+            <p class="note"><strong>堆疊失敗懲罰:</strong> 如果堆疊時有碳積木從碳塔上掉落，便是堆疊失敗、碳塔倒塌!本次啟動的電廠不能進行發電以外，導致碳塔倒塌的玩家必須被強制跳過下一個回合、不能進行任何行動。而過多的碳排放也會影響到其他玩家，因此碳塔倒塌時其他玩家必須自行選擇從自己手上棄掉1張牌。碳塔倒塌以後，便將整座碳塔清除，下一次會從桌面開始堆疊一座新的碳塔。</p>
+        </section>
+
+        <section id="city-cards" class="game-section">
+            <h2>完成城市用電需求</h2>
+            <p>回合的3個動作都做完後，如果這回合的發電量足夠滿足場上城市卡的需求，便可獲得那張城市卡並保留在面前計分用。</p>
+            <p><strong>範例:</strong> 例如這回合啟動了1張核電廠、2張燃氣電廠、1張川流式水力發電，發電量總共是6 + 3×2 + 1 = 13。場上3張城市卡的需求分別是12、7、6，則可以選擇獲得1張需求12的城市卡，或者需求7跟需求6共2張城市卡。</p>
+            <p class="note">※每回合未用完的發電量，無法保留到之後的回合使用。</p>
+        </section>
+
+        <section id="ending" class="game-section">
+            <h2>遊戲結束與勝負</h2>
+            <p>當城市卡堆不足、場上無法補齊3張城市卡時遊戲立刻結束，玩家計算自己面前的城市卡上的數量，最多的玩家贏得遊戲勝利!</p>
+            <p>如果有多位玩家有同樣多的分數、並列第一的話，他們共享遊戲的勝利。</p>
+        </section>
+    </main>
+    <!-- 吉祥物圖片新增在這裡 -->
+    <div class="mascot-container">
+        <a href="#" class="mascot-link" aria-label="吉祥物">
+            <img src="image/LiyuChillGuy.svg" alt="吉祥物" class="mascot-image">
+        </a>
+    </div>
+    <footer>
+        <p>Copyright © Liyuchiutiger Gongminshen</p>
+    </footer>
+</body>
+</html>
