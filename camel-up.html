@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新北市立雙溪高級中學－從桌遊看社會－《駱駝大賽 Camel Up》</title>
+    <link rel="stylesheet" href="style.css"> <!-- 連結到共用 CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="camel-up-theme"> <!-- 套用新的主題 class -->
+    <header>
+        <div class="header-content">
+            <h1>新北市立雙溪高級中學</h1>
+            <h2>－從桌遊看社會－</h2>
+            <h3>《駱駝大賽 Camel Up》</h3>
+            <p class="tagline">快來猜猜有史以來最瘋狂的駱駝大賽！賭注最高的玩家將贏得最終的勝利。</p>
+            <div class="game-meta">
+                <span><strong>玩家人數:</strong> 2-8</span>
+                <span><strong>年齡:</strong> 8+</span>
+                <span><strong>遊戲時間:</strong> 30-45分鐘</span>
+            </div>
+            <div class="credits-header">
+                <p><strong>遊戲作者:</strong> Steffen Bogen</p>
+                <p><strong>藝術家:</strong> Dennis Lohausen</p>
+                <p><strong>獲獎紀錄:</strong> 2014 年德國年度遊戲獎 (Spiel des Jahres) 得主</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#contents">內容物</a></li>
+            <li><a href="#setup">遊戲準備</a></li>
+            <li><a href="#gameplay">遊戲進行</a></li>
+            <li><a href="#leg-scoring">分段結算</a></li>
+            <li><a href="#ending">遊戲結束與勝負</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="contents" class="game-section">
+            <h2>內容物</h2>
+            <div class="component-grid">
+                <div class="component-item">
+                    <h4>金字塔與骰子</h4>
+                    <p>1個金字塔外層、1個金字塔內層、1個十宇配件、1個落門配件。5顆骰子 (紅、黃、藍、綠、白，各1~3點)。</p>
+                </div>
+                <div class="component-item">
+                    <h4>圖板與駱駝</h4>
+                    <p>1張遊戲圖板、5隻駱駝（紅、黃、藍、綠、白）、1張起始玩家指示物、1張終點線指示物。</p>
+                </div>
+                <div class="component-item">
+                    <h4>卡片與圖板</h4>
+                    <p>15張分段押注圖板 (每色駱駝各3張，數字5、3、2)、40張正反面下注卡 (每名玩家各5張)。</p>
+                </div>
+                <div class="component-item">
+                    <h4>配件與錢幣</h4>
+                    <p>8張沙漠圖板、1張駱駝腳色牌、48個硬幣 (1、5、10元面額)。</p>
+                </div>
+            </div>
+            <div class="game-info">
+                <p><strong>關於金字塔:</strong> 遊戲中的金字塔是骰子發射器，玩家透過搖晃金字塔，每次從中只會掉出一個骰子。</p>
+            </div>
+        </section>
+
+        <section id="setup" class="game-section">
+            <h2>遊戲準備</h2>
+            <ol>
+                <li>
+                    <h4>圖板與駱駝位置</h4>
+                    <p>將遊戲圖板放在桌面中央。將5隻駱駝放在起點區上方的格子上 (位置1~3)。駱駝的初始位置決定方式：將5顆骰子放到金字塔中搖晃後，讓它們同時掉出，根據骰子顏色將對應的駱駝放到數字格上。若多隻駱駝在同格，則堆疊起來（隨機決定上下順序）。</p>
+                </li>
+                <li>
+                    <h4>圖板配件與下注卡</h4>
+                    <p>將「終點線」指示物放在最遠端空格（數字20）。將「起點線」指示物放在最接近起點的空格（數字1）。</p>
+                    <p>將40張下注卡（背面朝上，共5種顏色）洗混後，分給每人各5張。</p>
+                </li>
+                <li>
+                    <h4>沙漏圖板</h4>
+                    <p>將8張沙漏圖板洗混後，背面朝上疊成一堆放在遊戲圖板旁邊，成為沙漏牌堆。</p>
+                </li>
+                <li>
+                    <h4>分段押注圖板與金錢</h4>
+                    <p>將15張分段押注圖板（顏色面朝上）根據駱駝顏色排成5堆，放在圖板旁作為供應區。</p>
+                    <p>每位玩家拿取5元硬幣作為起始資金。剩下的硬幣作為銀行。</p>
+                </li>
+                <li>
+                    <h4>起始玩家與行動方塊</h4>
+                    <p>每位玩家從5隻駱駝中取一個駱駝顏色的「行動方塊」，放在自己面前。將起始玩家指示物交給最近去過動物園的玩家。</p>
+                </li>
+            </ol>
+        </section>
+
+        <section id="gameplay" class="game-section">
+            <h2>遊戲進行</h2>
+            <p>遊戲以回合制進行，每位玩家輪流選擇執行以下四種行動之一。當所有5顆骰子都從金字塔中搖出後，該「分段」結束，進入結算階段。</p>
+
+            <div class="note">
+                <strong>行動方塊：</strong> 每位玩家在每個分段開始時，面前會擁有5個行動方塊，分別對應5隻駱駝的顏色。玩家執行行動時，必須將1個行動方塊棄掉。一旦某個駱駝的行動方塊被棄掉，則該駱駝在該分段中不能再被押注（即不能再執行「分段押注」行動）。
+            </div>
+
+            <ol>
+                <li>
+                    <h4>移動駱駝 (搖金字塔)</h4>
+                    <p>選擇這個行動時，你搖晃金字塔，讓1顆骰子掉出。根據骰子的顏色移動對應的駱駝，移動格數為骰子顯示的數字。將骰子放在圖板上對應骰子顏色的區域，表示該骰子已在本分段搖出。</p>
+                    <div class="game-info">
+                        <p><strong>駱駝堆疊規則:</strong> 當駱駝移動到有其他駱駝的格子上時，會疊到該格子最上方。當有駱駝堆被移動時，堆疊在上面的駱駝會隨著下面的駱駝一起移動。<strong>被移動駱駝的堆疊，會以整體一起移動，然後疊在目標格子上既有的駱駝堆最上方。</strong></p>
+                    </div>
+                </li>
+                <li>
+                    <h4>分段押注</h4>
+                    <p>從分段押注供應區中，選擇一個駱駝顏色的押注圖板，獲得上面標示的金額。將押注圖板正面朝上放在自己面前。</p>
+                    <p>每種駱駝的押注圖板有三張：5、3、2。先選擇押注圖板的玩家會獲得最高報酬。</p>
+                    <p class="note"><strong>押注圖板的數量限制:</strong> 每隻駱駝的分段押注圖板只能被選擇一次。因此，你必須棄掉對應駱駝顏色的行動方塊，表示該駱駝在本分段已不能再被押注。</p>
+                </li>
+                <li>
+                    <h4>抽沙漏圖板</h4>
+                    <p>從沙漏牌堆頂抽取一張沙漏圖板，背面朝上放在自己面前。沙漏圖板分為綠洲面（數字+1）和沙漠面（數字-1）。</p>
+                    <p>你必須選擇場上的一個空著的格子，將沙漏圖板正面（綠洲或沙漠）朝上放在該格子上。</p>
+                    <p>當駱駝移動到沙漏圖板所在的格子上時，玩家將獲得1元，並執行圖板上的效果：</p>
+                    <ul>
+                        <li><strong>綠洲面 (+1):</strong> 駱駝向前多移動一格。</li>
+                        <li><strong>沙漠面 (-1):</strong> 駱駝向後移動一格。</li>
+                    </ul>
+                    <div class="game-info">
+                        <p><strong>注意:</strong> 沙漠/綠洲圖板必須放在沒有駱駝的格子上，並且不能放在終點線後方或已有其他沙漏圖板的格子上。</p>
+                    </div>
+                </li>
+                <li>
+                    <h4>下注總冠軍或吊車尾</h4>
+                    <p>從40張下注卡中，選擇一張你認為會是最終冠軍（或吊車尾）的駱駝顏色卡，將其正面朝下放在你面前，不可翻開。</p>
+                    <p>這個行動在整個遊戲中可以執行多次，但對同隻駱駝只能下注一張。</p>
+                </li>
+            </ol>
+        </section>
+
+        <section id="leg-scoring" class="game-section">
+            <h2>分段結算</h2>
+            <p>當所有5顆骰子都被搖出並放到圖板上的對應區域後，該分段立即結束，進入結算階段：</p>
+            <ol>
+                <li>
+                    <h4>分段押注結算</h4>
+                    <p>檢查目前場上所有駱駝的堆疊順序，找出最領先的駱駝。所有擁有該駱駝顏色分段押注圖板的玩家，依照圖板上的數字獲得硬幣。</p>
+                    <p>所有押錯的圖板（非領先駱駝）將導致玩家失去1元。其餘未被押注的圖板則不會有任何獎懲。</p>
+                </li>
+                <li>
+                    <h4>歸還圖板</h4>
+                    <p>將所有分段押注圖板（包含押錯而懲罰的圖板）收回供應區，並將所有已搖出的5顆骰子放回金字塔中。</p>
+                </li>
+                <li>
+                    <h4>沙漏圖板清理</h4>
+                    <p>將所有沙漏圖板從圖板上移回沙漏牌堆，重新洗混。</p>
+                </li>
+                <li>
+                    <h4>新的分段開始</h4>
+                    <p>最後一位搖骰子的玩家的左手邊玩家，成為下一分段的起始玩家。所有玩家收回他們棄置的行動方塊，開始新的分段。</p>
+                </li>
+            </ol>
+        </section>
+
+        <section id="ending" class="game-section">
+            <h2>遊戲結束與勝負</h2>
+            <p>當有駱駝衝過終點線 (進入終點線所在的空格，通常是數字20) 時，遊戲立即結束，立即進行最終結算。</p>
+            <ol>
+                <li>
+                    <h4>最終冠軍與吊車尾結算</h4>
+                    <p>所有玩家翻開他們持有的「下注總冠軍」或「下注吊車尾」卡片。</p>
+                    <ul>
+                        <li><strong>最終冠軍:</strong> 猜中目前場上最領先駱駝（或堆疊在最上面）的玩家，根據下注卡上的圖案獲得硬幣獎勵（5、3、2、1元，第一位猜中的獲得5元）。猜錯的玩家失去1元。</li>
+                        <li><strong>最終吊車尾:</strong> 猜中目前場上最落後駱駝（或堆疊在最下面）的玩家，獲得硬幣獎勵（5、3、2、1元）。猜錯的玩家失去1元。</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>最終計分</h4>
+                    <p>玩家計算自己面前累積的所有硬幣總額。<strong>擁有最多硬幣的玩家贏得遊戲勝利！</strong></p>
+                    <p class="note">如果有多位玩家硬幣數量相同，則他們共同分享勝利。</p>
+                </li>
+            </ol>
+        </section>
+    </main>
+    <!-- 吉祥物圖片新增在這裡 -->
+    <div class="mascot-container">
+        <a href="#" class="mascot-link" aria-label="吉祥物">
+            <img src="image/LiyuChillGuy.svg" alt="吉祥物" class="mascot-image">
+        </a>
+    </div>
+    <footer>
+        <p>Copyright © Liyuchiutiger Gongminshen</p>
+    </footer>
+</body>
+</html>

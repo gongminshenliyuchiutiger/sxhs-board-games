@@ -36,7 +36,7 @@ nav ul li {
 
 nav ul li a {
     color: #fff;
-    text-decoration: none;
+    text-decoration: none; /* 確保通用導覽列無底線 */
     font-weight: bold;
     padding: 8px 12px;
     border-radius: 5px;
@@ -2139,6 +2139,158 @@ nav ul li a {
     text-decoration: underline;
 }
 
+/* --- 駱駝大賽主題樣式 (Camel Up Theme) --- */
+.camel-up-theme {
+    background-color: #fcf8e3; /* 沙漠淺黃色背景 */
+    color: #4a2e1d; /* 深棕色文字 */
+}
+
+.camel-up-theme header {
+    background-color: #e7bb41; /* 金色/琥珀色 */
+    color: #4a2e1d;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 5px solid #00567a; /* 深藍色強調邊框 (埃及藍) */
+}
+
+.camel-up-theme header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #00567a; /* 深藍色標題 */
+}
+
+.camel-up-theme header h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    font-weight: 400;
+    color: #4a2e1d; /* 深棕色次要標題 */
+}
+
+.camel-up-theme header h3 {
+    font-size: 2.2em;
+    margin-top: 20px;
+    font-weight: 700;
+    color: #cc3333; /* 駱駝紅/熱情的紅色 */
+}
+
+.camel-up-theme .tagline {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #00567a;
+    margin-top: 15px;
+}
+
+.camel-up-theme .game-meta {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #4a2e1d;
+}
+
+.camel-up-theme .game-meta span {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.camel-up-theme .credits-header {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #4a2e1d;
+}
+.camel-up-theme .credits-header p {
+    margin: 5px 0;
+}
+
+
+.camel-up-theme nav {
+    background-color: #00567a; /* 深藍色導航 */
+}
+
+.camel-up-theme nav ul li a {
+    color: #fff;
+    text-decoration: none; /* 移除底線 */
+    /* 移除先前嘗試模擬裝飾線的 box-shadow */
+    box-shadow: none; 
+}
+
+.camel-up-theme nav ul li a:hover,
+.camel-up-theme nav ul li a:focus {
+    background-color: #cc3333; /* 紅色懸停背景 */
+    color: #fff; /* 白色懸停文字 */
+    box-shadow: none; /* 確保懸停時也沒有裝飾線 */
+    text-decoration: none; /* 確保懸停時也沒有底線 */
+}
+
+.camel-up-theme .game-section {
+    background-color: #fff;
+    border: 1px solid #e7bb41; /* 金色邊框 */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.camel-up-theme .game-section h2 {
+    color: #00567a; /* 深藍色主標題 */
+    border-bottom: 2px solid #e7bb41; /* 金色底線 */
+}
+
+.camel-up-theme .game-section h3 {
+    color: #cc3333; /* 紅色次標題 */
+    border-bottom: 1px dashed #e7bb41;
+}
+
+.camel-up-theme .game-section h4 {
+    color: #4a2e1d; /* 深棕色標題 */
+}
+
+.camel-up-theme .game-info {
+    background-color: #fffdee; /* 淺白黃色背景 */
+    border-left: 5px solid #e7bb41; /* 金色強調線 */
+    color: #4a2e1d;
+}
+
+.camel-up-theme .note {
+    background-color: #e0f2f7; /* 淺藍色背景 */
+    border-left: 5px solid #00567a; /* 深藍色強調線 */
+    font-style: normal;
+    color: #333;
+}
+
+.camel-up-theme .component-item h4 {
+    color: #00567a;
+}
+
+.camel-up-theme .component-item p {
+    color: #4a2e1d;
+}
+
+/* 棋子與指示物 (如果需要特定的圖標顏色，可以覆蓋) */
+.camel-up-theme .token-item .icon {
+    color: #cc3333; /* 紅色強調 */
+}
+
+.camel-up-theme footer {
+    background-color: #e7bb41; /* 金色 */
+    color: #4a2e1d;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.9em;
+    border-top: 5px solid #cc3333; /* 紅色邊框 */
+}
+
+.camel-up-theme a {
+    color: #00567a;
+    text-decoration: none; /* 確保一般連結也沒有底線 */
+}
+
+.camel-up-theme a:hover {
+    color: #cc3333;
+    text-decoration: none; /* 確保懸停時沒有底線 */
+}
+
+
 /* --- 響應式調整 (Responsive adjustments) --- */
 /* 手機導覽列的切換按鈕 (需要手動在 HTML 中添加類似 <button class="menu-toggle">Menu</button> 的元素) */
 .menu-toggle {
@@ -2280,6 +2432,13 @@ nav ul::-webkit-scrollbar-thumb:hover {
     .home-play-theme .game-section h2 {
         font-size: 1.8em; /* Smaller h2 on mobile */
     }
+
+    /* Camel Up specific adjustments for mobile */
+    .camel-up-theme header h1 { font-size: 2em; }
+    .camel-up-theme header h3 { font-size: 1.8em; }
+    .camel-up-theme .tagline { font-size: 1em; }
+    .camel-up-theme .game-section h2 { font-size: 1.8em; }
+
 
     /* Conflicting Legends specific adjustments */
     .conflicting-legends-theme header h1 {
@@ -2424,43 +2583,43 @@ nav ul::-webkit-scrollbar-thumb:hover {
     }
     10% {
         transform: translate(-3px, -3px) rotate(-2deg) scale(1.05); /* 輕微放大 */
-        filter: drop_shadow(0 0 15px #00FFFF) drop_shadow(0 0 30px #FFD700) drop_shadow(0 0 45px #FF00FF); /* 更多顏色 */
+        filter: drop-shadow(0 0 15px #00FFFF) drop-shadow(0 0 30px #FFD700) drop-shadow(0 0 45px #FF00FF); /* 更多顏色 */
     }
     20% {
         transform: translate(3px, 3px) rotate(2deg) scale(1.1); /* 再次放大 */
-        filter: drop_shadow(0 0 20px #FFD700) drop_shadow(0 0 40px #00FF00) drop_shadow(0 0 60px #FF00FF) drop_shadow(0 0 80px #FF4500); /* 更多層次 */
+        filter: drop-shadow(0 0 20px #FFD700) drop-shadow(0 0 40px #00FF00) drop-shadow(0 0 60px #FF00FF) drop-shadow(0 0 80px #FF4500); /* 更多層次 */
     }
     30% {
         transform: translate(-2px, 2px) rotate(-1.5deg) scale(1.08);
-        filter: drop_shadow(0 0 18px #00FF00) drop_shadow(0 0 35px #FF4500) drop_shadow(0 0 50px #8A2BE2);
+        filter: drop-shadow(0 0 18px #00FF00) drop-shadow(0 0 35px #FF4500) drop-shadow(0 0 50px #8A2BE2);
     }
     40% {
         transform: translate(2px, -2px) rotate(1.5deg) scale(1.12); /* 達到最大放大 */
-        filter: drop_shadow(0 0 25px #FF4500) drop_shadow(0 0 50px #8A2BE2) drop_shadow(0 0 70px #00FFFF) drop_shadow(0 0 90px #FFD700); /* 最劇烈的噴發顏色 */
+        filter: drop-shadow(0 0 25px #FF4500) drop-shadow(0 0 50px #8A2BE2) drop-shadow(0 0 70px #00FFFF) drop-shadow(0 0 90px #FFD700); /* 最劇烈的噴發顏色 */
     }
     50% {
         transform: translate(0, 0) rotate(0deg) scale(1.15); /* 頂峰時的靜態放大 */
-        filter: drop_shadow(0 0 30px #FF00FF) drop_shadow(0 0 60px #00FFFF) drop_shadow(0 0 90px #FFD700) drop_shadow(0 0 120px #00FF00); /* 更大更亮的噴發 */
+        filter: drop-shadow(0 0 30px #FF00FF) drop-shadow(0 0 60px #00FFFF) drop-shadow(0 0 90px #FFD700) drop-shadow(0 0 120px #00FF00); /* 更大更亮的噴發 */
     }
     60% {
         transform: translate(-4px, 0px) rotate(-2.5deg) scale(1.12);
-        filter: drop_shadow(0 0 25px #00FFFF) drop_shadow(0 0 50px #FFD700) drop_shadow(0 0 70px #00FF00) drop_shadow(0 0 90px #FF4500);
+        filter: drop-shadow(0 0 25px #00FFFF) drop-shadow(0 0 50px #FFD700) drop-shadow(0 0 70px #00FF00) drop-shadow(0 0 90px #FF4500);
     }
     70% {
         transform: translate(4px, 0px) rotate(2.5deg) scale(1.08);
-        filter: drop_shadow(0 0 20px #FFD700) drop_shadow(0 0 40px #00FF00) drop_shadow(0 0 55px #FF4500);
+        filter: drop-shadow(0 0 20px #FFD700) drop-shadow(0 0 40px #00FF00) drop-shadow(0 0 55px #FF4500);
     }
     80% {
         transform: translate(0px, -4px) rotate(-2deg) scale(1.05);
-        filter: drop_shadow(0 0 15px #00FF00) drop_shadow(0 0 30px #FF4500) drop_shadow(0 0 50px #8A2BE2);
+        filter: drop-shadow(0 0 15px #00FF00) drop-shadow(0 0 30px #FF4500) drop-shadow(0 0 50px #8A2BE2);
     }
     90% {
         transform: translate(0px, 4px) rotate(2deg) scale(1.02);
-        filter: drop_shadow(0 0 12px #FF4500) drop_shadow(0 0 25px #8A2BE2) drop_shadow(0 0 40px #FF00FF);
+        filter: drop-shadow(0 0 12px #FF4500) drop-shadow(0 0 25px #8A2BE2) drop-shadow(0 0 40px #FF00FF);
     }
     100% {
         transform: translate(0, 0) rotate(0deg) scale(1);
-        filter: drop_shadow(0 0 10px #FF00FF) drop_shadow(0 0 20px #00FFFF);
+        filter: drop-shadow(0 0 10px #FF00FF) drop-shadow(0 0 20px #00FFFF);
     }
 }
 
