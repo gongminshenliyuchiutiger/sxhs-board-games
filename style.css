@@ -2639,3 +2639,124 @@ nav ul::-webkit-scrollbar-thumb:hover {
         animation: neon-burst-shake 1.5s infinite alternate cubic-bezier(0.6, 0.2, 0.8, 1); /* 稍微慢一點，平緩一些 */
     }
 }
+
+/* --- 時間軸樣式 (Timeline for borderlines.html) --- */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-left: 4px solid #4a90e2; /* 藍色垂直線 */
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -4px;
+    width: 4px;
+    height: 100%;
+    background-color: #e7bb41; /* 金色強調 */
+    opacity: 0.2;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.timeline-item:hover {
+    background-color: #f8fbfd;
+    transform: translateX(5px);
+}
+
+.timeline-item-date {
+    position: absolute;
+    left: -32px;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 1.2;
+    background-color: #1a4d7c; /* 深藍色圓點背景 */
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding: 8px 0;
+    box-shadow: 0 0 0 5px #f0f8f9, 0 2px 5px rgba(0,0,0,0.2); /* 圓點邊緣光暈 */
+    font-weight: bold;
+    font-size: 0.9em;
+    z-index: 1;
+}
+
+.timeline-item-date strong {
+    display: block;
+    font-size: 1.1em;
+    margin-top: 2px;
+    color: #e7bb41; /* 金色年份 */
+}
+
+.timeline-item-content {
+    background: #fff;
+    border: 1px solid #aed6f1;
+    border-radius: 5px;
+    padding: 15px;
+    position: relative;
+    margin-left: 40px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    font-size: 1em;
+}
+
+.timeline-item-content p {
+    margin: 0;
+}
+
+/* 小三角箭頭 */
+.timeline-item-content::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 20px;
+    border: 5px solid transparent;
+    border-right-color: #aed6f1; /* 邊框顏色 */
+}
+.timeline-item-content::after {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 20px;
+    border: 5px solid transparent;
+    border-right-color: #fff; /* 內容背景顏色 */
+}
+
+/* 移動到手機版時的調整 */
+@media (max-width: 768px) {
+    .timeline {
+        margin-left: 0;
+        padding-left: 20px;
+    }
+    .timeline-item {
+        padding-left: 40px;
+    }
+    .timeline-item-date {
+        left: 0;
+        width: 50px;
+        height: 50px;
+        padding: 5px 0;
+    }
+    .timeline-item-content {
+        margin-left: 20px;
+    }
+    .timeline-item-content::before, .timeline-item-content::after {
+        left: 28px;
+        top: -10px;
+        border: 5px solid transparent;
+        border-bottom-color: #aed6f1;
+        border-right-color: transparent;
+    }
+    .timeline-item-content::after {
+        left: 30px;
+        border-bottom-color: #fff;
+    }
+}
