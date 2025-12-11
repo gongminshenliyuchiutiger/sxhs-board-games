@@ -6,6 +6,50 @@
     <title>新北市立雙溪高級中學－從桌遊看社會－《扮家家遊 Home Play》</title>
     <link rel="stylesheet" href="style.css"> <!-- 連結到共用 CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- 新增內部樣式以修復表格溢出問題 -->
+    <style>
+        /* 表格響應式容器：讓表格在小螢幕上可以左右滑動，不會超出畫面 */
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch; /* 讓 iOS 滑動更順暢 */
+            margin-bottom: 1.5rem;
+            border: 1px solid #eee;
+        }
+
+        /* 表格基本樣式 */
+        .curriculum-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px; /* 設定最小寬度，強迫過窄時出現捲軸，避免文字擠壓 */
+            background-color: #fff;
+        }
+
+        .curriculum-table th, 
+        .curriculum-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+            line-height: 1.5;
+        }
+
+        .curriculum-table th {
+            background-color: #f0f0f0;
+            font-weight: 700;
+            color: #333;
+            white-space: nowrap; /* 標題不換行 */
+        }
+
+        .curriculum-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        /* 針對光譜部分的置中對齊 */
+        .curriculum-table td:nth-child(3) {
+            text-align: center;
+        }
+    </style>
 </head>
 <body class="home-play-theme"> <!-- 增加主題 class -->
     <header>
@@ -293,54 +337,56 @@
             <h2>可融入的學習領域/能力指標</h2>
             <h3>五、可融入的學習領域/能力指標 (參照九年一貫97課綱)</h3>
             <p>對於找不到時間實施的教師們,我們也提供了這份桌遊教材可以融入的學習領域及重大議題課程,希望能讓教學現場的老師在使用上更得心應手。</p>
-            <table class="curriculum-table">
-                <thead>
-                    <tr>
-                        <th>學習領域 (重大議題)</th>
-                        <th>主題軸</th>
-                        <th>能力指標</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td rowspan="2">綜合領域</td>
-                        <td>生活經營</td>
-                        <td>2-2-3參與家庭事務,分享與家人休閒互動的經驗和感受。<br>2-3-3覺察家人的生活方式,分享改善與家人相處的經驗。</td>
-                    </tr>
-                    <tr>
-                        <td>家庭</td>
-                        <td>3-2-1理解並關懷家庭內外環境的變化與調適。<br>14-1-1認識家庭的組成分子與稱謂。<br>4-2-4察覺家庭生活與家人關係。<br>14-3-5瞭解不同的家庭文化。</td>
-                    </tr>
-                    <tr>
-                        <td>社會領域</td>
-                        <td>人與空間 演化與不變</td>
-                        <td>1-2-2描述不同地方居民的生活方式。<br>1-3-9分析個人特質、文化背景、社會制度以及自然環境等因素對生活空間設計和環境類型的影響。<br>3-2-1理解並關懷家庭內外環境的變化與調適。</td>
-                    </tr>
-                    <tr>
-                        <td>人權教育</td>
-                        <td>人權的內容 人權的價值與實踐</td>
-                        <td>1-2-1欣賞、包容個別差異並尊重自己與他人的權利。<br>1-2-2知道人權是普遍的、不容剝奪的,並能關心弱勢。<br>2-2-1認識生存權、身分權與個人尊嚴的關係。</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">性別平等教育</td>
-                        <td>性別的自我瞭解</td>
-                        <td>1-2-2覺察性別特質的刻板化印象。<br>2-1-3表達自己的意見和感受,不受性別的限制。<br>2-2-6認識多元的家庭型態。<br>2-3-5辨別不同類型的情感關係。</td>
-                    </tr>
-                    <tr>
-                        <td>性別的人我關係</td>
-                        <td>2-1-1能培養良好的聆聽態度。<br>2-3-3能學習說話者的表達技巧。<br>3-1-3能生動活潑敘述故事。<br>3-2-1能充分表達意見。</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">國語文</td>
-                        <td>聆聽能力</td>
-                        <td>2-1-1能培養良好的聆聽態度。</td>
-                    </tr>
-                    <tr>
-                        <td>說話能力</td>
-                        <td>2-3-3能學習說話者的表達技巧。<br>3-1-3能生動活潑敘述故事。<br>3-2-1能充分表達意見。</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-responsive">
+                <table class="curriculum-table">
+                    <thead>
+                        <tr>
+                            <th>學習領域 (重大議題)</th>
+                            <th>主題軸</th>
+                            <th>能力指標</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">綜合領域</td>
+                            <td>生活經營</td>
+                            <td>2-2-3參與家庭事務,分享與家人休閒互動的經驗和感受。<br>2-3-3覺察家人的生活方式,分享改善與家人相處的經驗。</td>
+                        </tr>
+                        <tr>
+                            <td>家庭</td>
+                            <td>3-2-1理解並關懷家庭內外環境的變化與調適。<br>14-1-1認識家庭的組成分子與稱謂。<br>4-2-4察覺家庭生活與家人關係。<br>14-3-5瞭解不同的家庭文化。</td>
+                        </tr>
+                        <tr>
+                            <td>社會領域</td>
+                            <td>人與空間 演化與不變</td>
+                            <td>1-2-2描述不同地方居民的生活方式。<br>1-3-9分析個人特質、文化背景、社會制度以及自然環境等因素對生活空間設計和環境類型的影響。<br>3-2-1理解並關懷家庭內外環境的變化與調適。</td>
+                        </tr>
+                        <tr>
+                            <td>人權教育</td>
+                            <td>人權的內容 人權的價值與實踐</td>
+                            <td>1-2-1欣賞、包容個別差異並尊重自己與他人的權利。<br>1-2-2知道人權是普遍的、不容剝奪的,並能關心弱勢。<br>2-2-1認識生存權、身分權與個人尊嚴的關係。</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">性別平等教育</td>
+                            <td>性別的自我瞭解</td>
+                            <td>1-2-2覺察性別特質的刻板化印象。<br>2-1-3表達自己的意見和感受,不受性別的限制。<br>2-2-6認識多元的家庭型態。<br>2-3-5辨別不同類型的情感關係。</td>
+                        </tr>
+                        <tr>
+                            <td>性別的人我關係</td>
+                            <td>2-1-1能培養良好的聆聽態度。<br>2-3-3能學習說話者的表達技巧。<br>3-1-3能生動活潑敘述故事。<br>3-2-1能充分表達意見。</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">國語文</td>
+                            <td>聆聽能力</td>
+                            <td>2-1-1能培養良好的聆聽態度。</td>
+                        </tr>
+                        <tr>
+                            <td>說話能力</td>
+                            <td>2-3-3能學習說話者的表達技巧。<br>3-1-3能生動活潑敘述故事。<br>3-2-1能充分表達意見。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
         <section id="activities" class="game-section">
@@ -444,42 +490,45 @@
                         </dd>
                         <dt>我的特質</dt>
                         <dd>
-                            <table class="curriculum-table">
-                                <thead>
-                                    <tr>
-                                        <th>我的特質</th>
-                                        <th>類別</th>
-                                        <th>屬性</th>
-                                        <th>社會議題</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>我生下來是…………………</td>
-                                        <td>生理性別 sex</td>
-                                        <td>男 光譜地帶 女</td>
-                                        <td>女男平等</td>
-                                    </tr>
-                                    <tr>
-                                        <td>我覺得我是…………………</td>
-                                        <td>性別認同 gender</td>
-                                        <td>男生 光譜地帶 女生</td>
-                                        <td>跨性別</td>
-                                    </tr>
-                                    <tr>
-                                        <td>我看起來像………………</td>
-                                        <td>性別氣質 gender qualities</td>
-                                        <td>陽剛 光譜地帶陰柔</td>
-                                        <td>娘娘腔與男人婆</td>
-                                    </tr>
-                                    <tr>
-                                        <td>我喜歡的是…………………</td>
-                                        <td>性傾向 sexual orientation</td>
-                                        <td>女生 光譜地帶 男生</td>
-                                        <td>同性戀與雙性戀</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <!-- 這裡加入了 table-responsive class 來處理超出範圍的問題 -->
+                            <div class="table-responsive">
+                                <table class="curriculum-table">
+                                    <thead>
+                                        <tr>
+                                            <th>我的特質</th>
+                                            <th>類別</th>
+                                            <th>屬性</th>
+                                            <th>社會議題</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>我生下來是…………………</td>
+                                            <td>生理性別<br>sex</td>
+                                            <td>男 &lt;---光譜地帶---&gt; 女</td>
+                                            <td>女男平等</td>
+                                        </tr>
+                                        <tr>
+                                            <td>我覺得我是…………………</td>
+                                            <td>性別認同<br>gender</td>
+                                            <td>男生 &lt;---光譜地帶---&gt; 女生</td>
+                                            <td>跨性別</td>
+                                        </tr>
+                                        <tr>
+                                            <td>我看起來像………………</td>
+                                            <td>性別氣質<br>gender qualities</td>
+                                            <td>陽剛 &lt;---光譜地帶---&gt; 陰柔</td>
+                                            <td>娘娘腔與男人婆</td>
+                                        </tr>
+                                        <tr>
+                                            <td>我喜歡的是…………………</td>
+                                            <td>性傾向<br>sexual orientation</td>
+                                            <td>女生 &lt;---光譜地帶---&gt; 男生</td>
+                                            <td>同性戀與雙性戀</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                             <p class="note">資料來源:台灣同志諮詢熱線協會(2005)。認識同志手冊。台北市政府民政局。</p>
                         </dd>
                     </dl>
