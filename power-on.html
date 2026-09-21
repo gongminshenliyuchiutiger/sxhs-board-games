@@ -3,184 +3,314 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新北市立雙溪高級中學－從桌遊看社會－《電力啟動 Power On!》</title> <!-- 標題已更新 -->
+    <title>新北市立雙溪高級中學－從桌遊看社會－《電力啟動 Power On!》</title>
     <link rel="stylesheet" href="style.css"> <!-- 連結到共用 CSS -->
+    <!-- Font Awesome 6.5.2 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body class="power-on">
     <header>
         <div class="header-content">
-            <h1>新北市立雙溪高級中學</h1>  <!-- 主標題已更新 -->
-            <h2>－從桌遊看社會－</h2>  <!-- 次標題已更新 -->
-            <h3>《電力啟動 Power On!》</h3> <!-- 遊戲名稱現在為 h3 -->
-            <p class="tagline">能源有限，慾望無窮，創造出最有效率的發電方式，穩定城市人民。</p>
+            <h1><i class="fa-solid fa-school"></i> 新北市立雙溪高級中學</h1>
+            <h2><i class="fa-solid fa-dice"></i> －從桌遊看社會－</h2>
+            <h3>《電力啟動 Power On!》</h3>
+            <p class="tagline">能源有限，慾望無窮！在碳排放崩潰之前，打造穩定永續的綠色電網！</p>
             <div class="game-meta">
-                <span><strong>玩家人數:</strong> 2-4</span>
-                <span><strong>年齡:</strong> 6+</span>
-                <span><strong>遊戲時間:</strong> 30-50分鐘</span>
+                <span><i class="fa-solid fa-users"></i> <strong>玩家人數:</strong> 2-4人</span>
+                <span><i class="fa-solid fa-child-reaching"></i> <strong>適合年齡:</strong> 6歲以上 (國高中公民與能源教育極佳)</span>
+                <span><i class="fa-solid fa-clock"></i> <strong>遊戲時間:</strong> 30-50分鐘</span>
             </div>
             <div class="credits-header">
-                <p><strong>遊戲作者:</strong> 鄭安棋、陳彥霖、陳陶陶、蘇羽璇</p>
-                <p><strong>遊戲編輯與美術:</strong> 陳智帆、SY Li</p>
-                <p><strong>插圖:</strong> Masha Tace、Freepik</p>
-                <p>2019 H Homosapiens Lab 山頂洞人實驗室</p>
-                <p>特別感謝經濟部能源局指導，以及台灣綜合研究院協力開發。</p>
+                <p><strong>遊戲作者:</strong> 鄭安棋、陳彥霖、陳陶陶、蘇羽璇 | <strong>遊戲編輯與美術:</strong> 陳智帆、SY Li</p>
+                <p><strong>出品發行:</strong> 2019 山頂洞人實驗室 (Homosapiens Lab)</p>
+                <p><strong>專業指導:</strong> 經濟部能源局指導開發，台灣綜合研究院協力研發，榮獲能源桌遊設計大獎</p>
             </div>
         </div>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#contents">內容物</a></li>
-            <li><a href="#setup">遊戲準備</a></li>
-            <li><a href="#gameplay">遊戲進行</a></li>
-            <li><a href="#power-generation">發電說明</a></li>
-            <li><a href="#carbon-tower">堆疊碳塔</a></li>
-            <li><a href="#city-cards">完成城市用電需求</a></li>
-            <li><a href="#ending">遊戲結束與勝負</a></li>
+            <li><a href="#contents"><i class="fa-solid fa-box-open"></i> 配件內容物</a></li>
+            <li><a href="#setup"><i class="fa-solid fa-sliders"></i> 遊戲準備</a></li>
+            <li><a href="#gameplay"><i class="fa-solid fa-play"></i> 回合三大行動</a></li>
+            <li><a href="#power-plants"><i class="fa-solid fa-plug-circle-bolt"></i> 電廠發電機制</a></li>
+            <li><a href="#carbon-tower"><i class="fa-solid fa-smog"></i> 碳塔與環境代價</a></li>
+            <li><a href="#function-cards"><i class="fa-solid fa-layer-group"></i> 功能卡牌圖鑑</a></li>
+            <li><a href="#city-cards"><i class="fa-solid fa-city"></i> 城市用電與計分</a></li>
+            <li><a href="#ending"><i class="fa-solid fa-trophy"></i> 勝負判定</a></li>
+            <li><a href="#taiwan-energy"><i class="fa-solid fa-leaf"></i> 臺灣能源轉型思辨</a></li>
         </ul>
     </nav>
 
     <main class="container">
+        <!-- 內容物 -->
         <section id="contents" class="game-section">
-            <h2>內容物</h2>
-            <ul>
-                <li>遊戲卡 61張</li>
-                <li>城市卡 15張</li>
-                <li>碳排放積木 24顆</li>
-                <li>行動方塊 3顆</li>
-                <li>玩家幫助卡 4張</li>
-                <li>燃料兌換表 1張</li>
-            </ul>
+            <h2><i class="fa-solid fa-box-open"></i> 配件內容物 Components</h2>
+            <div class="component-grid">
+                <div class="component-item">
+                    <h4><i class="fa-solid fa-layer-group"></i> 遊戲卡 61 張</h4>
+                    <ul>
+                        <li><strong>發電廠卡：</strong> 核能、燃氣、燃煤、太陽光電、風力發電、川流式水力發電。</li>
+                        <li><strong>燃料卡：</strong> 天然氣卡、核燃料卡。</li>
+                        <li><strong>特殊限制卡：</strong> 核廢料貯存桶卡。</li>
+                        <li><strong>策略功能卡：</strong> 智慧電網、儲能設備、節能減碳、環評審查等。</li>
+                    </ul>
+                </div>
+                <div class="component-item">
+                    <h4><i class="fa-solid fa-city"></i> 城市卡 15 張</h4>
+                    <p>代表城鎮與產業聚落的用電負載，標註有用電瓦數需求（如 5~16 瓦）與結算計分星星（1~3 顆星）。</p>
+                </div>
+                <div class="component-item">
+                    <h4><i class="fa-solid fa-cubes"></i> 碳排放積木 24 顆</h4>
+                    <p>黑色木質積木，共同堆疊於中央代表全島空氣污染與碳排放總量。</p>
+                </div>
+                <div class="component-item">
+                    <h4><i class="fa-solid fa-dice"></i> 行動指示方塊 3 顆</h4>
+                    <p>用於在每回合記錄並消耗 3 次行動點數。</p>
+                </div>
+                <div class="component-item">
+                    <h4><i class="fa-solid fa-clipboard-list"></i> 玩家幫助卡 4 張 & 燃料兌換表 1 張</h4>
+                    <p>清晰指引每回合行動槽位、燃料替代比例與發電條件。</p>
+                </div>
+            </div>
         </section>
 
+        <!-- 遊戲準備 -->
         <section id="setup" class="game-section">
-            <h2>遊戲準備</h2>
+            <h2><i class="fa-solid fa-sliders"></i> 遊戲準備 Setup</h2>
             <ol>
                 <li>
                     <h4>城市卡設置</h4>
-                    <p>城市卡正面朝下洗混成為城市卡堆，翻開3張排列在場上，碳排放積木放在城市卡堆旁備用。</p>
+                    <p>將 15 張城市卡正面朝下充分洗勻成為城市卡堆，於桌面中央橫向翻開 3 張作為當前供電目標。碳排放積木置於一旁備用。</p>
                 </li>
                 <li>
-                    <h4>遊戲卡設置</h4>
-                    <p>遊戲卡正面朝下洗混成為牌堆，翻開6張排列在場上、翻開10張疊在牌堆旁作為棄牌堆，接著將燃料兌換表放在棄牌堆旁。(2或3人進行遊戲時，先將卡片右下角標示著的卡片移除放回盒中不使用。)</p>
+                    <h4>遊戲卡牌庫與棄牌堆設置</h4>
+                    <p>將 61 張遊戲卡洗勻成抽牌堆。翻開 6 張排列在場上作為「公共卡牌市場」；另翻開 10 張牌疊放於旁作為起始棄牌堆。將「燃料兌換表」放置於棄牌堆旁。（2 或 3 人遊戲時，依說明書移除右下角標有特定人數的卡片）。</p>
                 </li>
                 <li>
-                    <h4>玩家手牌與幫助卡</h4>
-                    <p>每位玩家拿取1張玩家幫助卡放到面前，從牌堆頂拿取5張遊戲卡作為手牌。</p>
+                    <h4>玩家初始資源與手牌</h4>
+                    <p>每位玩家拿取 1 張玩家幫助卡置於面前，並從遊戲卡牌庫頂抽取 <strong>5 張卡片作為起始手牌</strong>。</p>
                 </li>
                 <li>
-                    <h4>起始玩家決定</h4>
-                    <p>由最近繳過電費的人、或猜拳決定起始玩家，3顆行動方塊交給起始玩家準備開始遊戲。</p>
+                    <h4>決定起始玩家</h4>
+                    <p>由<strong>最近剛繳過電費</strong>的玩家（或猜拳決定）擔任起始玩家，拿取 3 顆行動方塊，準備啟動發電！</p>
                 </li>
             </ol>
         </section>
 
+        <!-- 回合三大行動 -->
         <section id="gameplay" class="game-section">
-            <h2>遊戲進行</h2>
-            <p>輪到你時，可以進行3次行動，每次行動從以下三個動作擇一執行：</p>
-            <ul>
-                <li>
-                    <h4>動作一: 取得遊戲卡</h4>
-                    <p>從場上翻開的遊戲卡中選一張拿到手上，遊戲中玩家的手牌上限為8張，手牌達到8張便不能再選擇這個行動。</p>
-                </li>
-                <li>
-                    <h4>動作二: 打出卡牌</h4>
-                    <p>從手上打出發電廠/功能卡使用，電廠打出後放在自己面前(表示興建電廠)；功能卡打出立刻執行功能，執行完後棄入棄牌堆。</p>
-                </li>
-                <li>
-                    <h4>動作三: 啟動電廠發電</h4>
-                    <p>啟動面前同一種非再生能源的電廠發電(燃煤/燃氣/核能電廠)。</p>
-                    <p class="note">※發電規則詳見說明書背面說明。</p>
-                </li>
-            </ul>
-            <p><strong>動作執行注意事項:</strong></p>
-            <ul>
-                <li>動作一、二、三不必依序執行，每次執行動作時，將1顆行動方塊放到幫助卡上對應的格子中，表示消耗的行動數。當3顆行動方塊都放到幫助卡上，代表這回合3個行動都已做完。</li>
-                <li>再生能源的電廠發電不會消耗行動數，也就是「太陽光電、風力發電與川流式水力發電」這三種電廠(綠色卡片)發電時，不需要將行動方塊放到幫助卡上。(幫助卡上「再生能源發電」也沒有格子放方塊)</li>
-                <li>動作三可以一次啟動多張同一種類的電廠，例如面前有2張核電廠、3張燃氣電廠，若想要啟動2種電廠(如1張核電廠、2張燃氣電廠)便需要消耗2個行動數。執行動作時，放1顆行動方塊到幫助卡上核電廠顏色的格子中、放另1顆行動方塊到燃氣電廠顏色的格子中。</li>
-                <li>每張電廠在一個回合中只能啟動一次，不能重複發電。</li>
-            </ul>
-        </section>
+            <h2><i class="fa-solid fa-play"></i> 遊戲進行：每回合三大行動 Actions</h2>
+            <p>輪到你的回合時，你擁有 <strong>3 個行動點數</strong>，可從以下三個動作中自由挑選並執行 3 次（可重複執行同一動作）：</p>
 
-        <section id="power-generation" class="game-section">
-            <h2>發電說明</h2>
-            <p>非再生能源發電時，需要消耗燃料以及滿足其他條件，才能順利發電，燃料可以從場上取得或棄掉手牌代替。再生能源發電不需要消耗燃料，不過其中「太陽光電、風力發電」兩種間歇性能源的發電量會隨著遊戲回合的進行而有所浮動，相對不穩定。</p>
-
-            <h3>非再生能源電廠</h3>
-            <div class="power-plant-types">
-                <div class="plant-card">
-                    <h4>核能發電 (NUCLEAR POWER PLANT)</h4>
-                    <p>發電量大且穩定，可24小時運轉發電。</p>
-                    <p><strong>發電條件:</strong> 發電時不用堆疊碳積木，但是需要從手上棄掉1張核燃料/2張手牌，外加棄掉1張核廢料貯存桶(只能從場上取得)，便能成功發電。</p>
-                    <p><strong>同時啟動2張核能電廠:</strong> 可以從手上棄掉1張核燃料+2張手牌，外加棄掉2張核廢料貯存桶，總共5張牌來支付需求，以此類推。</p>
+            <div class="card-grid">
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-hand-holding"></i> 動作一：取得遊戲卡 (Draw Card)</h4>
+                    <p>從場上翻開的 6 張公共卡牌中挑選 1 張加入手牌，並立即從牌庫頂補發 1 張新牌至市場。</p>
+                    <p class="note"><i class="fa-solid fa-circle-info"></i> <strong>手牌上限：</strong> 遊戲中手牌上限為 <strong>8 張</strong>。若手上已有 8 張牌，則無法再執行此行動。</p>
                 </div>
-                <div class="plant-card">
-                    <h4>燃氣發電 (GAS-FIRED POWER PLANT)</h4>
-                    <p>供電穩定，可24小時運轉發電。</p>
-                    <p><strong>發電條件:</strong> 發電時需要棄掉1張天然氣/2張手牌，外加堆疊2顆碳積木到碳塔上，順利堆疊不倒塌才能成功發電。</p>
-                    <p><strong>同時啟動2張燃氣電廠:</strong> 可以從手上棄掉1張天然氣+2張手牌，總共3張牌來支付需求，外加堆疊4顆碳積木才能成功發電，以此類推。</p>
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-bolt"></i> 動作二：打出卡牌 (Play Card)</h4>
+                    <p>從手上打出卡片：</p>
+                    <ul>
+                        <li><strong>興建電廠：</strong> 打出電廠卡置於自己面前，代表電廠興建完成，未來回合皆可持續為你發電。</li>
+                        <li><strong>使用功能卡：</strong> 打出功能卡立即發動其特殊效果，發動完畢後直接送入棄牌堆。</li>
+                    </ul>
                 </div>
-                <div class="plant-card">
-                    <h4>燃煤發電 (COAL-FIRED POWER PLANT)</h4>
-                    <p>以煤炭為燃料，燃料成本較低。</p>
-                    <p><strong>發電條件:</strong> 發電時需要棄掉1張手牌(煤炭無法從場上取得)，外加堆疊4顆碳積木到碳塔上，順利堆疊不倒塌才能成功發電。</p>
-                    <p><strong>同時啟動2張燃煤電廠:</strong> 必須棄掉2張手牌、堆疊8顆碳積木才能成功發電，以此類推。</p>
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-plug-circle-bolt"></i> 動作三：啟動電廠發電 (Power Generation)</h4>
+                    <p>宣告啟動面前<strong>同一種類的非再生能源電廠</strong>進行發電（燃煤、燃氣或核能）。</p>
+                    <ul>
+                        <li>花費 1 個行動點，可以<strong>同時啟動面前同種類的所有電廠</strong>（例如一次啟動面前所有的 2 座核能電廠只需花費 1 個行動點；但若要同時啟動核能與燃氣，則需分別消耗各 1 個行動點，共 2 點）。</li>
+                    </ul>
                 </div>
             </div>
 
-            <h3>間歇性再生能源電廠</h3>
-            <div class="power-plant-types">
-                <div class="plant-card">
-                    <h4>太陽光電 (SOLAR POWER PLANT)</h4>
-                    <p>發電時不產生空氣污染與碳排放。</p>
-                    <p><strong>發電量:</strong> 不須消耗燃料與回合行動數即可發電，但是發電量易受到外在條件影響，發電量「?」由牌堆頂牌數字決定，每回合補牌至場上後都有可能改變，數字範圍為0~2。</p>
-                </div>
-                <div class="plant-card">
-                    <h4>風力發電 (WIND POWER PLANT)</h4>
-                    <p>發電量受風場條件影響。</p>
-                    <p><strong>發電量:</strong> 不須消耗燃料與回合行動數即可發電，但是發電量易受到外在條件影響，發電量「?」由牌堆頂牌數字決定，每回合補牌至場上後都有可能改變，數字範圍為0~2。</p>
-                </div>
-                <div class="plant-card">
-                    <h4>川流式水力發電 (HYDROELECTRIC POWER PLANT)</h4>
-                    <p>發電效率穩定，可24小時運轉發電。</p>
-                    <p><strong>發電量:</strong> 不須消耗燃料與回合行動數即可發電，發電量僅有1，但不易受到外在條件影響。</p>
-                </div>
-            </div>
-            <h3>燃料替換表</h3>
-            <p>需要消耗燃料時，除了從手上棄掉對應的燃料卡，也可以棄掉不同數量的手牌代替，幫助卡的背面有數量的對照表。</p>
+            <p><strong>行動關鍵補充：</strong></p>
             <ul>
-                <li>棄1張手牌代替煤炭</li>
-                <li>棄2張手牌代替天然氣</li>
-                <li>棄2張手牌代替核燃料</li>
+                <li><strong>行動方塊記錄：</strong> 每次執行動作，將 1 顆行動方塊放到幫助卡上對應格子。3 顆方塊皆擺放即代表本回合 3 個行動結束。</li>
+                <li><strong>再生能源免耗行動點：</strong> 太陽光電、風力發電與川流式水力發電（綠色卡片）為大自然的恩賜，<strong>發電完全不需要消耗任何行動點</strong>！</li>
+                <li><strong>單回合限發電一次：</strong> 面前的每座電廠在同一回合中僅能發電一次，不可重複啟動。</li>
             </ul>
         </section>
 
+        <!-- 電廠發電機制 -->
+        <section id="power-plants" class="game-section">
+            <h2><i class="fa-solid fa-plug-circle-bolt"></i> 六大發電廠機制與燃料消耗 Power Plants</h2>
+            <p>不同電廠具有鮮明的發電特性、發電瓦數與環保成本：</p>
+
+            <h3>一、非再生能源電廠（需燃料與排碳代價）</h3>
+            <div class="power-plant-types">
+                <div class="plant-card">
+                    <h4><i class="fa-solid fa-atom" style="color: #9b59b6;"></i> 核能發電 (Nuclear Power Plant)</h4>
+                    <p><strong>發電瓦數：</strong> 6 瓦（發電量極大且供電極度穩定）</p>
+                    <p><strong>運轉條件：</strong> 無需堆疊碳積木（零碳排），但必須從手上棄掉 <strong>1 張核燃料（或棄 2 張手牌替代）</strong>，且額外必須打出或棄掉 <strong>1 張核廢料貯存桶卡</strong>（核廢料只能從市場取得，無法以手牌替代）。</p>
+                </div>
+                <div class="plant-card">
+                    <h4><i class="fa-solid fa-fire-flame-curved" style="color: #e67e22;"></i> 燃氣發電 (Gas-Fired Power Plant)</h4>
+                    <p><strong>發電瓦數：</strong> 3 瓦（起載迅速，適合調峰）</p>
+                    <p><strong>運轉條件：</strong> 必須棄掉 <strong>1 張天然氣卡（或棄 2 張手牌替代）</strong>，且必須親手在碳塔上<strong>堆疊 2 顆碳積木</strong>，不倒塌方能發電成功。</p>
+                </div>
+                <div class="plant-card">
+                    <h4><i class="fa-solid fa-industry" style="color: #34495e;"></i> 燃煤發電 (Coal-Fired Power Plant)</h4>
+                    <p><strong>發電瓦數：</strong> 2 瓦（成本低廉但空污嚴重）</p>
+                    <p><strong>運轉條件：</strong> 必須棄掉 <strong>任意 1 張手牌</strong> 作為燃料，但代價是必須親手在碳塔上<strong>一口氣堆疊 4 顆碳積木</strong>！</p>
+                </div>
+            </div>
+
+            <h3>二、再生能源電廠（免燃料、零碳排、免行動點）</h3>
+            <div class="power-plant-types">
+                <div class="plant-card">
+                    <h4><i class="fa-solid fa-sun" style="color: #f39c12;"></i> 太陽光電 (Solar Power Plant)</h4>
+                    <p><strong>特性：</strong> 零碳排放與零污染，但深受天候與日照影響。</p>
+                    <p><strong>發電瓦數：</strong> <strong>浮動 0 ~ 2 瓦</strong>（發電量由牌庫頂牌右下角數字決定，每當市場補牌時數字可能隨時變化）。</p>
+                </div>
+                <div class="plant-card">
+                    <h4><i class="fa-solid fa-wind" style="color: #1abc9c;"></i> 風力發電 (Wind Power Plant)</h4>
+                    <p><strong>特性：</strong> 依賴季風與風場條件，具顯著間歇性。</p>
+                    <p><strong>發電瓦數：</strong> <strong>浮動 0 ~ 2 瓦</strong>（同太陽能，由牌庫頂牌數字即時決定）。</p>
+                </div>
+                <div class="plant-card">
+                    <h4><i class="fa-solid fa-droplet" style="color: #3498db;"></i> 川流式水力發電 (Hydroelectric Plant)</h4>
+                    <p><strong>特性：</strong> 水力穩定運轉，常態發電。</p>
+                    <p><strong>發電瓦數：</strong> <strong>固定 1 瓦</strong>，雖然單卡發電量小，但不受天候波動干擾，是不可或缺的綠色基載補充。</p>
+                </div>
+            </div>
+
+            <div class="game-info">
+                <h4><i class="fa-solid fa-calculator"></i> 燃料替換表 (Fuel Exchange Rate)</h4>
+                <ul>
+                    <li>棄 <strong>1 張任意手牌</strong> ➔ 可替代 1 單位燃煤</li>
+                    <li>棄 <strong>2 張任意手牌</strong> ➔ 可替代 1 單位天然氣</li>
+                    <li>棄 <strong>2 張任意手牌</strong> ➔ 可替代 1 單位核燃料</li>
+                    <li><em>※ 核廢料貯存桶無法以手牌替代，必須使用實體卡片！</em></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 碳塔機制 -->
         <section id="carbon-tower" class="game-section">
-            <h2>堆疊碳塔</h2>
-            <p>使用燃煤與燃氣發電時需要堆疊碳積木到玩家共同使用的碳塔上，順利堆疊不倒塌才能成功發電。堆疊規則如下:</p>
+            <h2><i class="fa-solid fa-smog"></i> 堆疊碳塔：全民承擔的環境共業 The Carbon Tower</h2>
+            <p>當啟動燃煤或天然氣電廠時，玩家必須在桌面上共用的<strong>單一碳塔</strong>上堆疊碳積木：</p>
             <ol>
-                <li>碳塔直接從桌面上開始堆疊，由第一位堆疊的人決定堆疊的位置，但要在所有玩家都能觸碰到位置上。之後的人必須繼續往上堆疊，不能另外疊一座新的碳塔(場上只會有一座碳塔)。</li>
-                <li>堆疊時，必須一顆一顆往上疊，例如啟動燃煤電廠需要堆疊4顆碳積木，一次1顆、連續動作4次，把4顆碳積木堆疊上去，不能一次把4顆碳積木同時堆疊到碳塔上。</li>
-                <li>可以用橫躺、直立等不同角度往上堆疊，不限定堆疊的方向。</li>
+                <li><strong>全場共用一座塔：</strong> 碳塔由首位排碳的玩家在桌上選定位置起建，後續所有排碳玩家都必須往既有的碳塔上繼續加蓋，不得另闢新塔。</li>
+                <li><strong>嚴格逐顆加蓋：</strong> 必須一顆接一顆放置（例如燃煤需疊 4 顆，必須連續動作一顆放穩後再放下一顆，禁止雙手抓一把一次堆上）。</li>
+                <li><strong>自由擺放角度：</strong> 可橫躺、直立或交錯搭建。</li>
             </ol>
-            <p class="note"><strong>堆疊失敗懲罰:</strong> 如果堆疊時有碳積木從碳塔上掉落，便是堆疊失敗、碳塔倒塌!本次啟動的電廠不能進行發電以外，導致碳塔倒塌的玩家必須被強制跳過下一個回合、不能進行任何行動。而過多的碳排放也會影響到其他玩家，因此碳塔倒塌時其他玩家必須自行選擇從自己手上棄掉1張牌。碳塔倒塌以後，便將整座碳塔清除，下一次會從桌面開始堆疊一座新的碳塔。</p>
+            <div class="note">
+                <h4><i class="fa-solid fa-triangle-exclamation" style="color: #e74c3c;"></i> 碳塔倒塌災難懲罰（環境崩潰代價）：</h4>
+                <p>堆疊過程中若有任何積木掉落，即判定碳塔倒塌！</p>
+                <ul>
+                    <li><strong>肇事者懲罰：</strong> 本次發電立即宣告失敗（發電瓦數歸零）；且肇事者<strong>下一個回合強制被停權，跳過回合不得執行任何動作</strong>！</li>
+                    <li><strong>全民共業懲罰：</strong> 空污沒有國界！現場<strong>所有其他玩家必須立刻自行從手牌棄掉 1 張牌</strong>，象徵全民為環境外部性買單！</li>
+                    <li><strong>重置：</strong> 將倒塌的積木全數收回，下一次排碳時從桌面重新起建新的碳塔。</li>
+                </ul>
+            </div>
         </section>
 
+        <!-- 功能卡牌全覽 -->
+        <section id="function-cards" class="game-section">
+            <h2><i class="fa-solid fa-layer-group"></i> 策略功能卡牌圖鑑 Function Cards</h2>
+            <p>功能卡能在關鍵時刻扭轉發電效率或化解供電危機：</p>
+            <div class="card-grid">
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-tower-broadcast" style="color: #27ae60;"></i> 智慧電網 (Smart Grid)</h4>
+                    <p><strong>效果：</strong> 打出後本回合內，所有已興建電廠的輸電損耗降至最低，總發電量直接額外 +2 瓦！</p>
+                </div>
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-battery-full" style="color: #2980b9;"></i> 儲能系統 (Energy Storage)</h4>
+                    <p><strong>效果：</strong> 本回合發電滿足城市需求後多餘未用完的電力，至多可保留 3 瓦至下一回合使用，解決綠能間歇性痛點。</p>
+                </div>
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-lightbulb" style="color: #f1c40f;"></i> 節能減碳倡議 (Energy Conservation)</h4>
+                    <p><strong>效果：</strong> 指定場上一張城市卡，宣導節約能源，使其本回合的用電需求瓦數暫時減少 2 瓦。</p>
+                </div>
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-file-contract" style="color: #8e44ad;"></i> 環評嚴格審查 (Environmental Assessment)</h4>
+                    <p><strong>效果：</strong> 打出後放置於中央，直到下一輪開始前，所有玩家若要興建燃煤電廠需額外多支付 1 個行動點。</p>
+                </div>
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-bullhorn" style="color: #d35400;"></i> 公民反空污遊行 (Anti-Pollution Protest)</h4>
+                    <p><strong>效果：</strong> 指定一位對手，其面前的一座燃煤電廠本回合遭居民抗議包圍，無法運轉發電。</p>
+                </div>
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-bolt" style="color: #c0392b;"></i> 機組跳脫意外 (Generator Trip)</h4>
+                    <p><strong>效果：</strong> 強迫一位對手暫停一座運轉中的天然氣電廠，必須花費 1 個行動點進行檢修重啟。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 城市卡與計分 -->
         <section id="city-cards" class="game-section">
-            <h2>完成城市用電需求</h2>
-            <p>回合的3個動作都做完後，如果這回合的發電量足夠滿足場上城市卡的需求，便可獲得那張城市卡並保留在面前計分用。</p>
-            <p><strong>範例:</strong> 例如這回合啟動了1張核電廠、2張燃氣電廠、1張川流式水力發電，發電量總共是6 + 3×2 + 1 = 13。場上3張城市卡的需求分別是12、7、6，則可以選擇獲得1張需求12的城市卡，或者需求7跟需求6共2張城市卡。</p>
-            <p class="note">※每回合未用完的發電量，無法保留到之後的回合使用。</p>
+            <h2><i class="fa-solid fa-city"></i> 城市用電與計分需求 City Demands & Scoring</h2>
+            <p>當回合的 3 個動作結束後，計算本回合所有成功運轉電廠的<strong>總發電瓦數</strong>：</p>
+            <div class="card-grid">
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-house-chimney" style="color: #27ae60;"></i> 綠能生活村 / 偏鄉城鎮</h4>
+                    <p><strong>用電需求：</strong> 5 ~ 7 瓦</p>
+                    <p><strong>星星分值：</strong> <i class="fa-solid fa-star" style="color: #f1c40f;"></i> (1 顆星)</p>
+                    <p>需求容易滿足，早期藉由水力與再生能源即可迅速達標拿下。</p>
+                </div>
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-building" style="color: #2980b9;"></i> 都會金融商圈 / 住商混合中心</h4>
+                    <p><strong>用電需求：</strong> 8 ~ 11 瓦</p>
+                    <p><strong>星星分值：</strong> <i class="fa-solid fa-star" style="color: #f1c40f;"></i><i class="fa-solid fa-star" style="color: #f1c40f;"></i> (2 顆星)</p>
+                    <p>需要燃氣或多組再生能源配合，穩定供應尖峰用電。</p>
+                </div>
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-microchip" style="color: #8e44ad;"></i> 國家級科學園區 / 半導體製造重鎮</h4>
+                    <p><strong>用電需求：</strong> 12 ~ 16 瓦</p>
+                    <p><strong>星星分值：</strong> <i class="fa-solid fa-star" style="color: #f1c40f;"></i><i class="fa-solid fa-star" style="color: #f1c40f;"></i><i class="fa-solid fa-star" style="color: #f1c40f;"></i> (3 顆星)</p>
+                    <p>巨量穩定用電需求，通常必須仰賴大容量核電廠或多座大型燃氣電廠全開，但伴隨巨大的碳排放倒塌風險！</p>
+                </div>
+            </div>
+            <div class="note">
+                <i class="fa-solid fa-circle-info"></i> <strong>供電滿足規則：</strong> 若發電總量大於等於城市卡需求，即可將該城市卡收至面前計分。例如發電量 13 瓦，場上有需求 12、7、6 瓦的城市卡，你可選擇拿取 1 張 12 瓦（高分），或拿取 7 瓦 + 6 瓦（共 2 張）。未用完的電力不可保留（除非有儲能系統）。
+            </div>
         </section>
 
+        <!-- 遊戲結束與勝負 -->
         <section id="ending" class="game-section">
-            <h2>遊戲結束與勝負</h2>
-            <p>當城市卡堆不足、場上無法補齊3張城市卡時遊戲立刻結束，玩家計算自己面前的城市卡上的數量，最多的玩家贏得遊戲勝利!</p>
-            <p>如果有多位玩家有同樣多的分數、並列第一的話，他們共享遊戲的勝利。</p>
+            <h2><i class="fa-solid fa-trophy"></i> 遊戲結束與勝負判定 End of Game</h2>
+            <p>當城市卡牌堆抽盡、<strong>場上無法補齊 3 張城市卡時</strong>，遊戲立即終止！</p>
+            <p>所有玩家結算面前收集到的城市卡上的<strong>星星總數，星星數量最多的玩家奪冠，成為國家最優秀的能源電力掌舵者！</strong> 若星星平手，則由完成城市卡數量最多者獲勝。</p>
+        </section>
+
+        <!-- 臺灣能源轉型與社會思辨 -->
+        <section id="taiwan-energy" class="game-section">
+            <h2><i class="fa-solid fa-leaf"></i> 社會科深入思辨：臺灣能源轉型與 2050 淨零排放</h2>
+            <p>新北市立雙溪高級中學《從桌遊看社會》核心專題：臺灣四面環海、獨立電網，該如何兼顧經濟發展與環境保護？</p>
+
+            <div class="qa-category">
+                <h3>議題一：基載電力 vs. 間歇性再生能源（地理與物理跨科）</h3>
+                <dl>
+                    <dt>Q1：為什麼遊戲中太陽光電與風電發電量是「0~2 瓦的浮動問號」？這反映了台灣真實能源的什麼困境？</dt>
+                    <dd>這生動反映了再生能源的「間歇性（Intermittent）」與「不易儲存」特性。太陽能只有白天日照充沛時能發電，夜間歸零；台灣離岸風力最強的季節在秋冬季（東北季風），而台灣用電最高峰卻落在盛夏午後（冷氣負載）。因此，發展綠能必須同步建設智慧電網與大型抽蓄水力、化學儲能電池，否則無法單靠風光完全取代全天候穩定發電的基載電廠。</dd>
+                </dl>
+
+                <h3>議題二：碳塔與外部成本內部化（經濟學與公民社會）</h3>
+                <dl>
+                    <dt>Q2：碳塔倒塌時「所有人都要棄一張牌」，這在經濟學上有何意涵？</dt>
+                    <dd>這就是著名的「負外部性（Negative Externalities）」與「公地悲劇（Tragedy of the Commons）」。單一工廠或電廠為了追求自身利益燃燒煤炭，排放的溫室氣體與 PM2.5 懸浮微粒卻由全社會共同吸入，引發肺癌、氣候變遷暴雨與海平面上升。現代公民政策透過「碳定價」、「碳費/碳稅」與「碳權交易市場」，迫使污染者自負成本，促使產業轉向低碳製程。</dd>
+                </dl>
+
+                <h3>議題三：核能倫理與最終處置難題（環境倫理與世代正義）</h3>
+                <dl>
+                    <dt>Q3：遊戲中核電發電量高達 6 瓦且不疊碳積木，但強制需要「核廢料貯存桶」，象徵什麼代價？</dt>
+                    <dd>核能發電雖然無碳排且穩定，但高放射性核廢料（使用過核燃料棒）半衰期長達數萬年。臺灣目前面臨核一、核二、核三廠高階核廢料乾式貯存設施受地方政府卡關、蘭嶼低階核廢料遷出承諾跳票，且無任何縣市願意接納「高階核廢料最終處置場」的嚴峻困局。享受了幾十年的便宜電力，卻將萬年核廢料留給後代子孫，這牽涉到深層的「跨世代正義（Intergenerational Justice）」問題。</dd>
+                </dl>
+
+                <h3>議題四：區域能源正義與鄰避效應（NIMBY）（區域治理與公民參與）</h3>
+                <dl>
+                    <dt>Q4：從「南電北送」與「大潭藻礁 vs 第三天然氣接收站」，看公民審議的難題？</dt>
+                    <dd>台灣長期存在「中電北送、南電北送」的不均等現象：重污染的燃煤電廠（如台中電廠、高雄興達電廠）位於中南部，供應北部繁華都會與科技廠用電，引發嚴重的區域環境正義抗議。而在桃園大潭推動天然氣第三接收站（三接）時，又面臨「確保北部燃氣供電」與「保護珍貴一級保育類大潭柴山多杯孔珊瑚藻礁」的兩難公投。成熟的公民社會並非零和對立，而是透過科學實證、迴避替代方案與公眾對話，尋求發展與保育的最大公約數。</dd>
+                </dl>
+            </div>
         </section>
     </main>
-    <!-- 吉祥物圖片新增在這裡 -->
+
+    <!-- 吉祥物圖片 -->
     <div class="mascot-container">
         <a href="#" class="mascot-link" aria-label="吉祥物">
             <img src="image/LiyuChillGuy.svg" alt="吉祥物" class="mascot-image">

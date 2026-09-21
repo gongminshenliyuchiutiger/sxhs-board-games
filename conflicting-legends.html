@@ -5,218 +5,366 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>新北市立雙溪高級中學－從桌遊看社會－《偉人の猜拳単戦略 Conflicting Legends》</title>
     <link rel="stylesheet" href="style.css"> <!-- 連結到共用 CSS -->
+    <!-- Font Awesome 6.5.2 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body class="conflicting-legends-theme"> <!-- 增加主題 class -->
+<body class="conflicting-legends-theme">
     <header>
         <div class="header-content">
-            <h1>新北市立雙溪高級中學</h1>
-            <h2>－從桌遊看社會－</h2>
+            <h1><i class="fa-solid fa-school"></i> 新北市立雙溪高級中學</h1>
+            <h2><i class="fa-solid fa-dice"></i> －從桌遊看社會－</h2>
             <h3>《偉人の猜拳単戦略 Conflicting Legends》</h3>
-            <p class="tagline">世界上不同的偉人將加入你的麾下，一同發展文明。</p>
+            <p class="tagline">人類歷史上的璀璨偉人齊聚麾下！用智慧、文明與「剪刀、石頭、布」譜寫帝國霸業！</p>
             <div class="game-meta">
-                <span><strong>遊戲作者:</strong> 陳智帆、張勝皓、吳威呈</span>
-                <span><strong>插畫:</strong> 吳威呈</span>
-                <span><strong>英文翻譯:</strong> 李欣怡 (Joy), Scott B. Dyson</span>
-                <span><strong>印刷製造:</strong> 墨帥印刷有限公司</span>
+                <span><i class="fa-solid fa-users"></i> <strong>玩家人數:</strong> 2-4人 (擴充可支援 3-6人)</span>
+                <span><i class="fa-solid fa-child-reaching"></i> <strong>適合年齡:</strong> 10歲以上</span>
+                <span><i class="fa-solid fa-clock"></i> <strong>遊戲時間:</strong> 30-45分鐘</span>
             </div>
             <div class="credits-header">
-                <p>2017 Homosapiens Lab 山頂洞人實驗室</p>
+                <p><strong>遊戲作者:</strong> 陳智帆 (Chih-Fan Chen)、張勝皓、吳威呈 | <strong>插畫美術:</strong> 吳威呈</p>
+                <p><strong>發行出版:</strong> 山頂洞人實驗室 (Homosapiens Lab) | <strong>海外發行:</strong> Indie Boards & Cards</p>
             </div>
         </div>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#contents">內容物</a></li>
-            <li><a href="#overview">遊戲概述</a></li>
-            <li><a href="#objective">遊戲目的</a></li>
-            <li><a href="#setup">遊戲準備</a></li>
-            <li><a href="#gameplay">遊戲進行</a></li>
-            <li><a href="#declare-war">發起戰爭</a></li>
-            <li><a href="#ending">遊戲結束與勝負</a></li>
+            <li><a href="#overview"><i class="fa-solid fa-book-open"></i> 遊戲概述</a></li>
+            <li><a href="#contents"><i class="fa-solid fa-box-open"></i> 內容物</a></li>
+            <li><a href="#setup"><i class="fa-solid fa-sliders"></i> 遊戲準備</a></li>
+            <li><a href="#gameplay"><i class="fa-solid fa-play"></i> 核心流程</a></li>
+            <li><a href="#declare-war"><i class="fa-solid fa-hand-fist"></i> 發起戰爭</a></li>
+            <li><a href="#characters"><i class="fa-solid fa-users-viewfinder"></i> 偉人圖鑑</a></li>
+            <li><a href="#ending"><i class="fa-solid fa-crown"></i> 勝利條件</a></li>
+            <li><a href="#strategy"><i class="fa-solid fa-chess"></i> 致勝策略</a></li>
+            <li><a href="#reflection"><i class="fa-solid fa-scale-balanced"></i> 歷史科思辨</a></li>
         </ul>
     </nav>
 
     <main class="container">
-        <section id="contents" class="game-section">
-            <h2>內容物</h2>
-            <ul>
-                <li>遊戲卡 37張 (人物卡)</li>
-                <li>領土卡 18張</li>
-                <li>發展標記 48個 (武力、文化、科技各16個)</li>
-            </ul>
-        </section>
-
+        <!-- 遊戲概述 -->
         <section id="overview" class="game-section">
-            <h2>遊戲概述</h2>
-            <p>《偉人の猜拳戦略》是一款結合猜拳的卡牌遊戲。玩家可以使用手牌中的偉人強化武力、擴展帝國領土,或是強化文化與科技、建設出繁榮的帝國。</p>
-            <p>透過猜拳攻打你的對手們!使用偉人的猜拳加持贏得戰役。並且妥善運用偉人的特殊能力,發揮出強力的組合技!</p>
-            <p>究竟你會成為名留青史的統治者,還是亡國敗君?就用「剪刀、石頭、布」分出勝負!</p>
+            <h2><i class="fa-solid fa-book-open"></i> 遊戲概述 Overview</h2>
+            <p>《偉人の猜拳戦略》（Conflicting Legends）是由台灣知名獨立桌遊團隊「山頂洞人實驗室」開發的原創卡牌策略遊戲，並成功授權發行歐美海外版本。遊戲跳脫了傳統文明發展桌遊龐雜沉重的包袱，破天荒將全世界無人不知的古老博弈機制——「猜拳（剪刀、石頭、布）」與「歷史偉人文明演進」巧妙結合。</p>
+            <p>在遊戲中，玩家扮演新興帝國的開拓者，招攬橫跨東西方數千年歷史的軍事霸主、科學泰斗、哲學巨擘與藝術名家。你能運用手中的偉人強化武力對外征伐、擴張領土；或是發展卓越的文化與前沿科技，將原本荒蕪戰亂的土地建設成繁榮昌盛的黃金文明！</p>
         </section>
 
-        <section id="objective" class="game-section">
-            <h2>遊戲目的</h2>
-            <p>率先建設領土獲得10顆星星(榮耀積分),或用武力征服六大洲稱霸世界的人,成為遊戲的最終勝利者!</p>
+        <!-- 內容物 -->
+        <section id="contents" class="game-section">
+            <h2><i class="fa-solid fa-box-open"></i> 配件內容物 Components</h2>
+            <div class="component-grid">
+                <div class="component-item">
+                    <h4><i class="fa-solid fa-scroll"></i> 遊戲卡 37 張 (人物牌庫)</h4>
+                    <ul>
+                        <li><strong>武力偉人卡（紅色）：</strong> 軍事領袖與征服者，提供武力點數並擅長發起戰爭。</li>
+                        <li><strong>文化偉人卡（綠色）：</strong> 文學家、藝術家與思想家，提供文化點數與手牌操作能力。</li>
+                        <li><strong>科技偉人卡（藍色）：</strong> 科學家、發明家與探索者，提供科技點數與策略連鎖優勢。</li>
+                        <li><strong>人民卡（灰色）：</strong> 象徵無名大眾與平民勞動者，可自由轉換資源。</li>
+                    </ul>
+                </div>
+                <div class="component-item">
+                    <h4><i class="fa-solid fa-earth-americas"></i> 領土卡 18 張</h4>
+                    <p>涵蓋世界六大洲（歐洲、亞洲、非洲、北美洲、南美洲、大洋洲）。</p>
+                    <p><strong>雙面設計：</strong> 白色面為「未開發/戰亂荒涼（帶有黑色負分星星）」，黃色面為「繁榮發達（帶有黃金榮耀星星）」。</p>
+                </div>
+                <div class="component-item">
+                    <h4><i class="fa-solid fa-gem"></i> 發展標記 48 個</h4>
+                    <ul>
+                        <li><strong>武力標記（紅色）x16：</strong> 用於征伐擴張領土與軍備對抗。</li>
+                        <li><strong>文化標記（綠色）x16：</strong> 用於文明建設與翻轉繁榮領土。</li>
+                        <li><strong>科技標記（藍色）x16：</strong> 用於科技革新、加速建設與抽牌。</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
+        <!-- 遊戲準備 -->
         <section id="setup" class="game-section">
-            <h2>遊戲準備</h2>
+            <h2><i class="fa-solid fa-sliders"></i> 遊戲準備 Setup</h2>
             <ol>
                 <li>
                     <h4>領土卡設置</h4>
-                    <p>領土卡白色面朝上洗混後,隨機發給每人各2張。玩家拿到領土卡以白色面朝上放在各自的面前。剩下領土放在桌面中央成為領土牌堆。</p>
+                    <p>將 18 張領土卡以<strong>白色面朝上</strong>充分洗勻，隨機發給每位玩家各 2 張，正面（白色面）置於各自面前。剩餘的領土卡整齊疊放在桌面中央，白色面朝上作為「領土牌庫」。</p>
                 </li>
                 <li>
-                    <h4>人物卡設置</h4>
-                    <p>人物卡正面朝下洗混後,發給每人各6張作為起始手牌。其餘卡片放在桌面中央成為牌庫。<strong>遊戲中玩家手牌上限為6張，手上持有6張牌時，不能再抽新的牌。</strong></p>
+                    <h4>人物卡設置與手牌</h4>
+                    <p>將 37 張人物卡背面朝上洗勻，發給每位玩家各 <strong>6 張作為起始手牌</strong>。其餘人物卡牌面朝下置於中央作為抽牌堆。<strong>請注意：遊戲中玩家手牌上限為 6 張，持滿 6 張時不得再抽新牌。</strong></p>
                 </li>
                 <li>
-                    <h4>發展標記設置</h4>
-                    <p>所有發展標記放在牌庫旁作為供應區。接著每人從供應區獲得武力、文化、科技各1點放在各自面前。</p>
-                </li>
-                <li>
-                    <h4>起始玩家決定</h4>
-                    <p>由最近有出過國的人、或年紀最小的人成為起始玩家，準備開始遊戲。遊戲按順時針方向進行。</p>
-                </li>
-            </ol>
-        </section>
-
-        <section id="gameplay" class="game-section">
-            <h2>遊戲進行</h2>
-            <p>輪到你時，可以從以下四個動作中選擇一個執行：</p>
-
-            <h3>行動階段 (擇一執行)</h3>
-            <ul>
-                <li>
-                    <h4>動作一: 打出卡片</h4>
-                    <p>從手上打出一張人物卡在自己的面前並執行功能。在結算階段仍留在自己面前的人物會帶來對應的發展點數：紅色卡片提供武力、綠色卡片提供文化、藍色卡片提供科技。</p>
-                    <p>【人民】卡也是人物卡，但打出時沒有功能。在結算階段時，【人民】卡可以選擇提供武力、文化、科技其中一種發展點數。</p>
-                    <p>人物卡功能分成三種：</p>
-                    <ul>
-                        <li><span class="action-icon action-immediate">技</span> <strong>立即執行：</strong> 打出當下必須馬上執行。當功能說明以「你可以」開頭時，才能夠在打出時選擇不執行功能。</li>
-                        <li><span class="action-icon action-passive">天</span> <strong>被動/棄牌執行：</strong> 打出時不會執行。當這張牌因為其他牌的效果，被從手上或場上棄掉時執行。</li>
-                        <li><span class="action-icon action-war">戰</span> <strong>發起戰爭：</strong> 打出時向一位對手發起戰爭，並在這場戰爭中使用這張牌的功能影響戰局，攻打對手面前的領土。</li>
-                    </ul>
-                </li>
-                <li>
-                    <h4>動作二: 擴張</h4>
-                    <p>檢查桌面中央領土牌堆最上方牌的左下角「武力需求」，將等量的武力標記繳回供應區，然後將該領土牌移動到自己面前。</p>
-                    <div class="game-example">
-                        <div class="territory-card territory-card-white">
-                            <span class="card-icon">🌍</span>
-                            <span class="card-title">非洲</span>
-                            <div class="corner-left">
-                                <span>2x</span> <span class="stars-outline">☆☆☆</span>
-                            </div>
-                            <div class="corner-right">
-                                <span>4</span> <span class="stars-outline">☆☆☆</span>
-                            </div>
-                        </div>
-                        <p><strong>範例：</strong> 非洲領土卡顯示武力需求為2。支付2點武力標記，然後將這張非洲領土卡拿到自己面前。</p>
-                    </div>
-                </li>
-                <li>
-                    <h4>動作三: 建設</h4>
-                    <p>選擇自己面前一張領土，按照右下角的「建設需求」，繳回等量的文化標記或科技標記，然後將該領土卡翻面到黃色面，並且從牌庫抽一張人物卡。</p>
-                    <p class="note">※一次只能使用單種標記，不能混用兩種標記，也不能使用武力標記。</p>
-                    <div class="game-example">
-                        <div class="territory-card territory-card-yellow">
-                            <span class="card-icon">🌍</span>
-                            <span class="card-title">Africa</span>
-                            <div class="corner-right">
-                                <span>4</span> <span class="stars-solid">★★★</span>
-                            </div>
-                        </div>
-                        <p><strong>範例：</strong> 非洲領土卡顯示建設需求為4。支付4點文化標記或4點科技標記，然後將卡片翻到黃色面。</p>
-                    </div>
-                    <p>黃色星星象徵著領土的繁榮，黑色星星則是戰亂過後的荒涼。新得到的領土經過建設(翻面)便會獲得黃色星星。收集愈多星星，建立繁榮的帝國，也是贏得遊戲勝利的一種方法。</p>
-                </li>
-                <li>
-                    <h4>動作四: PASS</h4>
-                    <p>不執行任何動作。一旦選擇PASS，這一輪之後你都不再執行任何行動。當所有玩家都PASS以後，遊戲進入「結算階段」。</p>
-                </li>
-            </ul>
-
-            <h3>結算階段</h3>
-            <ol>
-                <li>
-                    <h4>獲得發展點數</h4>
-                    <p>每位玩家檢查自己面前的人物卡。每有一張紅色人物卡便獲得1點武力，綠色人物卡獲得1點文化，藍色人物卡獲得1點科技。面前有【人民】卡則可以從武力、文化、科技中三選一獲得1點。</p>
-                </li>
-                <li>
-                    <h4>抽牌</h4>
-                    <p>將場上所有打出的人物卡和棄牌堆中的人物卡洗回牌庫。每位玩家從牌庫抽3張牌。</p>
-                    <p class="note">※此時抽牌不算是從場上「棄牌」 (意指不會觸發「天」類型的人物功能)。</p>
-                    <p class="note">※手牌上限為6張。如果玩家手上已持有6張牌，則不能再抽新的牌。</p>
+                    <h4>發放初始發展標記</h4>
+                    <p>將所有發展標記分類置於一旁形成供應區。每位玩家從供應區拿取<strong>武力 1 點、文化 1 點、科技 1 點</strong>，置於自己面前作為初始資源。</p>
                 </li>
                 <li>
                     <h4>決定起始玩家</h4>
-                    <p>最後一位PASS的玩家的左手邊玩家，成為下一輪的起始玩家。接著從行動階段開始進行新的一輪遊戲。</p>
+                    <p>由最近出過國、或年紀最小的玩家擔任第一輪的起始玩家。遊戲依順時針方向進行。</p>
                 </li>
             </ol>
         </section>
 
-        <section id="declare-war" class="game-section">
-            <h2>發起戰爭</h2>
-            <p>具有 <span class="action-icon action-war">戰</span> 標誌的人物卡，可以向對手發起戰爭，執行流程如下:</p>
-            <ol>
-                <li>
-                    <h4>指定目標</h4>
-                    <p>指定任意對手面前的一張領土。</p>
-                </li>
-                <li>
-                    <h4>猜拳對決</h4>
-                    <p>和對方猜拳，同時喊出「剪刀、石頭、布」並且同時出拳。如果平手則繼續猜下一把，直到分出勝負為止。</p>
-                </li>
-                <li>
-                    <h4>戰鬥結果</h4>
+        <!-- 遊戲進行 -->
+        <section id="gameplay" class="game-section">
+            <h2><i class="fa-solid fa-play"></i> 遊戲進行：行動階段與結算階段 Gameplay</h2>
+            <p>遊戲由多個「大輪」組成，每一大輪包含兩個階段：<strong>行動階段</strong>與<strong>結算階段</strong>。</p>
+
+            <h3>一、行動階段 (Action Phase)</h3>
+            <p>由起始玩家開始，順時針輪流進行。輪到你時，必須從以下<strong>四個動作中擇一執行</strong>：</p>
+
+            <div class="card-grid">
+                <div class="card-item">
+                    <h4><span class="action-icon action-immediate"><i class="fa-solid fa-bolt"></i> 技</span> 動作一：打出卡片</h4>
+                    <p>從手上打出一張人物卡置於自己面前，並觸發其效果：</p>
                     <ul>
-                        <li><strong>攻擊方猜贏:</strong>
+                        <li><span class="action-icon action-immediate"><i class="fa-solid fa-bolt"></i> 技</span> <strong>即時執行：</strong> 打出時立即生效（除非卡面寫「你可以...」方可選擇不執行）。</li>
+                        <li><span class="action-icon action-passive"><i class="fa-solid fa-feather"></i> 天</span> <strong>天賦被動：</strong> 打出置於面前時無事發生；唯有日後因其他卡牌效果<strong>被從手上或場上棄掉時</strong>才會觸發效果。</li>
+                        <li><span class="action-icon action-war"><i class="fa-solid fa-hand-fist"></i> 戰</span> <strong>發起戰爭：</strong> 打出時指名對手的一張領土發動猜拳戰役！詳見下方發起戰爭規則。</li>
+                    </ul>
+                    <p class="note"><strong>人民卡：</strong> 打出時無任何特殊技能，但留在面前在結算時可提供任選 1 點資源，非常實用！</p>
+                </div>
+
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-earth-americas"></i> 動作二：擴張領土 (Expand Territory)</h4>
+                    <p>花費武力開疆拓土！檢視中央領土牌堆最上方第一張卡片：</p>
+                    <ul>
+                        <li>查看該領土卡左下角的「武力需求」（如 2 點或 3 點）。</li>
+                        <li>繳回對應數量的<strong>武力標記</strong>至供應區。</li>
+                        <li>將該張領土卡直接拿至自己面前（白色面朝上）。中央露出下一張新的領土卡。</li>
+                    </ul>
+                </div>
+
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-landmark"></i> 動作三：建設領土 (Develop Civilization)</h4>
+                    <p>將戰亂的殖民地建設成黃金盛世！</p>
+                    <ul>
+                        <li>選擇自己面前一張<strong>白色面朝上</strong>的領土卡，檢視其右下角標註的建設需求（如 3 點或 4 點）。</li>
+                        <li>繳回等量的<strong>文化標記 OR 科技標記</strong>（不可混用，亦不可使用武力標記）。</li>
+                        <li>將該領土卡<strong>翻面至黃金繁榮面</strong>！</li>
+                        <li><strong>建設獎勵：</strong> 翻面成功的瞬間，立刻從牌庫<strong>免費抽取 1 張人物卡</strong>（若手牌未滿 6 張）！</li>
+                    </ul>
+                </div>
+
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-circle-stop"></i> 動作四：PASS (跳過/停損)</h4>
+                    <p>本輪不再採取任何行動。</p>
+                    <ul>
+                        <li>一旦選擇 PASS，本輪後續輪到你時都只能跳過，不得再執行任何動作。</li>
+                        <li><strong>當場上所有玩家都宣告 PASS 後</strong>，行動階段結束，立刻進入「結算階段」！</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>二、結算階段 (Scoring & Maintenance Phase)</h3>
+            <p>當所有玩家皆已 PASS，依序執行下列步驟清理場地並準備下一輪：</p>
+            <ol>
+                <li><strong>產出發展點數：</strong> 檢視自己面前留存的人物卡。每有 1 張紅色卡獲得 1 點武力、綠色卡獲得 1 點文化、藍色卡獲得 1 點科技；【人民】卡可任選 1 點武力/文化/科技。將對應標記拿至自己面前。</li>
+                <li><strong>清理與重抽手牌：</strong> 將場上所有已打出的人物卡與棄牌堆全數收回，重新洗回牌庫。<strong>每位玩家從牌庫抽取 3 張人物卡</strong>（手牌上限仍為 6 張，超額部分不得抽取）。<em>注意：此清理收牌不視為被動「棄牌」，不會觸發「天」效果。</em></li>
+                <li><strong>決定下一輪起始玩家：</strong> 由<strong>最後一位宣告 PASS 的玩家的左手邊下一位玩家</strong>擔任新一輪的起始玩家。</li>
+            </ol>
+        </section>
+
+        <!-- 發起戰爭詳細流程 -->
+        <section id="declare-war" class="game-section">
+            <h2><i class="fa-solid fa-hand-fist"></i> 發起戰爭規則：剪刀石頭布的帝國命運 War & Duels</h2>
+            <p>當打出帶有 <span class="action-icon action-war"><i class="fa-solid fa-hand-fist"></i> 戰</span> 圖示的人物卡時，將向對手發起一場生死決鬥：</p>
+            <ol>
+                <li><strong>指定目標：</strong> 指名任意一位對手面前的<strong>一張領土卡</strong>作為戰利品目標。</li>
+                <li><strong>猜拳對決：</strong> 發起者與防守者同聲喊出「剪刀、石頭、布」並同時出拳。若平手則立即進行下一把，直到分出勝負為止。</li>
+                <li><strong>戰果裁決：</strong>
+                    <ul>
+                        <li><strong><i class="fa-solid fa-trophy" style="color: #f1c40f;"></i> 攻擊方獲勝：</strong>
                             <ul>
-                                <li>如果指定的領土是黃色面朝上的（已建設），則把它翻面回白色面（未建設）。</li>
-                                <li>如果指定的領土是白色面朝上的（未建設），則把它移動到攻擊方的面前。</li>
+                                <li>若目標領土原本是<strong>黃色面（已建設繁榮）</strong>：領土遭受戰火摧殘，必須將其<strong>翻回白色面（荒涼破敗）</strong>！防守方痛失黃金星星。</li>
+                                <li>若目標領土原本是<strong>白色面（未建設荒蕪）</strong>：城池陷落！攻擊方直接將這張領土卡<strong>奪走並放到自己面前</strong>！</li>
                             </ul>
                         </li>
-                        <li><strong>防守方猜贏:</strong> 則不會發生任何事。</li>
+                        <li><strong><i class="fa-solid fa-shield-halved" style="color: #3498db;"></i> 防守方獲勝：</strong> 守城成功！戰局維持原狀，不發生任何剝奪。</li>
                     </ul>
                 </li>
-                <li>
-                    <h4>人物卡去向</h4>
-                    <p>不論戰爭勝負，用來發起戰爭的人物卡會留在攻擊方的面前。</p>
-                </li>
+                <li><strong>戰後留存：</strong> 不論猜拳輸贏，發動攻擊所打出的人民/偉人卡都會<strong>留在發動者的面前</strong>，在回合結算時照常產出點數！</li>
             </ol>
-            <p class="note">※ 人物卡的功能只在一場戰爭中產生效果。</p>
-            <p class="note">※ 就算不是使用【凱撒】（其功能為預告出拳），任何猜拳前依然可以預告自己將要出的拳。</p>
-            <p class="note">※ 連續平手多次的話，可能會多次觸發人物功能。例如：使用【阿育王】連續平手3次，則會棄掉對方面前3張人物卡。</p>
+            <div class="note">
+                <i class="fa-solid fa-lightbulb"></i> <strong>戰術心法與平手加持：</strong> 許多偉人具備連續猜拳效果。例如阿育王的技能：「猜拳平手時，迫使對手棄掉面前 1 張人物卡」——若連續平手 3 把，對方將連續痛失 3 張人物！此外，心理戰亦是合規戰術，即使不用凱撒，你也可以在出拳前虛張聲勢預告：「我這把一定出石頭！」，引誘對手陷入博弈圈套。
+            </div>
         </section>
 
+        <!-- 歷史偉人圖鑑 -->
+        <section id="characters" class="game-section">
+            <h2><i class="fa-solid fa-users-viewfinder"></i> 歷史偉人卡牌圖鑑 Historical Legends Catalogue</h2>
+            <p>遊戲中共收錄 37 張卡牌，每張卡牌人物皆擺出剪刀、石頭或布的生動插畫，並擁有呼應其生平傳奇的特異功能：</p>
+
+            <h3><i class="fa-solid fa-hand-fist" style="color: #e74c3c;"></i> 武力系偉人（紅色）：鐵血統治與霸權擴張</h3>
+            <div class="character-grid">
+                <div class="character-card">
+                    <h3>【凱撒】尤利烏斯·凱撒 (Julius Caesar)</h3>
+                    <p><strong>羅馬終身獨裁官，名言「我來，我見，我征服 (Veni, Vidi, Vici)」。</strong></p>
+                    <p><strong>標誌：</strong> <span class="action-icon action-war"><i class="fa-solid fa-hand-fist"></i> 戰</span> 發起戰爭</p>
+                    <p><strong>技能：</strong> 出拳前大聲宣告自己將要出的手勢。若你依約出該手勢且猜拳獲勝，你可額外奪取對方 1 個武力標記！絕對霸氣的心理施壓戰術。</p>
+                </div>
+                <div class="character-card">
+                    <h3>【拿破崙】拿破崙·波拿巴 (Napoleon Bonaparte)</h3>
+                    <p><strong>法蘭西第一帝國皇帝，橫掃歐陸的常勝軍神。</strong></p>
+                    <p><strong>標誌：</strong> <span class="action-icon action-war"><i class="fa-solid fa-hand-fist"></i> 戰</span> 發起戰爭</p>
+                    <p><strong>技能：</strong> 若猜拳獲勝奪得白色領土，可立即額外發動一次免費擴張行動，以迅雷不及掩耳之勢吞併周邊諸國。</p>
+                </div>
+                <div class="character-card">
+                    <h3>【亞歷山大大帝】(Alexander the Great)</h3>
+                    <p><strong>馬其頓國王，建立橫跨歐亞非三大洲的空前帝國。</strong></p>
+                    <p><strong>標誌：</strong> <span class="action-icon action-war"><i class="fa-solid fa-hand-fist"></i> 戰</span> 發起戰爭</p>
+                    <p><strong>技能：</strong> 戰鬥獲勝時，若攻擊目標為亞洲、歐洲或非洲領土，可同時奪取目標玩家的 1 點任意發展標記。</p>
+                </div>
+                <div class="character-card">
+                    <h3>【阿育王】阿育王·孔雀王朝 (Ashoka)</h3>
+                    <p><strong>統印度半島的強大君王，歷經血腥殺伐後皈依佛門。</strong></p>
+                    <p><strong>標誌：</strong> <span class="action-icon action-war"><i class="fa-solid fa-hand-fist"></i> 戰</span> 發起戰爭</p>
+                    <p><strong>技能：</strong> 猜拳每與對手平手一次，對方就必須從面前棄掉 1 張已打出的人物卡！戰事膠著時破壞力無與倫比。</p>
+                </div>
+                <div class="character-card">
+                    <h3>【聖女貞德】讓娜·達克 (Joan of Arc)</h3>
+                    <p><strong>英法百年戰爭的法蘭西民族英雄，虔誠純潔的神聖象徵。</strong></p>
+                    <p><strong>標誌：</strong> <span class="action-icon action-passive"><i class="fa-solid fa-feather"></i> 天</span> 天賦棄牌</p>
+                    <p><strong>技能：</strong> 當這張卡被任何效果棄掉時，你可以立即免除自己面前一張被摧毀領土的翻面懲罰，神蹟守護疆土。</p>
+                </div>
+                <div class="character-card">
+                    <h3>【列奧尼達】斯巴達國王 (Leonidas I)</h3>
+                    <p><strong>溫泉關戰役率三百勇士阻擊波斯百萬大軍。</strong></p>
+                    <p><strong>標誌：</strong> <span class="action-icon action-passive"><i class="fa-solid fa-feather"></i> 天</span> 天賦防禦</p>
+                    <p><strong>技能：</strong> 當對手向你發起戰爭時棄掉此牌，強制平手並終止對方的戰爭行動，一夫當關萬夫莫敵！</p>
+                </div>
+            </div>
+
+            <h3><i class="fa-solid fa-palette" style="color: #2ecc71;"></i> 文化系偉人（綠色）：思想啟蒙與藝術繁華</h3>
+            <div class="character-grid">
+                <div class="character-card">
+                    <h3>【莎士比亞】威廉·莎士比亞 (William Shakespeare)</h3>
+                    <p><strong>文藝復興時期劇作大師，英國文學的璀璨冠冕。</strong></p>
+                    <p><strong>標誌：</strong> <span class="action-icon action-immediate"><i class="fa-solid fa-bolt"></i> 技</span> 即時執行</p>
+                    <p><strong>技能：</strong> 打出時，指定一位對手與你交換手牌中的 1 張隨機卡片，彷彿戲劇轉折般顛覆對手的出牌佈局。</p>
+                </div>
+                <div class="character-card">
+                    <h3>【孔子】孔丘 (Confucius)</h3>
+                    <p><strong>儒家學派創始人，至聖先師，倡導仁愛與禮治。</strong></p>
+                    <p><strong>標誌：</strong> <span class="action-icon action-immediate"><i class="fa-solid fa-bolt"></i> 技</span> 即時執行</p>
+                    <p><strong>技能：</strong> 打出時，所有玩家面前具有 <span class="action-icon action-war"><i class="fa-solid fa-hand-fist"></i> 戰</span> 標誌的卡片暫時失去效果一輪，化干戈為玉帛，平息戰火。</p>
+                </div>
+                <div class="character-card">
+                    <h3>【李白】詩仙 (Li Bai)</h3>
+                    <p><strong>盛唐浪漫主義詩人，舉杯邀明月，天馬行空。</strong></p>
+                    <p><strong>標誌：</strong> <span class="action-icon action-immediate"><i class="fa-solid fa-bolt"></i> 技</span> 即時執行</p>
+                    <p><strong>技能：</strong> 棄掉自己手上任意 1 張手牌，立即獲得 2 點文化標記，靈感湧現加速文明建設。</p>
+                </div>
+                <div class="character-card">
+                    <h3>【莫札特】沃夫岡·阿瑪迪斯·莫札特 (Mozart)</h3>
+                    <p><strong>古典主義音樂神童，傳世名曲無數。</strong></p>
+                    <p><strong>標誌：</strong> <span class="action-icon action-immediate"><i class="fa-solid fa-bolt"></i> 技</span> 即時執行</p>
+                    <p><strong>技能：</strong> 打出時若你面前已有其他綠色文化卡，可立即免消耗翻面一張建設需求 3 以下的領土！</p>
+                </div>
+            </div>
+
+            <h3><i class="fa-solid fa-microscope" style="color: #3498db;"></i> 科技系偉人（藍色）：科學革新與宇宙奧秘</h3>
+            <div class="character-grid">
+                <div class="character-card">
+                    <h3>【達爾文】查爾斯·達爾文 (Charles Darwin)</h3>
+                    <p><strong>進化論提出者，著有《物種起源》，顛覆人類宇宙觀。</strong></p>
+                    <p><strong>標誌：</strong> <span class="action-icon action-immediate"><i class="fa-solid fa-bolt"></i> 技</span> 即時執行</p>
+                    <p><strong>技能：</strong> 將自己手上或面前的 1 張【人民】卡進化為牌庫頂抽出的全新偉人卡，演繹物競天擇。</p>
+                </div>
+                <div class="character-card">
+                    <h3>【伽利略】伽利略·伽利萊 (Galileo Galilei)</h3>
+                    <p><strong>現代觀測天文學之父，名言「但它依然在轉動」。</strong></p>
+                    <p><strong>標誌：</strong> <span class="action-icon action-immediate"><i class="fa-solid fa-bolt"></i> 技</span> 即時執行</p>
+                    <p><strong>技能：</strong> 檢視牌庫頂的 3 張卡片，選擇 1 張加入手牌，其餘依喜好順序放回牌庫頂或底，洞悉未來！</p>
+                </div>
+                <div class="character-card">
+                    <h3>【牛頓】艾薩克·牛頓 (Isaac Newton)</h3>
+                    <p><strong>經典力學之父，發現萬有引力與微積分。</strong></p>
+                    <p><strong>標誌：</strong> <span class="action-icon action-passive"><i class="fa-solid fa-feather"></i> 天</span> 天賦被動</p>
+                    <p><strong>技能：</strong> 在結算階段，每有一張藍色科技卡留在面前，額外吸引並產出 1 點科技標記，如萬有引力般聚斂資源。</p>
+                </div>
+                <div class="character-card">
+                    <h3>【愛迪生】湯瑪斯·愛迪生 (Thomas Edison)</h3>
+                    <p><strong>發明大王，擁有超過千項專利，照亮現代文明。</strong></p>
+                    <p><strong>標誌：</strong> <span class="action-icon action-immediate"><i class="fa-solid fa-bolt"></i> 技</span> 即時執行</p>
+                    <p><strong>技能：</strong> 繳回 2 點科技標記，可立即再次執行一次「動作三：建設」，科技大爆發瞬間翻面領土！</p>
+                </div>
+            </div>
+
+            <h3><i class="fa-solid fa-people-group" style="color: #7f8c8d;"></i> 人民卡（灰色）：文明真正的不朽基石</h3>
+            <div class="card-item" style="background-color: #f8f9fa; border: 2px dashed #95a5a6; padding: 20px; border-radius: 8px; margin-top: 15px;">
+                <h4><i class="fa-solid fa-user-group"></i> 【人民卡】平民大眾 (The People / Commoners)</h4>
+                <p>雖然沒有震懾天下的專屬特技，但人民卡代表著默默耕耘的農夫、工匠、水手與士兵。打出置於面前，<strong>在結算階段時可由玩家任意指派其為「武力、文化、或科技」任一種發展點數</strong>！在資源匱乏的關鍵時刻，人民卡往往是翻轉全局的隱形功臣。</p>
+            </div>
+        </section>
+
+        <!-- 勝利條件 -->
         <section id="ending" class="game-section">
-            <h2>遊戲結束與勝負</h2>
-            <p>當有玩家率先滿足下列任一條件時，遊戲立即結束，並且完成條件的人成為遊戲的贏家！</p>
+            <h2><i class="fa-solid fa-crown"></i> 遊戲結束與勝負條件 Victory Conditions</h2>
+            <p>只要在遊戲進行中的<strong>任何時刻</strong>，有玩家滿足以下兩大條件之一，遊戲立即中斷並宣告該玩家獲勝：</p>
             <ol>
                 <li>
-                    <h4>征服六大洲</h4>
-                    <p>面前集齊六大洲領土，不論領土是正面（白色未建設）或反面（黃色已建設）。六大洲為：歐洲、亞洲、非洲、北美洲、南美洲、大洋洲。</p>
+                    <h4><i class="fa-solid fa-globe"></i> 條件一：武力稱霸——集齊六大洲</h4>
+                    <p>面前擁有完整的世界六大洲領土（<strong>歐洲、亞洲、非洲、北美洲、南美洲、大洋洲</strong>）。卡片為白色面（未建設）或黃色面（已建設）皆可！只要湊滿六洲，象徵全球大一統霸業達成，直接奪冠！</p>
                 </li>
                 <li>
-                    <h4>榮耀積分達標</h4>
-                    <p>面前領土牌中，所有黃色星星的數量減去所有黑色星星的數量，總和達到或超過10個。</p>
-                    <div class="game-example">
-                        <div class="star-calculation">
-                            <span class="stars-solid stars-yellow">★★★★</span>
-                            <span class="operator">-</span>
-                            <span class="stars-outline stars-black">☆☆☆</span>
-                            <span class="operator">≥</span>
-                            <span>10</span>
-                        </div>
-                        <p><strong>範例：</strong> 黃色星星總數 - 黑色星星總數 ≥ 10</p>
+                    <h4><i class="fa-solid fa-star" style="color: #f1c40f;"></i> 條件二：文明盛世——榮耀積分達標</h4>
+                    <p>面前所有領土卡上的<strong>黃色星星總數，減去黑色星星總數，總淨值達到 10 顆（含）以上</strong>！象徵你所治理的文明繁盛昌榮、人民豐衣足食，以無與倫比的文化科技軟實力贏得世界尊敬！</p>
+                    <div class="star-calculation">
+                        <span class="stars-yellow"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                        <span class="operator">-</span>
+                        <span class="stars-black"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span>
+                        <span class="operator">≥</span>
+                        <span>10 顆淨星！</span>
                     </div>
                 </li>
             </ol>
         </section>
+
+        <!-- 致勝策略分析 -->
+        <section id="strategy" class="game-section">
+            <h2><i class="fa-solid fa-chess"></i> 高手進階：戰略流派與博弈心法 Strategy</h2>
+            <div class="card-grid">
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-shield-halved"></i> 1. 鐵血軍事擴張流（六大洲突襲）</h4>
+                    <p>核心思路在於快速累積武力標記，搶奪中央牌庫的各洲領土；同時運用拿破崙、亞歷山大等武將強勢發動戰爭，專門奪取對手面前尚未建設的白色領土。此流派節奏極快，能逼迫注重慢速建設的文化流玩家疲於奔命。</p>
+                </div>
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-building-columns"></i> 2. 科技文化繁盛流（黃金星星累積）</h4>
+                    <p>注重達文西、愛迪生、莫札特等卡牌連鎖。每翻面一張領土即可免費抽牌，形成龐大的手牌優勢，在短短幾輪內將面前領土全面鍍金，衝破 10 顆黃金星星門檻。缺點是容易成為全場發動戰爭的箭靶，需常備列奧尼達或聖女貞德進行護盤。</p>
+                </div>
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-brain"></i> 3. 猜拳博弈論：納許均衡與心理戰</h4>
+                    <p>心理學統計顯示，一般人在興奮發動攻擊時偏好出「石頭」，平手緊張時偏好出「剪刀」。高手能洞察對手的心理定勢，或透過語言預告（凱撒戰術）干擾對手思考，打破均衡以提高關鍵戰役的勝率。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 社會歷史科學習思辨 -->
+        <section id="reflection" class="game-section">
+            <h2><i class="fa-solid fa-scale-balanced"></i> 社會科學習思辨：從文明演進看人類歷史</h2>
+            <p>新北市立雙溪高級中學《從桌遊看社會》專題探討：歷史的巨輪究竟由誰推動？</p>
+
+            <div class="qa-category">
+                <h3>思辨一：英雄史觀 vs. 唯物主義人民史觀（歷史科／哲學）</h3>
+                <dl>
+                    <dt>Q1：遊戲中收錄了拿破崙、愛迪生等偉人，但也加入了無名的【人民卡】，這反映了怎樣的歷史觀點？</dt>
+                    <dd>19世紀托馬斯·卡萊爾提出「英雄史觀」，認為世界歷史不過是偉人的傳記；然而馬克思主義歷史唯物論則強調：真正推動歷史生產力前進的，是廣大勞動群眾與制度結構。如果沒有千千萬萬無名的工匠、農民與士兵，即使凱撒或拿破崙擁有通天徹地之能，也無法建立龐大的帝國。遊戲將人民卡賦予自由轉換資源的特性，正是向大眾基石致敬。</dd>
+                </dl>
+
+                <h3>思辨二：帝國擴張的殘酷代價——黑色星星的隱喻（地理科／國際關係）</h3>
+                <dl>
+                    <dt>Q2：為什麼領土卡未建設時會帶有「黑色扣分星星」？這對應了殖民史上的什麼現象？</dt>
+                    <dd>領土剛被武力征服時，伴隨的是流離失所、基礎建設毀壞與民生凋敝（黑色荒涼之星）。歐洲列強在16至19世紀向亞非拉擴張殖民地時，掠奪資源卻未實質改善殖民地民生，帶來百年歷史創傷。唯有挹注教育、醫療、文化與科技（翻面至黃金面），土地才能真正實現永續繁榮。</dd>
+                </dl>
+
+                <h3>思辨三：武力霸權 vs. 文化軟實力——當代國力之爭（公民與社會科）</h3>
+                <dl>
+                    <dt>Q3：遊戲設計了「征服六大洲」與「10顆黃金星星」兩種獲勝途徑，對應當今國際社會有何啟發？</dt>
+                    <dd>這直接呼應了國際關係學者約瑟夫·奈爾（Joseph Nye）提出的「硬實力（Hard Power）」與「軟實力（Soft Power）」。武力能逼迫他國屈服，但引發的反抗與維持成本極其高昂（如蘇聯阿富汗戰爭或美國反恐戰爭）；相反地，透過科技創新、文化創意產業與民主普世價值建立的軟實力，能讓各國心悅誠服。在21世紀，追求文明高質量的永續治理，往往比盲目開疆闢土更具生存韌性。</dd>
+                </dl>
+            </div>
+        </section>
     </main>
-    <!-- 吉祥物圖片新增在這裡 -->
+
+    <!-- 吉祥物圖片 -->
     <div class="mascot-container">
         <a href="#" class="mascot-link" aria-label="吉祥物">
             <img src="image/LiyuChillGuy.svg" alt="吉祥物" class="mascot-image">

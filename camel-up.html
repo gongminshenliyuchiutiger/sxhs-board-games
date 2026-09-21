@@ -5,180 +5,320 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>新北市立雙溪高級中學－從桌遊看社會－《駱駝大賽 Camel Up》</title>
     <link rel="stylesheet" href="style.css"> <!-- 連結到共用 CSS -->
+    <!-- Font Awesome 6.5.2 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body class="camel-up-theme"> <!-- 套用新的主題 class -->
+<body class="camel-up-theme">
     <header>
         <div class="header-content">
-            <h1>新北市立雙溪高級中學</h1>
-            <h2>－從桌遊看社會－</h2>
+            <h1><i class="fa-solid fa-school"></i> 新北市立雙溪高級中學</h1>
+            <h2><i class="fa-solid fa-dice"></i> －從桌遊看社會－</h2>
             <h3>《駱駝大賽 Camel Up》</h3>
-            <p class="tagline">快來猜猜有史以來最瘋狂的駱駝大賽！賭注最高的玩家將贏得最終的勝利。</p>
+            <p class="tagline">快來猜猜有史以來最瘋狂的駱駝大賽！在充滿未知的賽局中，精準下注贏得富甲天下！</p>
             <div class="game-meta">
-                <span><strong>玩家人數:</strong> 2-8</span>
-                <span><strong>年齡:</strong> 8+</span>
-                <span><strong>遊戲時間:</strong> 30-45分鐘</span>
+                <span><i class="fa-solid fa-users"></i> <strong>玩家人數:</strong> 2-8人 (最佳 4-6人)</span>
+                <span><i class="fa-solid fa-child-reaching"></i> <strong>適合年齡:</strong> 8歲以上</span>
+                <span><i class="fa-solid fa-clock"></i> <strong>遊戲時間:</strong> 30-45分鐘</span>
             </div>
             <div class="credits-header">
-                <p><strong>遊戲作者:</strong> Steffen Bogen</p>
-                <p><strong>藝術家:</strong> Dennis Lohausen</p>
-                <p><strong>獲獎紀錄:</strong> 2014 年德國年度遊戲獎 (Spiel des Jahres) 得主</p>
+                <p><strong>遊戲作者:</strong> Steffen Bogen | <strong>美術設計:</strong> Dennis Lohausen</p>
+                <p><strong>榮譽獎項:</strong> 2014 年德國年度遊戲獎 (Spiel des Jahres Winner)、德國玩家票選最佳遊戲</p>
             </div>
         </div>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#contents">內容物</a></li>
-            <li><a href="#setup">遊戲準備</a></li>
-            <li><a href="#gameplay">遊戲進行</a></li>
-            <li><a href="#leg-scoring">分段結算</a></li>
-            <li><a href="#ending">遊戲結束與勝負</a></li>
+            <li><a href="#intro"><i class="fa-solid fa-circle-info"></i> 遊戲簡介</a></li>
+            <li><a href="#contents"><i class="fa-solid fa-box-open"></i> 內容物</a></li>
+            <li><a href="#setup"><i class="fa-solid fa-sliders"></i> 遊戲準備</a></li>
+            <li><a href="#gameplay"><i class="fa-solid fa-gamepad"></i> 四大核心行動</a></li>
+            <li><a href="#stacking"><i class="fa-solid fa-layer-group"></i> 疊疊樂規則</a></li>
+            <li><a href="#desert-oasis"><i class="fa-solid fa-mountain-sun"></i> 沙漠與綠洲</a></li>
+            <li><a href="#leg-scoring"><i class="fa-solid fa-coins"></i> 分段賽結算</a></li>
+            <li><a href="#ending"><i class="fa-solid fa-trophy"></i> 終局計分</a></li>
+            <li><a href="#camel-up-2"><i class="fa-solid fa-wand-magic-sparkles"></i> 二代瘋狂擴充</a></li>
+            <li><a href="#strategies"><i class="fa-solid fa-chess"></i> 策略分析</a></li>
+            <li><a href="#social-reflection"><i class="fa-solid fa-scale-balanced"></i> 社會科思辨</a></li>
         </ul>
     </nav>
 
     <main class="container">
+        <!-- 遊戲簡介 -->
+        <section id="intro" class="game-section">
+            <h2><i class="fa-solid fa-circle-info"></i> 遊戲簡介 Introduction</h2>
+            <p>在廣袤熾熱的埃及沙漠深處，一年一度最盛大的狂歡盛事——「駱駝大賽」震撼開跑！來自世界各地的達官顯貴與投機商人齊聚一堂，大家並非親自騎乘駱駝，而是作為眼光獨到的旁觀賭客。在這場混亂滑稽的競賽中，駱駝們不僅會發足狂奔，還會互相跳到彼此背上「搭便車」！落後的駱駝可能轉瞬被揹上領先群，而領先的駱駝也隨時可能為他人作嫁衣裳。</p>
+            <p>《駱駝大賽》（Camel Up）榮獲 2014 年德國桌遊界最高榮譽「年度遊戲獎（Spiel des Jahres）」。遊戲完美融合了<strong>風險管理、機率期望值計算、資訊預測</strong>與<strong>爆笑歡樂的派對互動</strong>，讓玩家在體驗賽局刺激之際，深入思考預測市場、群眾心理與金融投資的本質。</p>
+        </section>
+
+        <!-- 內容物 -->
         <section id="contents" class="game-section">
-            <h2>內容物</h2>
+            <h2><i class="fa-solid fa-box-open"></i> 配件內容物 Components</h2>
             <div class="component-grid">
                 <div class="component-item">
-                    <h4>金字塔與骰子</h4>
-                    <p>1個金字塔外層、1個金字塔內層、1個十宇配件、1個落門配件。5顆骰子 (紅、黃、藍、綠、白，各1~3點)。</p>
+                    <h4><i class="fa-solid fa-monument"></i> 賽道圖板與骰子金字塔</h4>
+                    <p>1 張環形賽道遊戲圖板（包含16個賽道格與下注區）。</p>
+                    <p>1 座特製骰子發射金字塔（精緻機關，每次倒置按壓僅會掉出1顆骰子）。</p>
                 </div>
                 <div class="component-item">
-                    <h4>圖板與駱駝</h4>
-                    <p>1張遊戲圖板、5隻駱駝（紅、黃、藍、綠、白）、1張起始玩家指示物、1張終點線指示物。</p>
+                    <h4><i class="fa-solid fa-flag-checkered"></i> 賽跑駱駝與專屬骰子</h4>
+                    <p>5 隻木質駱駝（紅、藍、黃、綠、白各1隻，具卡榫可相互堆疊）。</p>
+                    <p>5 顆六面骰子（每色1顆，點數為 1, 2, 3 各兩面）。</p>
                 </div>
                 <div class="component-item">
-                    <h4>卡片與圖板</h4>
-                    <p>15張分段押注圖板 (每色駱駝各3張，數字5、3、2)、40張正反面下注卡 (每名玩家各5張)。</p>
+                    <h4><i class="fa-solid fa-ticket"></i> 下注板塊與卡片</h4>
+                    <p><strong>15 張分段賽下注板塊：</strong> 5 種顏色各 3 張，分值分別為 5、3、2 埃及鎊。</p>
+                    <p><strong>40 張終局下注卡：</strong> 8 位玩家每人 5 張（每色駱駝各 1 張，下注總冠軍或吊車尾）。</p>
+                    <p><strong>5 張金字塔板塊：</strong> 每次搖骰拿取，每張代表 1 埃及鎊獎勵。</p>
                 </div>
                 <div class="component-item">
-                    <h4>配件與錢幣</h4>
-                    <p>8張沙漠圖板、1張駱駝腳色牌、48個硬幣 (1、5、10元面額)。</p>
+                    <h4><i class="fa-solid fa-mountain-sun"></i> 沙漠/綠洲板塊與貨幣</h4>
+                    <p><strong>8 塊沙漠/綠洲板塊：</strong> 每位玩家各 1 塊（雙面設計：+1 綠洲 / -1 海市蜃樓）。</p>
+                    <p><strong>50 枚埃及鎊硬幣：</strong> 面額分為 1 鎊、5 鎊、10 鎊、20 鎊。</p>
+                    <p><strong>1 個起始玩家標記</strong>。</p>
                 </div>
-            </div>
-            <div class="game-info">
-                <p><strong>關於金字塔:</strong> 遊戲中的金字塔是骰子發射器，玩家透過搖晃金字塔，每次從中只會掉出一個骰子。</p>
             </div>
         </section>
 
+        <!-- 遊戲準備 -->
         <section id="setup" class="game-section">
-            <h2>遊戲準備</h2>
+            <h2><i class="fa-solid fa-sliders"></i> 遊戲準備 Game Setup</h2>
             <ol>
                 <li>
-                    <h4>圖板與駱駝位置</h4>
-                    <p>將遊戲圖板放在桌面中央。將5隻駱駝放在起點區上方的格子上 (位置1~3)。駱駝的初始位置決定方式：將5顆骰子放到金字塔中搖晃後，讓它們同時掉出，根據骰子顏色將對應的駱駝放到數字格上。若多隻駱駝在同格，則堆疊起來（隨機決定上下順序）。</p>
+                    <h4>展開賽道圖板</h4>
+                    <p>將遊戲圖板鋪在桌面中央。將 15 張分段賽下注板塊按照 5 種駱駝顏色分類，由上至下依「5 鎊、3 鎊、2 鎊」疊放於圖板對應欄位，最上面的數值為 5 鎊。</p>
                 </li>
                 <li>
-                    <h4>圖板配件與下注卡</h4>
-                    <p>將「終點線」指示物放在最遠端空格（數字20）。將「起點線」指示物放在最接近起點的空格（數字1）。</p>
-                    <p>將40張下注卡（背面朝上，共5種顏色）洗混後，分給每人各5張。</p>
+                    <h4>決定駱駝起跑位置</h4>
+                    <p>將 5 顆骰子全數投入金字塔中，用力搖勻。依序從金字塔按出 5 顆骰子：按出的顏色對應駱駝，骰子點數（1~3）即為該駱駝的起跑格。若有數隻駱駝點數相同，後搖出的駱駝直接<strong>疊在既有駱駝的背上</strong>。骰完後將 5 顆骰子重新裝回金字塔中。</p>
                 </li>
                 <li>
-                    <h4>沙漏圖板</h4>
-                    <p>將8張沙漏圖板洗混後，背面朝上疊成一堆放在遊戲圖板旁邊，成為沙漏牌堆。</p>
+                    <h4>發放玩家起始資源</h4>
+                    <p>每位玩家選擇一個角色，拿取：</p>
+                    <ul>
+                        <li>該角色對應的 <strong>5 張終局下注卡</strong>（5 色駱駝各 1 張，自己保管，不可被對手看見）。</li>
+                        <li><strong>1 塊沙漠/綠洲板塊</strong>（正面綠洲 +1，背面海市蜃樓 -1）。</li>
+                        <li><strong>起始資金 3 埃及鎊</strong>（其餘硬幣置於圖板旁作為銀行儲備）。</li>
+                    </ul>
                 </li>
                 <li>
-                    <h4>分段押注圖板與金錢</h4>
-                    <p>將15張分段押注圖板（顏色面朝上）根據駱駝顏色排成5堆，放在圖板旁作為供應區。</p>
-                    <p>每位玩家拿取5元硬幣作為起始資金。剩下的硬幣作為銀行。</p>
-                </li>
-                <li>
-                    <h4>起始玩家與行動方塊</h4>
-                    <p>每位玩家從5隻駱駝中取一個駱駝顏色的「行動方塊」，放在自己面前。將起始玩家指示物交給最近去過動物園的玩家。</p>
+                    <h4>決定起始玩家</h4>
+                    <p>由最近騎過駱駝（或年紀最輕）的玩家擔任起始玩家，拿取起始玩家標記。遊戲按順時針方向輪流行動。</p>
                 </li>
             </ol>
         </section>
 
+        <!-- 遊戲進行 -->
         <section id="gameplay" class="game-section">
-            <h2>遊戲進行</h2>
-            <p>遊戲以回合制進行，每位玩家輪流選擇執行以下四種行動之一。當所有5顆骰子都從金字塔中搖出後，該「分段」結束，進入結算階段。</p>
+            <h2><i class="fa-solid fa-gamepad"></i> 遊戲進行：四大核心行動 Actions</h2>
+            <p>遊戲以回合輪流進行。輪到你的回合時，必須在下列<strong>四種行動中嚴格選擇一種執行</strong>（不可 pass）：</p>
 
+            <div class="card-grid">
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-ticket"></i> 行動一：拿取分段下注板塊 (Take Leg Bet Tile)</h4>
+                    <p>預測哪隻駱駝會在「當前分段賽結束時」暫居<strong>第一名</strong>。</p>
+                    <ul>
+                        <li>從圖板供應區挑選任一顏色的最上方板塊（優先拿取 5 鎊，被拿走後依序為 3 鎊、2 鎊）。</li>
+                        <li>放在自己面前公開。同一分段中，玩家可以持有多張不同或相同顏色的分段板塊。</li>
+                    </ul>
+                </div>
+
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-signs-post"></i> 行動二：放置沙漠/綠洲板塊 (Place Desert Tile)</h4>
+                    <p>在跑道上設置陷阱或加速區，干擾駱駝走勢並賺取外快。</p>
+                    <ul>
+                        <li>選擇將自己的板塊以「綠洲面（+1）」或「海市蜃樓面（-1）」朝上，放置於賽道空格上。</li>
+                        <li><strong>放置限制：</strong> 不可放在第 1 格、不可放在已有駱駝的格子上、<strong>絕對不可緊鄰其他沙漠板塊</strong>（兩塊沙漠板塊間至少需隔一格空白）。</li>
+                    </ul>
+                </div>
+
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-dice"></i> 行動三：拿取金字塔板塊並搖骰 (Roll Pyramid)</h4>
+                    <p>推動賽事進展，獲取穩定的現金酬勞。</p>
+                    <ul>
+                        <li>從圖板旁拿取 1 張金字塔板塊（每張結算時值 1 鎊）。</li>
+                        <li>將金字塔倒扣於桌面，按壓開關釋放 1 顆骰子。將該色駱駝依照骰子點數（1~3格）向前推進。</li>
+                        <li>將該骰子放在圖板旁的對應顏色帳棚上，表示本分段此骰子已使用完畢。</li>
+                    </ul>
+                </div>
+
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-envelope-open-text"></i> 行動四：秘密下注總冠軍或吊車尾 (Bet on Overall)</h4>
+                    <p>放眼全場長遠戰局，在神不知鬼不覺中謀取最高鉅額彩金。</p>
+                    <ul>
+                        <li>從手牌 5 張終局卡中選 1 張，<strong>牌面朝下</strong>疊放到圖板上的「總冠軍牌堆」或「最後一名（吊車尾）牌堆」頂端。</li>
+                        <li>一旦下注便不可抽回或更換順序，越早下注猜中者，獲得獎金越高！</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 駱駝移動與疊疊樂機制 -->
+        <section id="stacking" class="game-section">
+            <h2><i class="fa-solid fa-layer-group"></i> 駱駝移動與「疊疊樂」物理機制 Stacking Rules</h2>
+            <p>《駱駝大賽》最精彩的核心正是其獨創的<strong>背負堆疊（Piggybacking）</strong>規則：</p>
+            <ol>
+                <li><strong>背負整隊同行：</strong> 當一隻被搖出的駱駝移動時，它會<strong>揹著所有疊在它上方的駱駝一起向前衝</strong>！但在它底下的駱駝則不受影響，留在原地。</li>
+                <li><strong>後到者居上：</strong> 移動結束時，若目標格子已有其他駱駝，被移動的這組駱駝會<strong>整體疊在原本格子既有駱駝的最上方</strong>。</li>
+                <li><strong>名次判定：</strong> 在同一格賽道內，<strong>堆疊在最頂端的駱駝名次最高</strong>，最底層的駱駝名次最低。因此只要疊在別人背上，即使在同一格也是遙遙領先！</li>
+            </ol>
             <div class="note">
-                <strong>行動方塊：</strong> 每位玩家在每個分段開始時，面前會擁有5個行動方塊，分別對應5隻駱駝的顏色。玩家執行行動時，必須將1個行動方塊棄掉。一旦某個駱駝的行動方塊被棄掉，則該駱駝在該分段中不能再被押注（即不能再執行「分段押注」行動）。
+                <i class="fa-solid fa-lightbulb"></i> <strong>經典範例：</strong> 若目前第 7 格由下至上疊放著「藍、黃、綠」，此時搖出黃色骰子點數 2。黃色駱駝會背著背上的綠色駱駝一起飛奔 2 格到達第 9 格；藍色駱駝則孤身留在第 7 格。若第 9 格原本已有紅色駱駝，則黃與綠會疊在紅色之上，該格最終排列為（下至上）：紅、黃、綠（綠色暫居領先）！
+            </div>
+        </section>
+
+        <!-- 沙漠與綠洲戰術 -->
+        <section id="desert-oasis" class="game-section">
+            <h2><i class="fa-solid fa-mountain-sun"></i> 沙漠與綠洲機制 Desert & Oasis Dynamics</h2>
+            <p>沙漠板塊是高手翻轉戰局、調配排名的重要戰術武器：</p>
+            <ul>
+                <li><strong>踩中賞金：</strong> 無論駱駝是單隻還是整疊踩中你的沙漠/綠洲板塊，<strong>板塊擁有者立即從銀行獲得 1 埃及鎊</strong>。一回合若有多波駱駝踏過，每次皆可領錢！</li>
+                <li><strong>綠洲面 (+1) 效果：</strong> 踏上綠洲的整疊駱駝，必須額外再向前推進 1 格。若目標格已有駱駝，這疊駱駝依照正常規則<strong>疊在既有駱駝的最頂層</strong>。</li>
+                <li><strong>海市蜃樓面 (-1) 效果：</strong> 踏上海市蜃樓的整疊駱駝，受到幻覺驚嚇倒退 1 格。關鍵規則：倒退時，這疊駱駝必須<strong>硬生生塞進目標格既有駱駝的最「底層」</strong>！這會徹底摧毀原先的領先地位，瞬間被打入墊底！</li>
+                <li><strong>移動板塊：</strong> 若自己的板塊已在場上，輪到自己執行「放置沙漠板塊」行動時，可選擇將其移動至另一個合法格子，或將其翻面。</li>
+            </ul>
+        </section>
+
+        <!-- 分段賽結算 -->
+        <section id="leg-scoring" class="game-section">
+            <h2><i class="fa-solid fa-coins"></i> 分段賽結算 Leg Scoring</h2>
+            <p>當金字塔中的 <strong>5 顆骰子全數被搖出</strong>（即 5 隻駱駝皆已在該分段各移動過一次）時，當前分段賽立即告一段落，暫停賽事進入分段結算：</p>
+
+            <div class="table-responsive">
+                <table class="outcome-table">
+                    <thead>
+                        <tr>
+                            <th>結算項目</th>
+                            <th>判定標準</th>
+                            <th>獎金 / 扣款金額</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="fa-solid fa-medal" style="color: #f1c40f;"></i> <strong>分段第一名</strong></td>
+                            <td>持有賽場上最領先駱駝的分段板塊</td>
+                            <td>獲得板塊上面標註的金額（<strong>+5 鎊、+3 鎊、或 +2 鎊</strong>）</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-medal" style="color: #bdc3c7;"></i> <strong>分段第二名</strong></td>
+                            <td>持有賽場上次領先駱駝的分段板塊</td>
+                            <td>每張固定獲得 <strong>+1 鎊</strong>（無視板塊原先標註數字）</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-circle-xmark" style="color: #e74c3c;"></i> <strong>其他名次（落選）</strong></td>
+                            <td>持有第三、四、五名駱駝的分段板塊</td>
+                            <td><strong>每張罰款 -1 鎊</strong>，繳回給銀行！</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-dice-d6" style="color: #3498db;"></i> <strong>金字塔板塊</strong></td>
+                            <td>分段中執行搖骰行動獲得的板塊</td>
+                            <td><strong>每張獲得 +1 鎊</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
+            <p><strong>分段重置作業：</strong></p>
             <ol>
-                <li>
-                    <h4>移動駱駝 (搖金字塔)</h4>
-                    <p>選擇這個行動時，你搖晃金字塔，讓1顆骰子掉出。根據骰子的顏色移動對應的駱駝，移動格數為骰子顯示的數字。將骰子放在圖板上對應骰子顏色的區域，表示該骰子已在本分段搖出。</p>
-                    <div class="game-info">
-                        <p><strong>駱駝堆疊規則:</strong> 當駱駝移動到有其他駱駝的格子上時，會疊到該格子最上方。當有駱駝堆被移動時，堆疊在上面的駱駝會隨著下面的駱駝一起移動。<strong>被移動駱駝的堆疊，會以整體一起移動，然後疊在目標格子上既有的駱駝堆最上方。</strong></p>
-                    </div>
-                </li>
-                <li>
-                    <h4>分段押注</h4>
-                    <p>從分段押注供應區中，選擇一個駱駝顏色的押注圖板，獲得上面標示的金額。將押注圖板正面朝上放在自己面前。</p>
-                    <p>每種駱駝的押注圖板有三張：5、3、2。先選擇押注圖板的玩家會獲得最高報酬。</p>
-                    <p class="note"><strong>押注圖板的數量限制:</strong> 每隻駱駝的分段押注圖板只能被選擇一次。因此，你必須棄掉對應駱駝顏色的行動方塊，表示該駱駝在本分段已不能再被押注。</p>
-                </li>
-                <li>
-                    <h4>抽沙漏圖板</h4>
-                    <p>從沙漏牌堆頂抽取一張沙漏圖板，背面朝上放在自己面前。沙漏圖板分為綠洲面（數字+1）和沙漠面（數字-1）。</p>
-                    <p>你必須選擇場上的一個空著的格子，將沙漏圖板正面（綠洲或沙漠）朝上放在該格子上。</p>
-                    <p>當駱駝移動到沙漏圖板所在的格子上時，玩家將獲得1元，並執行圖板上的效果：</p>
-                    <ul>
-                        <li><strong>綠洲面 (+1):</strong> 駱駝向前多移動一格。</li>
-                        <li><strong>沙漠面 (-1):</strong> 駱駝向後移動一格。</li>
-                    </ul>
-                    <div class="game-info">
-                        <p><strong>注意:</strong> 沙漠/綠洲圖板必須放在沒有駱駝的格子上，並且不能放在終點線後方或已有其他沙漏圖板的格子上。</p>
-                    </div>
-                </li>
-                <li>
-                    <h4>下注總冠軍或吊車尾</h4>
-                    <p>從40張下注卡中，選擇一張你認為會是最終冠軍（或吊車尾）的駱駝顏色卡，將其正面朝下放在你面前，不可翻開。</p>
-                    <p>這個行動在整個遊戲中可以執行多次，但對同隻駱駝只能下注一張。</p>
-                </li>
+                <li>所有玩家將分段下注板塊放回圖板供應區（依 5、3、2 重疊）。</li>
+                <li>所有玩家收回場上的沙漠/綠洲板塊。</li>
+                <li>將 5 顆骰子重新裝回金字塔中。</li>
+                <li>由最後一位搖骰玩家的<strong>左手邊下一位玩家</strong>獲得起始玩家標記，開啟全新分段！</li>
             </ol>
         </section>
 
-        <section id="leg-scoring" class="game-section">
-            <h2>分段結算</h2>
-            <p>當所有5顆骰子都被搖出並放到圖板上的對應區域後，該分段立即結束，進入結算階段：</p>
-            <ol>
-                <li>
-                    <h4>分段押注結算</h4>
-                    <p>檢查目前場上所有駱駝的堆疊順序，找出最領先的駱駝。所有擁有該駱駝顏色分段押注圖板的玩家，依照圖板上的數字獲得硬幣。</p>
-                    <p>所有押錯的圖板（非領先駱駝）將導致玩家失去1元。其餘未被押注的圖板則不會有任何獎懲。</p>
-                </li>
-                <li>
-                    <h4>歸還圖板</h4>
-                    <p>將所有分段押注圖板（包含押錯而懲罰的圖板）收回供應區，並將所有已搖出的5顆骰子放回金字塔中。</p>
-                </li>
-                <li>
-                    <h4>沙漏圖板清理</h4>
-                    <p>將所有沙漏圖板從圖板上移回沙漏牌堆，重新洗混。</p>
-                </li>
-                <li>
-                    <h4>新的分段開始</h4>
-                    <p>最後一位搖骰子的玩家的左手邊玩家，成為下一分段的起始玩家。所有玩家收回他們棄置的行動方塊，開始新的分段。</p>
-                </li>
-            </ol>
-        </section>
-
+        <!-- 終局計分與勝負 -->
         <section id="ending" class="game-section">
-            <h2>遊戲結束與勝負</h2>
-            <p>當有駱駝衝過終點線 (進入終點線所在的空格，通常是數字20) 時，遊戲立即結束，立即進行最終結算。</p>
+            <h2><i class="fa-solid fa-trophy"></i> 終局計分與勝負判定 Game End & Final Scoring</h2>
+            <p>當有<strong>任何一隻駱駝踩到或越過終點線（第 16 格）</strong>時，比賽立即瞬間終止！遊戲直接進入全場終局大結算：</p>
             <ol>
-                <li>
-                    <h4>最終冠軍與吊車尾結算</h4>
-                    <p>所有玩家翻開他們持有的「下注總冠軍」或「下注吊車尾」卡片。</p>
+                <li><strong>先結算當前分段：</strong> 按照當下場上駱駝名次，依正常分段規則發放第一名、第二名獎金、罰款與金字塔板塊收益。</li>
+                <li><strong>結算「總冠軍（Overall Winner）」牌堆：</strong>
                     <ul>
-                        <li><strong>最終冠軍:</strong> 猜中目前場上最領先駱駝（或堆疊在最上面）的玩家，根據下注卡上的圖案獲得硬幣獎勵（5、3、2、1元，第一位猜中的獲得5元）。猜錯的玩家失去1元。</li>
-                        <li><strong>最終吊車尾:</strong> 猜中目前場上最落後駱駝（或堆疊在最下面）的玩家，獲得硬幣獎勵（5、3、2、1元）。猜錯的玩家失去1元。</li>
+                        <li>將總冠軍牌堆整疊翻開，<strong>依玩家下注先後順序（由上至下）</strong>逐一檢視：</li>
+                        <li>第 1 位猜對終局冠軍的玩家：獲得 <strong>+8 鎊</strong>！</li>
+                        <li>第 2 位猜對終局冠軍的玩家：獲得 <strong>+5 鎊</strong>！</li>
+                        <li>第 3 位猜對終局冠軍的玩家：獲得 <strong>+3 鎊</strong>！</li>
+                        <li>第 4 位猜對終局冠軍的玩家：獲得 <strong>+2 鎊</strong>！</li>
+                        <li>第 5 位猜對終局冠軍的玩家：獲得 <strong>+1 鎊</strong>！</li>
+                        <li><strong>下注錯誤者：</strong> 每有一張猜錯的卡片，<strong>罰繳 -1 鎊</strong>！</li>
                     </ul>
                 </li>
-                <li>
-                    <h4>最終計分</h4>
-                    <p>玩家計算自己面前累積的所有硬幣總額。<strong>擁有最多硬幣的玩家贏得遊戲勝利！</strong></p>
-                    <p class="note">如果有多位玩家硬幣數量相同，則他們共同分享勝利。</p>
+                <li><strong>結算「吊車尾（Overall Loser）」牌堆：</strong>
+                    <ul>
+                        <li>翻開整疊吊車尾卡片，同樣按照下注先後順序發放獎金：第 1 位 <strong>+8 鎊</strong>、第 2 位 <strong>+5 鎊</strong>、第 3 位 <strong>+3 鎊</strong>、第 4 位 <strong>+2 鎊</strong>、第 5 位 <strong>+1 鎊</strong>。下注錯誤者同樣<strong>每張扣 1 鎊</strong>。</li>
+                    </ul>
                 </li>
+                <li><strong>最終勝負：</strong> 加總個人所有現金，<strong>擁有最多埃及鎊的玩家榮登沙漠巨富，奪得遊戲最終勝利！</strong> 若金額相同則共享殊榮。</li>
             </ol>
+        </section>
+
+        <!-- 二代瘋狂駱駝要素 -->
+        <section id="camel-up-2" class="game-section">
+            <h2><i class="fa-solid fa-wand-magic-sparkles"></i> 進化版本：《駱駝大賽 二代》瘋狂逆行擴充 (Camel Up 2.0)</h2>
+            <p>在 2018 年推出的二代新版中，加入了令全球玩家拍案叫絕的瘋狂新元素：</p>
+            <ul>
+                <li><strong>黑白逆行瘋狂駱駝（Crazy Camels）：</strong> 比賽加入了一隻黑色與一隻白色駱駝，它們從終點出發，<strong>逆時針往起點瘋狂狂奔</strong>！若常規駱駝不幸跳到瘋狂駱駝背上，會被這群逆行瘋子一路倒載載回起點，局勢徹底陷入狂暴混亂！</li>
+                <li><strong>灰黑雙色骰：</strong> 金字塔內加入一顆特殊的灰黑骰，可能搖出黑色或白色的移動點數（1~3步），讓逆行駱駝隨時出動搗亂。</li>
+                <li><strong>相機拍照機制 (Camera Action)：</strong> 新增相機道具，當玩家預測某個格子將迎來最壯觀的多層駱駝大堆疊時，放置相機，只要該格發生堆疊即可獲取高額觀光攝影獎金。</li>
+                <li><strong>合作夥伴卡 (Partnership)：</strong> 在 6 人以上遊戲中，玩家可與同儕結盟，共享彼此得分最高的投注收益，大幅強化社交博弈深度。</li>
+            </ul>
+        </section>
+
+        <!-- 致勝策略分析 -->
+        <section id="strategies" class="game-section">
+            <h2><i class="fa-solid fa-chess"></i> 高手進階：策略分析與期望值計算 Winning Strategies</h2>
+            <div class="card-grid">
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-chart-line"></i> 1. 金字塔骰子計數（機率思維）</h4>
+                    <p>隨時關注帳棚區已經開出哪些顏色的骰子。例如：五顆中已有三顆開出，剩下綠色與藍色尚未跑動，且綠色駱駝距離領先群僅差 1 步，則綠色在此分段奪冠的機率高達 80% 以上，應果斷搶下 5 鎊分段卡！</p>
+                </div>
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-skull-crossbones"></i> 2. 墊底海市蜃樓的毀滅連鎖</h4>
+                    <p>當兩大競爭對手正激烈爭奪領先時，在前方格精準放上海市蜃樓 (-1)。當衝刺第一的駱駝踏上後退回前一格，會被<strong>強行壓在原本落後的駱駝底層</strong>，直接從天堂跌入地獄，重創對手下注的分段板塊。</p>
+                </div>
+                <div class="card-item">
+                    <h4><i class="fa-solid fa-shield-halved"></i> 3. 先行者優勢與保底收益</h4>
+                    <p>局勢混沌不明時，搖骰拿 1 鎊與金字塔板塊是最穩賺不賠的防禦手段；而一旦看準最後一名或第一名駱駝有極大劣勢/優勢，及早打出終局卡搶佔第 1 順位（+8 鎊），即使冒著 -1 鎊風險，長期數學期望值也是絕對正向！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 社會科學習思辨 -->
+        <section id="social-reflection" class="game-section">
+            <h2><i class="fa-solid fa-scale-balanced"></i> 社會科學習思辨：從賽局看社會多元議題</h2>
+            <p>新北市立雙溪高級中學《從桌遊看社會》核心探討：桌遊不僅是休閒，更是人類社會行為、制度設計與心理決策的縮影。</p>
+            
+            <div class="qa-category">
+                <h3>探討主題一：風險管理與數學期望值（公民與社會／數學素養）</h3>
+                <dl>
+                    <dt>Q1：為什麼現實中人們常常熱衷於買樂透或進行高風險投機，明知期望值為負卻樂此不疲？</dt>
+                    <dd>在遊戲中，許多玩家看到只剩 2 鎊的分段板塊依然忍不住拿取，甚至冒險猜測冷門駱駝。這對應了行為經濟學中的「前景理論（Prospect Theory）」——人類在面對微小機率時往往會過度放大其可能性，且受到冒險衝動與沉沒成本謬誤驅使。理性投資需計算勝率乘上報酬率，而非單憑直дж渴望以小博大。</dd>
+                </dl>
+
+                <h3>探討主題二：資訊不對稱、預測市場與先行者優勢（經濟學）</h3>
+                <dl>
+                    <dt>Q2：終局冠軍下注的「早鳥高回報、遲疑低回報」機制，在金融市場與真實社會中有何對應？</dt>
+                    <dd>這正是「風險與報酬成正比」的資本市場法則。創業投資（VC）或天使投資人在專案初期資訊極度不透明時進場，承擔極高失敗風險，因而享有最豐厚的估值紅利；若等到商業模式成熟、人人皆知其必勝時再進場，獲利空間已被大幅壓縮。</dd>
+                </dl>
+
+                <h3>探討主題三：搭便車效應（Free-Rider Problem）與公共利益（社會學）</h3>
+                <dl>
+                    <dt>Q3：駱駝「疊疊樂」背負移動的規則，如何隱喻社會組織中的合作與勞動剝削？</dt>
+                    <dd>底層駱駝揮汗奔馳，卻把上層的駱駝一併送上頒獎台，甚至讓上層駱駝奪冠。這生動演繹了公共財理論中的「搭便車難題」：少數付出勞動成本的人推動了體系進步，但成果卻由居於上層的旁觀者輕鬆享有。在公民社會中，如何透過制度設計（如合理分工、激勵機制、賦稅公平）避免搭便車導致的基層倦怠，是現代民主治理的重要課題。</dd>
+                </dl>
+
+                <h3>探討主題四：博弈產業合法化與公共政策爭議（公共行政與法律）</h3>
+                <dl>
+                    <dt>Q4：從《駱駝大賽》的賭局熱潮，反思台灣澎湖/金門離島博弈公投及運動彩券專法？</dt>
+                    <dd>桌遊讓我們在無害的歡笑中體驗預測與下注的快感，但現實中的博弈產業牽涉極其複雜的社會外部成本：包括成癮犯罪、洗錢防制、家庭破裂與地方經濟依賴。支持者主張其能活絡觀光與增加稅收（如運彩挹注體育發展基金），反對者則憂心社會道德滑坡與治安代價。公民在面對此類公共政策時，必須超越短期利益，通盤評估長遠的社會總成本。</dd>
+                </dl>
+            </div>
         </section>
     </main>
-    <!-- 吉祥物圖片新增在這裡 -->
+
+    <!-- 吉祥物圖片 -->
     <div class="mascot-container">
         <a href="#" class="mascot-link" aria-label="吉祥物">
             <img src="image/LiyuChillGuy.svg" alt="吉祥物" class="mascot-image">
